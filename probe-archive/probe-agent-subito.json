@@ -1,0 +1,30 @@
+{
+  "id": "subito",
+  "name": "Subito.it",
+  "category": "standard",
+  "probedAt": "2026-11-21T08:45:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": 200,
+      "finalUrl": "https://www.subito.it/annunci-emilia-romagna/vendita/appartamenti/bologna/?pe=160000&szs=40",
+      "title": "Annunci Appartamenti Bologna e provincia - Vendita appartamenti Emilia-Romagna - Subito.it",
+      "url": "https://www.subito.it/annunci-emilia-romagna/vendita/appartamenti/bologna/?pe=160000&szs=40",
+      "hasNextData": true,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": {
+        "a[href$=\".htm\"]": 15
+      },
+      "topLinkPatterns": [],
+      "sampleLinks": [
+        "https://www.subito.it/appartamenti/via-giusti-monolocale-ristrutturato-accesso-indi-bologna-669181866.htm",
+        "https://www.subito.it/appartamenti/appartamento-indipendente-con-giardino-privato-bologna-653695188.htm",
+        "https://www.subito.it/appartamenti/bilocale-con-ascensore-in-centro-bologna-669181837.htm"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi verificati via UI browser reale: pe=prezzo max, szs=superficie min. pe=160000 accettato anche se la UI offre solo 150/170k. 1379 -> 484 risultati (provincia), 0 annunci >160k in pagina 1 e 2. ps= e' prezzo MIN (ignorarlo). Ordinamento default 'Dal piu recente'. Paginazione &o=N compatibile coi filtri."
+    }
+  ]
+}

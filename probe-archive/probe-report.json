@@ -1,0 +1,2687 @@
+[
+  {
+    "id": "idealista",
+    "name": "Idealista",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:56:37.190Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.idealista.it/",
+        "title": "idealista, N.1 in Italia — Case e appartamenti, affitto e vendita, annunci gratuiti",
+        "url": "https://www.idealista.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 27,
+          "[class*=\"result\"]": 2,
+          "a[href*=\"/immobile\"]": 1,
+          "a[href*=\"/casa\"]": 4,
+          "a[href*=\"/vendita\"]": 187
+        },
+        "topLinkPatterns": [
+          [
+            "/vendita-case/#municipality-search",
+            5
+          ],
+          [
+            "/info/pubblica-annuncio",
+            2
+          ],
+          [
+            "https://www.idealista.it/news/finanza/casa/{id}/{id}/{id}/{id}-stucco-o-intonaco-che-differenza-c-e-quando-si-usano-e-a-che-scopo",
+            2
+          ],
+          [
+            "/agenzie-immobiliari/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-nuove_costruzioni/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-garage/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-cantine/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-uffici/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-negozi/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-terreni/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-edifici/#municipality-search",
+            2
+          ],
+          [
+            "/vendita-case/con-appartamenti/#municipality-search",
+            2
+          ]
+        ],
+        "totalDeclared": "2 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In idealista utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 25 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi sia accettare tutti i cookie sia sceglierne alcuni facendo clic su “Più informazioni” sia continuare la navigazione con i soli cookie tecnici cliccando \"Continua senza accettare\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato sul legittimo interesse facendo clic sull"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.idealista.it/vendita-case/bologna/con-prezzo_160000/",
+        "status": 404,
+        "finalUrl": "https://www.idealista.it/vendita-case/bologna/con-prezzo_160000/",
+        "title": "www.idealista.it — Case vendita. Case affitto. Appartamenti. Ville — idealista, N.1 in Italia",
+        "url": "https://www.idealista.it/vendita-case/bologna/con-prezzo_160000/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"result\"]": 2
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.idealista.it/info/pubblica-annuncio",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In idealista utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 25 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi sia accettare tutti i cookie sia sceglierne alcuni facendo clic su “Più informazioni” sia continuare la navigazione con i soli cookie tecnici cliccando \"Continua senza accettare\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato sul legittimo interesse facendo clic sull"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "casait",
+    "name": "Casa.it",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:56:50.583Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.casa.it/",
+        "title": "Case e appartamenti in vendita e in affitto - Annunci immobiliari su Casa.it",
+        "url": "https://www.casa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "a[href*=\"/casa\"]": 25,
+          "a[href*=\"/vendita\"]": 137
+        },
+        "topLinkPatterns": [
+          [
+            "/valutazione-immobile/",
+            4
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/la-casa-che-cerchi/",
+            3
+          ],
+          [
+            "https://www.facebook.com/casa.it",
+            2
+          ],
+          [
+            "https://x.com/casapuntoit",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/casaitchannel",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/casa-it",
+            2
+          ],
+          [
+            "https://www.instagram.com/casapuntoit/",
+            2
+          ],
+          [
+            "https://t.me/casapuntoit",
+            2
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/country-soil/",
+            2
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/castello-di-lunghezza/",
+            2
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/borgo-elaia/",
+            2
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/ecosistema-urbano-{id}/",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In Casa.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 14 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche scegliere quali cookie accettare facendo clic su \"Più informazioni\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato su un legittimo interesse selezionando \"Gestione consenso cookie” riportato n"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.casa.it/vendita/residenziale/bologna/?prezzoMax=160000",
+        "status": 200,
+        "finalUrl": "https://www.casa.it/vendita/residenziale/bologna?prezzoMax=160000",
+        "title": "Case in vendita a Bologna - Casa.it",
+        "url": "https://www.casa.it/vendita/residenziale/bologna?prezzoMax=160000",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "SearchResultsPage"
+        ],
+        "cardSelectors": {
+          "[class*=\"card\"]": 1349,
+          "a[href*=\"/casa\"]": 29,
+          "a[href*=\"/vendita\"]": 47
+        },
+        "topLinkPatterns": [
+          [
+            "/immobili/{id}/",
+            250
+          ],
+          [
+            "/immobili/{id}/#{id}",
+            20
+          ],
+          [
+            "/vendita/residenziale/bologna",
+            13
+          ],
+          [
+            "/agenzie/casabo-immobiliare-{id}/",
+            4
+          ],
+          [
+            "/agenzie/prisma-immobiliare-srl-{id}/",
+            4
+          ],
+          [
+            "https://www.facebook.com/casa.it",
+            2
+          ],
+          [
+            "https://x.com/casapuntoit",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/casaitchannel",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/casa-it",
+            2
+          ],
+          [
+            "https://www.instagram.com/casapuntoit/",
+            2
+          ],
+          [
+            "https://t.me/casapuntoit",
+            2
+          ],
+          [
+            "/agenzie/inncasa-rimini-{id}/",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In Casa.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 14 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche scegliere quali cookie accettare facendo clic su \"Più informazioni\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato su un legittimo interesse selezionando \"Gestione consenso cookie” riportato n"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "wikicasa",
+    "name": "Wikicasa",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:57:09.855Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.wikicasa.it/",
+        "title": "Case in vendita • Wikicasa: Annunci che contano",
+        "url": "https://www.wikicasa.it/",
+        "hasNextData": false,
+        "hasNuxt": true,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 5,
+          "[class*=\"card\"]": 20,
+          "[class*=\"listing\"]": 1,
+          "li[class*=\"item\"]": 19,
+          "a[href*=\"/vendita\"]": 165
+        },
+        "topLinkPatterns": [
+          [
+            "/quotazione-immobili/",
+            6
+          ],
+          [
+            "/valutazione-immobile",
+            5
+          ],
+          [
+            "https://play.google.com/store/apps/details",
+            3
+          ],
+          [
+            "https://www.wikicasa.it/",
+            3
+          ],
+          [
+            "https://apps.apple.com/it/app/wikicasa-cerca-e-vendi-casa/id{id}",
+            2
+          ],
+          [
+            "https://www.facebook.com/WikiCasa.it",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/wikicasa/",
+            2
+          ],
+          [
+            "https://www.instagram.com/wikicasa.it/",
+            2
+          ],
+          [
+            "https://www.wikicasa.it/news/",
+            2
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tecnocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tempocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-remax/",
+            1
+          ]
+        ],
+        "totalDeclared": "800.000 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Noi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)” come specificato nella cookie policy. Per quanto riguarda la pubblicità, noi e 1236 terze parti selezionate, potremmo utilizzare dati di geolocalizzazione precisi e l’identificazione attraverso la scansione del dispositivo, al fine di archiviare e/o accedere a informazioni su un dispositivo e trattare dati personali come i tuoi dati di utilizzo, per "
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.wikicasa.it/case/vendita/bologna?prezzo_max=160000",
+        "status": 404,
+        "finalUrl": "https://www.wikicasa.it/case/vendita/bologna?prezzo_max=160000",
+        "title": "Pagina non trovata",
+        "url": "https://www.wikicasa.it/case/vendita/bologna?prezzo_max=160000",
+        "hasNextData": false,
+        "hasNuxt": true,
+        "jsonLdTypes": [],
+        "cardSelectors": {},
+        "topLinkPatterns": [
+          [
+            "https://www.wikicasa.it/",
+            4
+          ],
+          [
+            "/valutazione-immobile",
+            3
+          ],
+          [
+            "/quotazione-immobili/",
+            3
+          ],
+          [
+            "https://apps.apple.com/it/app/wikicasa-cerca-e-vendi-casa/id{id}",
+            2
+          ],
+          [
+            "https://play.google.com/store/apps/details",
+            2
+          ],
+          [
+            "https://www.facebook.com/WikiCasa.it",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/wikicasa/",
+            2
+          ],
+          [
+            "https://www.instagram.com/wikicasa.it/",
+            2
+          ],
+          [
+            "https://www.wikicasa.it/news/",
+            2
+          ],
+          [
+            "https://www.wikicasa.it",
+            1
+          ],
+          [
+            "https://www.wikicasa.it/pro/",
+            1
+          ],
+          [
+            "https://agency.wikicasa.it",
+            1
+          ]
+        ],
+        "totalDeclared": "566.740 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Noi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)” come specificato nella cookie policy. Per quanto riguarda la pubblicità, noi e 1236 terze parti selezionate, potremmo utilizzare dati di geolocalizzazione precisi e l’identificazione attraverso la scansione del dispositivo, al fine di archiviare e/o accedere a informazioni su un dispositivo e trattare dati personali come i tuoi dati di utilizzo, per "
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "trovacasa",
+    "name": "Trovacasa",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:57:26.066Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.trovacasa.it/",
+        "title": "Il miglior modo per trovare casa - TrovaCasa",
+        "url": "https://www.trovacasa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"result\"]": 1,
+          "li[class*=\"item\"]": 5
+        },
+        "topLinkPatterns": [
+          [
+            "/agenzie-immobiliari",
+            3
+          ],
+          [
+            "/pubblica-annuncio",
+            2
+          ],
+          [
+            "https://www.immobiliare.it/terms/cookie/",
+            1
+          ],
+          [
+            "https://my.trovacasa.it/",
+            1
+          ],
+          [
+            "/immobili-commerciali-in-vendita#maplist",
+            1
+          ],
+          [
+            "/box-e-posti-auto-in-vendita#maplist",
+            1
+          ],
+          [
+            "/terreni-in-vendita#maplist",
+            1
+          ],
+          [
+            "/case-in-vendita/provincia-di-chieti/map",
+            1
+          ],
+          [
+            "/case-in-vendita/provincia-di-l-aquila/map",
+            1
+          ],
+          [
+            "/case-in-vendita/provincia-di-pescara/map",
+            1
+          ],
+          [
+            "/case-in-vendita/provincia-di-teramo/map",
+            1
+          ],
+          [
+            "/case-in-vendita/provincia-di-matera/map",
+            1
+          ]
+        ],
+        "totalDeclared": "2026 Immobili",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Con il tuo consenso, noi e i nostri partner usiamo cookie o tecnologie simili per archiviare, accedere ed elaborare dati personali come visite al sito web, indirizzi IP e ID univoci nei cookie, con finalità di profilazione relative a: valutazione degli annunci e del contenuto, osservazioni del pubblico e sviluppo di prodotti, archiviare e/o accedere a informazioni su un dispositivo, annunci e contenuti personalizzati. Alcuni Partner non richiedono il tuo consenso e fanno affidamento sull'interesse legittimo. Puoi ritirare il consenso o rifiutare l'elaborazione dei da"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.trovacasa.it/vendita/bologna",
+        "status": 404,
+        "finalUrl": "https://www.trovacasa.it/vendita/bologna",
+        "title": "NotFound - TrovaCasa",
+        "url": "https://www.trovacasa.it/vendita/bologna",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 5
+        },
+        "topLinkPatterns": [
+          [
+            "/agenzie-immobiliari",
+            2
+          ],
+          [
+            "/pubblica-annuncio",
+            2
+          ],
+          [
+            "https://assistenza.trovacasa.it",
+            1
+          ]
+        ],
+        "totalDeclared": "2026 Immobili",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "PUBBLICA ANNUNCIO Accedi PAGINA NON TROVATA (404) Sembra che ti sei perso a causa di un errore di battitura o di un link errato. TORNA ALLA HOME PAGE © 2026 Immobiliare.it S.p.A. con sede in via Carlo Farini 41, Milano 20159 INFORMAZIONI Chi siamo Assistenza SEZIONI Annunci immobiliari Agenzie immobiliari Annunci da privati Immobili all'asta Pubblicazione annunci CONDIZIONI DI SERVIZIO Condizioni generali Privacy policy Cookie policy"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "subito",
+    "name": "Subito.it",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:57:41.842Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.subito.it/",
+        "title": "Subito - Compra e vendi gratis in sicurezza",
+        "url": "https://www.subito.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization"
+        ],
+        "cardSelectors": {
+          "article": 20,
+          "[class*=\"card\"]": 44,
+          "li[class*=\"item\"]": 28,
+          "a[href*=\"/vendita\"]": 165
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.subito.it/annunci-italia/vendita/offerte-lavoro/",
+            24
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/moto-e-scooter/",
+            9
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/auto/",
+            8
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/auto/peugeot/{id}/",
+            7
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/animali/",
+            7
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/biciclette/",
+            6
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/auto/bmw/x{id}/",
+            5
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/auto/audi/a{id}/",
+            5
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/arredamento-casalinghi/",
+            4
+          ],
+          [
+            "https://www.subito.it/annunci-lombardia/vendita/offerte-lavoro/milano/",
+            4
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/veicoli-commerciali/",
+            3
+          ],
+          [
+            "https://www.subito.it/annunci-italia/vendita/auto/audi/q{id}/",
+            3
+          ]
+        ],
+        "totalDeclared": "554.295 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Questo sito ed i suoi Partners fanno uso di cookie tecnici, analitici e di altre tecnologie per archiviare, accedere ed elaborare dati personali - incluse la geolocalizzazione e l’identificazione del dispositivo - per finalità di profilazione attraverso le seguenti attività: annunci e contenuti personalizzati, valutazione degli annunci e del contenuto, ricerche di mercato e sviluppo di prodotti. Selezionando “Accetta”, acconsenti alla raccolta di dati da parte di Subito ed i suoi Partners. Selezionando “Continua senza accettare” potrai continuare la navigazione con i"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.subito.it/annunci-italia/vendita/appartamenti/bologna/?ps=160000",
+        "status": 404,
+        "finalUrl": "https://www.subito.it/annunci-italia/vendita/appartamenti/bologna/?ps=160000",
+        "title": "Subito.it",
+        "url": "https://www.subito.it/annunci-italia/vendita/appartamenti/bologna/?ps=160000",
+        "hasNextData": true,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 8
+        },
+        "topLinkPatterns": [
+          [
+            "https://areariservata.subito.it/annunci",
+            1
+          ],
+          [
+            "https://www.subito.it/magazine/motori/#",
+            1
+          ],
+          [
+            "https://www.subito.it/sitemaps/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Questo sito ed i suoi Partners fanno uso di cookie tecnici, analitici e di altre tecnologie per archiviare, accedere ed elaborare dati personali - incluse la geolocalizzazione e l’identificazione del dispositivo - per finalità di profilazione attraverso le seguenti attività: annunci e contenuti personalizzati, valutazione degli annunci e del contenuto, ricerche di mercato e sviluppo di prodotti. Selezionando “Accetta”, acconsenti alla raccolta di dati da parte di Subito ed i suoi Partners. Selezionando “Continua senza accettare” potrai continuare la navigazione con i"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "attico",
+    "name": "Attico.it",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:57:57.769Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.attico.it/",
+        "title": "Case e appartamenti in vendita – Annunci immobiliari - Attico.it",
+        "url": "https://www.attico.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 6,
+          "a[href*=\"/casa\"]": 18,
+          "a[href*=\"/vendita\"]": 156
+        },
+        "topLinkPatterns": [
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/country-soil/",
+            3
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/castello-di-lunghezza/",
+            3
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/borgo-elaia/",
+            3
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/ecosistema-urbano-{id}/",
+            3
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/decreto-bollette-{id}/",
+            3
+          ],
+          [
+            "https://blog.casa.it/{id}/{id}/{id}/maledetti-architetti-{id}/",
+            3
+          ],
+          [
+            "https://www.casa.it/agenzie",
+            2
+          ],
+          [
+            "https://www.casa.it/pubblica-annunci",
+            2
+          ],
+          [
+            "/friuliveneziagiulia/vendita/",
+            2
+          ],
+          [
+            "/gorizia/vendita/",
+            2
+          ],
+          [
+            "/pordenone/vendita/",
+            2
+          ],
+          [
+            "/trieste/vendita/",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In Attico.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 9 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche scegliere quali cookie accettare facendo clic su \"Preferenze\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato su un legittimo interesse selezionando \"Gestione consenso cookie” riportato nel fo"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.attico.it/vendita/bologna/",
+        "status": 200,
+        "finalUrl": "https://www.attico.it/vendita/bologna/",
+        "title": "Case in vendita - Attico.it",
+        "url": "https://www.attico.it/vendita/bologna/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"listing\"]": 2,
+          "a[href*=\"/immobile\"]": 20,
+          "a[href*=\"/casa\"]": 15,
+          "a[href*=\"/vendita\"]": 8
+        },
+        "topLinkPatterns": [
+          [
+            "/vendita-residenziale/lista-{id}",
+            6
+          ],
+          [
+            "/vendita-residenziale/mappa-{id}",
+            2
+          ],
+          [
+            "/immobile-appartamento-piemonte-torino-{id}/",
+            2
+          ],
+          [
+            "/immobile-villa-puglia-putignano-{id}/",
+            2
+          ],
+          [
+            "/immobile-appartamento-puglia-acquaviva delle fonti-{id}/",
+            2
+          ],
+          [
+            "https://www.attico.it/casait/cookie/",
+            1
+          ],
+          [
+            "https://www.casa.it/agenzie",
+            1
+          ],
+          [
+            "/immobile-appartamento-puglia-vieste-{id}/",
+            1
+          ],
+          [
+            "/immobile-casa+indipendente-lombardia-castelli calepio-{id}/",
+            1
+          ],
+          [
+            "/immobile-casa+indipendente-veneto-zimella-{id}/",
+            1
+          ],
+          [
+            "/immobile-casa+indipendente-piemonte-penango-{id}/",
+            1
+          ],
+          [
+            "/immobile-appartamento-piemonte-molare-{id}/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → In Attico.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 9 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche scegliere quali cookie accettare facendo clic su \"Preferenze\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato su un legittimo interesse selezionando \"Gestione consenso cookie” riportato nel fo"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "casaclick",
+    "name": "CasaClick",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:58:21.579Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.wikicasa.it/",
+        "title": "Case in vendita • Wikicasa: Annunci che contano",
+        "url": "https://www.wikicasa.it/",
+        "hasNextData": false,
+        "hasNuxt": true,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 5,
+          "[class*=\"card\"]": 38,
+          "[class*=\"listing\"]": 1,
+          "li[class*=\"item\"]": 19,
+          "a[href*=\"/vendita\"]": 165
+        },
+        "topLinkPatterns": [
+          [
+            "/quotazione-immobili/",
+            6
+          ],
+          [
+            "/valutazione-immobile",
+            5
+          ],
+          [
+            "https://play.google.com/store/apps/details",
+            3
+          ],
+          [
+            "https://www.wikicasa.it/",
+            3
+          ],
+          [
+            "https://apps.apple.com/it/app/wikicasa-cerca-e-vendi-casa/id{id}",
+            2
+          ],
+          [
+            "https://www.facebook.com/WikiCasa.it",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/wikicasa/",
+            2
+          ],
+          [
+            "https://www.instagram.com/wikicasa.it/",
+            2
+          ],
+          [
+            "https://www.wikicasa.it/news/",
+            2
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tecnocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tempocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-remax/",
+            1
+          ]
+        ],
+        "totalDeclared": "800.000 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Chi siamo Valuta Quotazioni Pubblica annuncio TroverAI AccediRegistrati Compra Affitta Valuta Asta Agenzie Quotazioni TroverAI Case - Qualsiasi Cerca I nostri partner Pubblica annunci su Wikicasa Promuovi i tuoi annunci di vendita e affitto Pubblica ora Quanto vale il tuo immobile? Scoprilo adesso con il nostro strumento di valutazione completamente gratuito Valuta gratis È arrivata l'App di Wikicasa Scopri la nuova App dove trovare e valutare casa Disponibile ora su App Store e Google Play Conosci i prezzi di mercato? Segui in tempo reale l'andamento del mercato immobiliare nella tua zona Sco"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.casaclick.it/",
+        "status": 200,
+        "finalUrl": "https://www.wikicasa.it/",
+        "title": "Case in vendita • Wikicasa: Annunci che contano",
+        "url": "https://www.wikicasa.it/",
+        "hasNextData": false,
+        "hasNuxt": true,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 5,
+          "[class*=\"card\"]": 20,
+          "[class*=\"listing\"]": 1,
+          "li[class*=\"item\"]": 19,
+          "a[href*=\"/vendita\"]": 165
+        },
+        "topLinkPatterns": [
+          [
+            "/quotazione-immobili/",
+            6
+          ],
+          [
+            "/valutazione-immobile",
+            5
+          ],
+          [
+            "https://www.wikicasa.it/news/",
+            4
+          ],
+          [
+            "https://play.google.com/store/apps/details",
+            3
+          ],
+          [
+            "https://www.wikicasa.it/",
+            3
+          ],
+          [
+            "https://apps.apple.com/it/app/wikicasa-cerca-e-vendi-casa/id{id}",
+            2
+          ],
+          [
+            "https://www.facebook.com/WikiCasa.it",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/wikicasa/",
+            2
+          ],
+          [
+            "https://www.instagram.com/wikicasa.it/",
+            2
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tecnocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-tempocasa/",
+            1
+          ],
+          [
+            "/agenzie-immobiliari/gruppo-remax/",
+            1
+          ]
+        ],
+        "totalDeclared": "800.000 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Noi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)” come specificato nella cookie policy. Per quanto riguarda la pubblicità, noi e 1236 terze parti selezionate, potremmo utilizzare dati di geolocalizzazione precisi e l’identificazione attraverso la scansione del dispositivo, al fine di archiviare e/o accedere a informazioni su un dispositivo e trattare dati personali come i tuoi dati di utilizzo, per "
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "casadaprivato",
+    "name": "CasaDaPrivato",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:58:36.777Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.casadaprivato.it/",
+        "title": "Case da Privati in Vendita e Affitto - CasaDaPrivato.it",
+        "url": "https://www.casadaprivato.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "FAQPage"
+        ],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 121,
+          "a[href*=\"/immobile\"]": 1,
+          "a[href*=\"/casa\"]": 17
+        },
+        "topLinkPatterns": [
+          [
+            "/annunci-vendita/#map-list",
+            3
+          ],
+          [
+            "/annunci-affitto",
+            2
+          ],
+          [
+            "/annunci-case-vacanza",
+            2
+          ],
+          [
+            "/annunci-stanze-posti-letto",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/info/faq",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere/",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/come-vendere-casa-senza-agenzia-guida-completa",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere-casa-da-soli",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/compravendita-immobiliare-tra-privati-in-{id}-punti",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/info/policies/regolamento",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/info/policies/cookie",
+            2
+          ]
+        ],
+        "totalDeclared": "1.000\ncase",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Accedi Registrati Case in vendita e affitto da Privati senza agenzia VENDITA AFFITTO VACANZE STANZE CERCA PUBBLICA ANNUNCIO GRATIS Cerca, vendi e affitta casa direttamente da Privato a zero commissioni PERCHÉ AFFIDARSI A CASADAPRIVATO CasaDaPrivato è il portale LEADER in Italia negli annunci immobiliari dei privati Con la nostra assistenza riuscirai a vendere casa in sicurezza senza commettere errori 1.000.000+ utenti registrati sul sito 70.000+ annunci immobiliari da privati 1.000 case vendute nel 2025 4.000.000 pagine viste mensilmente I VANTAGGI PER CHI VENDE CASA Pubblichi gratis Inserisc"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.casadaprivato.it/",
+        "status": 200,
+        "finalUrl": "https://www.casadaprivato.it/",
+        "title": "Case da Privati in Vendita e Affitto - CasaDaPrivato.it",
+        "url": "https://www.casadaprivato.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "FAQPage"
+        ],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 121,
+          "a[href*=\"/immobile\"]": 1,
+          "a[href*=\"/casa\"]": 17
+        },
+        "topLinkPatterns": [
+          [
+            "/annunci-vendita/#map-list",
+            3
+          ],
+          [
+            "/annunci-affitto",
+            2
+          ],
+          [
+            "/annunci-case-vacanza",
+            2
+          ],
+          [
+            "/annunci-stanze-posti-letto",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/info/faq",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere/",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/come-vendere-casa-senza-agenzia-guida-completa",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere-casa-da-soli",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/compravendita-immobiliare-tra-privati-in-{id}-punti",
+            2
+          ],
+          [
+            "https://www.casadaprivato.it/account/login",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/account/registrati",
+            1
+          ]
+        ],
+        "totalDeclared": "1.000\ncase",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Accedi Registrati Case in vendita e affitto da Privati senza agenzia VENDITA AFFITTO VACANZE STANZE CERCA PUBBLICA ANNUNCIO GRATIS Cerca, vendi e affitta casa direttamente da Privato a zero commissioni PERCHÉ AFFIDARSI A CASADAPRIVATO CasaDaPrivato è il portale LEADER in Italia negli annunci immobiliari dei privati Con la nostra assistenza riuscirai a vendere casa in sicurezza senza commettere errori 1.000.000+ utenti registrati sul sito 70.000+ annunci immobiliari da privati 1.000 case vendute nel 2025 4.000.000 pagine viste mensilmente I VANTAGGI PER CHI VENDE CASA Pubblichi gratis Inserisc"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "bakeca",
+    "name": "Bakeca",
+    "category": "standard",
+    "probedAt": "2026-11-15T00:58:56.387Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.bakeca.it/",
+        "title": "Bakeca: la bacheca di annunci gratuiti, pubblica il tuo annuncio gratis su Bakeca",
+        "url": "https://www.bakeca.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization",
+          "VideoObject"
+        ],
+        "cardSelectors": {
+          "a[href*=\"/annunci/\"]": 49
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.bakeca.it/inserisci/annuncio/",
+            3
+          ],
+          [
+            "https://www.bakeca.it/annunci/biglietti/",
+            2
+          ],
+          [
+            "https://www.bakeca.it/annunci/animali/",
+            2
+          ],
+          [
+            "https://www.bakeca.it/annunci/acquisti-logistica/",
+            2
+          ],
+          [
+            "annunci/case/",
+            1
+          ],
+          [
+            "annunci/offerte-di-lavoro/",
+            1
+          ],
+          [
+            "annunci/in-citta/",
+            1
+          ],
+          [
+            "annunci/lavoro-servizi/",
+            1
+          ],
+          [
+            "annunci/auto-moto/",
+            1
+          ],
+          [
+            "annunci/formazione/",
+            1
+          ],
+          [
+            "annunci/compro-vendo/",
+            1
+          ],
+          [
+            "annunci/elettronica/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Preferiti Accedi Registrati INSERISCI ANNUNCIO Tutte le categorie CERCA Cerca per categoria Case Lavoro In città Servizi Motori Formazione Compro - vendo Elettronica Vuoi aumentare la tua visibilità e ricevere più contatti? Più traffico sul tuo sito, nuovi clienti e più contatti con i nostri servizi per le imprese 10 milioni di utenti unici annui Più di 1 milione di annunci pubblicati Oltre 1,5 milioni di contatti generati tra inserzionisti e utenti ogni mese CLICCA QUI! TUTTE LE CITTÀ DI BAKECA Trova annunci nelle principali città e province italiane Milano Roma Bologna Parma Italia Torino Pa"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.bakeca.it/annunci/vendita-case/bologna/",
+        "status": 200,
+        "finalUrl": "https://www.bakeca.it/annunci/vendita-case/bologna/",
+        "title": "Vendita immobili, appartamenti e case in vendita Novembre 2026 su Bakeca",
+        "url": "https://www.bakeca.it/annunci/vendita-case/bologna/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization",
+          "BreadcrumbList",
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        "cardSelectors": {
+          "article": 1,
+          "a[href*=\"/annunci/\"]": 72,
+          "a[href*=\"/casa\"]": 3,
+          "a[href*=\"/vendita\"]": 95
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.bakeca.it/annunci/vendita-case/",
+            4
+          ],
+          [
+            "https://www.bakeca.it/inserisci/annuncio/",
+            3
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/page/{id}/",
+            2
+          ],
+          [
+            "https://www.bakeca.it/annunci/case/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/inserzionistacase/privato/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/inserzionistacase/agenzia/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/monolocale/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/bilocale/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/trilocale/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/quadrilocale/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/cinque-o-piu-locali/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/attico/",
+            1
+          ]
+        ],
+        "totalDeclared": "73.859 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Preferiti Accedi Registrati INSERISCI ANNUNCIO Case in vendita CERCA Bakeca Italia Case Case in vendita Vendita appartamenti, immobili residenziali - Vendita case Dal più recente INSERZIONISTA Privato Agenzia TIPOLOGIA IMMOBILE Monolocale Bilocale Trilocale Quadrilocale Cinque e più locali Attico Mansarda Villa Altro PREZZO (EURO) Da 50.000 80.000 100.000 130.000 160.000 190.000 220.000 250.000 300.000 350.000 400.000 450.000 500.000 750.000 1.000.000 1.500.000 2.000.000 2.500.000 3.000.000 A 50.000 80.000 100.000 130.000 160.000 190.000 220.000 250.000 300.000 350.000 400.000 450.000 500.000 "
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook Marketplace",
+    "category": "login",
+    "probedAt": "2026-11-15T00:59:13.443Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.facebook.com/marketplace/",
+        "title": "Facebook Marketplace: acquista e vendi articoli a livello locale o usufruendo della spedizione | Facebook",
+        "url": "https://www.facebook.com/marketplace/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "http://schema.org/DataFeed",
+          "http://schema.org/WebSite"
+        ],
+        "cardSelectors": {},
+        "topLinkPatterns": [
+          [
+            "/marketplace/item/{id}/",
+            18
+          ],
+          [
+            "/marketplace/sanfrancisco/search/",
+            16
+          ],
+          [
+            "/marketplace/category/propertyrentals/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Accedi Non ricordi più come accedere all'account? Marketplace Sfoglia tutto Il tuo account Crea nuovo annuncio Luogo San Francisco Inserisci la tua città per mostrare i risultati locali Categorie Veicoli Proprietà in affitto Abbigliamento Articoli gratuiti Articoli per animali Articoli per la casa Articoli per lavori in casa Articoli per ufficio Articoli sportivi Elettronica Famiglia Giardino ed esterni Giocattoli e videogiochi Hobby Intrattenimento Piccoli annunci Strumenti musicali Vendite di case Consigliati oggi San Francisco 9 US$ Papel aluminio barato Antioch, CA 1000 US$ 91 corvette Bre"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.facebook.com/marketplace/bologna/propertyforsale/",
+        "status": 200,
+        "finalUrl": "https://www.facebook.com/marketplace/",
+        "title": "Facebook Marketplace: acquista e vendi articoli a livello locale o usufruendo della spedizione | Facebook",
+        "url": "https://www.facebook.com/marketplace/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "http://schema.org/DataFeed",
+          "http://schema.org/WebSite"
+        ],
+        "cardSelectors": {},
+        "topLinkPatterns": [
+          [
+            "/marketplace/item/{id}/",
+            18
+          ],
+          [
+            "/marketplace/sanfrancisco/search/",
+            16
+          ],
+          [
+            "/marketplace/category/propertyrentals/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Accedi Non ricordi più come accedere all'account? Marketplace Sfoglia tutto Il tuo account Crea nuovo annuncio Luogo San Francisco Inserisci la tua città per mostrare i risultati locali Categorie Veicoli Proprietà in affitto Abbigliamento Articoli gratuiti Articoli per animali Articoli per la casa Articoli per lavori in casa Articoli per ufficio Articoli sportivi Elettronica Famiglia Giardino ed esterni Giocattoli e videogiochi Hobby Intrattenimento Piccoli annunci Strumenti musicali Vendite di case Consigliati oggi San Francisco 9 US$ Papel aluminio barato Antioch, CA 1000 US$ 91 corvette Bre"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "nextdoor",
+    "name": "Nextdoor",
+    "category": "login",
+    "probedAt": "2026-11-15T00:59:50.661Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://it.nextdoor.com/",
+        "title": "Nextdoor",
+        "url": "https://it.nextdoor.com/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization"
+        ],
+        "cardSelectors": {},
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Con il tuo consenso, noi e i nostri 33 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legittimo interesse commerciale. È possibile ritirare il proprio consenso od opporsi al trattamento dei dati basato sul legittimo interesse in qualsiasi momento cliccando su \"Per saperne di più\" o sulla nostra Informativa sulla privacy su questo sito web. Noi e i nostri partner ci att"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://it.nextdoor.com/for_sale_and_free/",
+        "status": 200,
+        "finalUrl": "https://it.nextdoor.com/login/?next=/for_sale_and_free/",
+        "title": "Accedi - Nextdoor",
+        "url": "https://it.nextdoor.com/login/?next=/for_sale_and_free/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {},
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Con il tuo consenso, noi e i nostri 33 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legittimo interesse commerciale. È possibile ritirare il proprio consenso od opporsi al trattamento dei dati basato sul legittimo interesse in qualsiasi momento cliccando su \"Per saperne di più\" o sulla nostra Informativa sulla privacy su questo sito web. Noi e i nostri partner ci att"
+      }
+    ],
+    "verdict": "empty-or-js"
+  },
+  {
+    "id": "tecnocasa",
+    "name": "Tecnocasa",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:00:10.794Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.tecnocasa.it/",
+        "title": "Annunci case e appartamenti in vendita e in affitto - Tecnocasa.it",
+        "url": "https://www.tecnocasa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 6,
+          "[class*=\"result\"]": 1,
+          "li[class*=\"item\"]": 16,
+          "a[href*=\"/annunci/\"]": 10,
+          "a[href*=\"/vendita\"]": 113
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.tecnocasa.it/annunci+commerciali.html",
+            3
+          ],
+          [
+            "https://www.tecnocasa.it/vendo-immobile.html",
+            3
+          ],
+          [
+            "https://www.tecnocasa.it",
+            3
+          ],
+          [
+            "https://www.tecnocasa.it/agenzie.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/opt-out.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/lavora-con-noi.html",
+            2
+          ],
+          [
+            "https://www.facebook.com/GruppoTecnocasa",
+            2
+          ],
+          [
+            "https://www.instagram.com/tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/tecnocasafranchising",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/tecnocasa",
+            2
+          ],
+          [
+            "https://twitter.com/GroupTecnocasa",
+            2
+          ],
+          [
+            "https://www.threads.net/@tecnocasa.group",
+            2
+          ]
+        ],
+        "totalDeclared": "408 Case",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI VENDITA AFFITTO VALUTA Servizi Tecnocasa Visita in comodità Potrai effettuare una prima visita dell’immobile restando comodamente a casa tua! SCOPRI DI PIÙ Valuta immobile Gratuitamente oggi potrai avere una valutazione del tuo immobile senza perdere tempo prezioso. SCOPRI DI PIÙ Lavora con noi! Ti piacerebbe lavorare in un’agenzia immobiliare? SCOPRI DI PIÙ Vendo immobile Ricevi senza impegno una consulenza per vendere il tuo"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "status": 200,
+        "finalUrl": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "title": "Annunci case e appartamenti in vendita e in affitto - Tecnocasa.it",
+        "url": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 197,
+          "[class*=\"result\"]": 2,
+          "li[class*=\"item\"]": 17,
+          "a[href*=\"/annunci/\"]": 30,
+          "a[href*=\"/vendita\"]": 16
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/{id}.html",
+            14
+          ],
+          [
+            "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html/pag-{id}",
+            8
+          ],
+          [
+            "https://www.tecnocasa.it",
+            3
+          ],
+          [
+            "https://www.tecnocasa.it/annunci+commerciali.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/vendo-immobile.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/agenzie.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/opt-out.html",
+            2
+          ],
+          [
+            "https://www.facebook.com/GruppoTecnocasa",
+            2
+          ],
+          [
+            "https://www.instagram.com/tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/tecnocasafranchising",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/tecnocasa",
+            2
+          ],
+          [
+            "https://twitter.com/GroupTecnocasa",
+            2
+          ]
+        ],
+        "totalDeclared": "168 immobili",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI Provincia, comune, zona, riferimento Bologna (BO) Scegli zone Vendita Tipologia Prezzo Superficie Altri filtri SALVA RICERCA Home Case in vendita Case Bologna Bologna Case in vendita a Bologna 168 immobili Ordina TOP € 257.000 Trilocale in vendita Bologna, Via Leonardo da Vinci - Barca 4 locali 90 Mq 1 bagno TOP € 258.000 Trilocale in vendita Bologna, Via Alessandro Guardassoni - Barca 3 locali 80 Mq 2 bagni TOP € 123.000 Quad"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "tecnorete",
+    "name": "Tecnorete",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:00:30.296Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.tecnorete.it/",
+        "title": "Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e in affitto - Tecnorete.it",
+        "url": "https://www.tecnorete.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 6,
+          "[class*=\"result\"]": 1,
+          "li[class*=\"item\"]": 16,
+          "a[href*=\"/annunci/\"]": 10,
+          "a[href*=\"/vendita\"]": 113
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.tecnorete.it/annunci+commerciali.html",
+            3
+          ],
+          [
+            "https://www.tecnorete.it/vendo-immobile.html",
+            3
+          ],
+          [
+            "https://www.facebook.com/GruppoTecnocasa",
+            2
+          ],
+          [
+            "https://www.instagram.com/tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/tecnocasafranchising",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/tecnocasa",
+            2
+          ],
+          [
+            "https://twitter.com/GroupTecnocasa",
+            2
+          ],
+          [
+            "https://www.threads.net/@tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it",
+            2
+          ],
+          [
+            "https://www.tecnorete.it/affitto-immobile.html",
+            1
+          ],
+          [
+            "https://periodico.tecnocasa.com/tecnocasa.html",
+            1
+          ],
+          [
+            "https://podcasts.apple.com/us/podcast/le-chiavi-di-casa/id{id}",
+            1
+          ]
+        ],
+        "totalDeclared": "408 Case",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI VENDITA AFFITTO VALUTA Servizi Tecnorete Visita in comodità Potrai effettuare una prima visita dell’immobile restando comodamente a casa tua! SCOPRI DI PIÙ Valuta immobile Gratuitamente oggi potrai avere una valutazione del tuo immobile senza perdere tempo prezioso. SCOPRI DI PIÙ Lavora con noi! Ti piacerebbe lavorare in un’agenzia immobiliare? SCOPRI DI PIÙ Vendo immobile Ricevi senza impegno una consulenza per vendere il tuo"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "status": 200,
+        "finalUrl": "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "title": "Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e in affitto - Tecnorete.it",
+        "url": "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 197,
+          "[class*=\"result\"]": 2,
+          "li[class*=\"item\"]": 17,
+          "a[href*=\"/annunci/\"]": 30,
+          "a[href*=\"/vendita\"]": 16
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.tecnorete.it/vendita/appartamenti/bologna/bologna/{id}.html",
+            14
+          ],
+          [
+            "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html/pag-{id}",
+            8
+          ],
+          [
+            "https://www.tecnorete.it/annunci+commerciali.html",
+            2
+          ],
+          [
+            "https://www.tecnorete.it/vendo-immobile.html",
+            2
+          ],
+          [
+            "https://www.facebook.com/GruppoTecnocasa",
+            2
+          ],
+          [
+            "https://www.instagram.com/tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.youtube.com/user/tecnocasafranchising",
+            2
+          ],
+          [
+            "https://www.linkedin.com/company/tecnocasa",
+            2
+          ],
+          [
+            "https://twitter.com/GroupTecnocasa",
+            2
+          ],
+          [
+            "https://www.threads.net/@tecnocasa.group",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it",
+            2
+          ],
+          [
+            "https://www.tecnorete.it/vendita-immobili/bologna-provincia/comuni.html",
+            1
+          ]
+        ],
+        "totalDeclared": "168 immobili",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI Provincia, comune, zona, riferimento Bologna (BO) Scegli zone Vendita Tipologia Prezzo Superficie Altri filtri SALVA RICERCA Home Case in vendita Case Bologna Bologna Case in vendita a Bologna 168 immobili Ordina TOP € 395.000 5 locali in vendita Bologna, Via del Greto - Borgo Panigale 5 locali 105 Mq 2 bagni TOP VISITA 3D € 283.000 5 locali in vendita Bologna, Via Luigi Pasteur - Borgo Panigale 5 locali 110 Mq 1 bagno TOP VIS"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "tempocasa",
+    "name": "Tempocasa",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:00:48.505Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://tempocasa.it/",
+        "title": "Annunci Case. Trova appartamenti in vendita e in affitto | Tempocasa",
+        "url": "https://tempocasa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 133,
+          "li[class*=\"item\"]": 6,
+          "a[href*=\"/vendita\"]": 70
+        },
+        "topLinkPatterns": [
+          [
+            "https://tempocasa.it/it/agenzie-immobiliari",
+            3
+          ],
+          [
+            "https://tempocasa.it/it/piu-mutui",
+            3
+          ],
+          [
+            "/blog/guida-al-mutuo-prima-casa/",
+            3
+          ],
+          [
+            "/blog/guida-acquisto-seconda-casa-{id}/",
+            3
+          ],
+          [
+            "/blog/guida-come-diventare-agente-immobiliare/",
+            3
+          ],
+          [
+            "/blog/guida-bonus-casa-{id}/",
+            3
+          ],
+          [
+            "https://tempocasa.it/blog/napoli-ritrova-slancio-nel-{id}-cresce-la-domanda-e-salgono-compravendite-e-prezzi/",
+            3
+          ],
+          [
+            "https://tempocasa.it/it/valuta-la-tua-casa",
+            2
+          ],
+          [
+            "https://tempocasa.it/it/lavora-con-noi",
+            2
+          ],
+          [
+            "https://tempocasa.it/it/contatti",
+            2
+          ],
+          [
+            "https://tempocasa.it/blog/la-crescita-parte-dalla-formazione-il-modello-tempocollege-di-gruppo-tempocasa/",
+            2
+          ],
+          [
+            "https://tempocasa.it/blog/welchome-benvenuto-a-casa-di-george-clooney/",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Cerca Casa Valuta Casa Agenzie Calcola Mutuo Magazine Lavora con noi Contatti 750 AGENZIE PRONTE A REALIZZARE I TUOI SOGNI COMPRO AFFITTO VALUTA CASA AGENZIE VALUTA LA TUA CASA Sei curioso di sapere quanto vale la tua casa? Compila il mini-form con i pochi dati richiesti e ottieni in meno di 60 secondi la stima del tuo immobile. Oppure invia una richiesta per fissare una consulenza professionale con uno dei nostri agenti. VALUTA ORA TROVA LA TUA AGENZIA TEMPOCASA Professionalità, affidabilità e competenza. I tre elementi distintivi di ognuna delle oltre 700 agenzie immobiliari Tempocasa in Ita"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.tempocasa.it/it/vendita/bologna",
+        "status": 200,
+        "finalUrl": "https://tempocasa.it/it/vendita/bologna",
+        "title": "Case in Vendita in provincia di Bologna | Tempocasa",
+        "url": "https://tempocasa.it/it/vendita/bologna",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "ItemList",
+          "BreadcrumbList"
+        ],
+        "cardSelectors": {
+          "[class*=\"card\"]": 73,
+          "li[class*=\"item\"]": 17,
+          "a[href*=\"/casa\"]": 14,
+          "a[href*=\"/vendita\"]": 145
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.addtoany.com/share#url=https%{id}A%{id}F%{id}Ftempocasa.it%{id}Fit%{id}Fvendita%{id}Fbologna&title=Case%{id}in%{id}Vendita%{id}in%{id}provincia%{id}di%{id}Bologna%{id}%{id}C%{id}Tempocasa",
+            12
+          ],
+          [
+            "/it/vendita/bologna/bologna/quadrilocale/{id}",
+            4
+          ],
+          [
+            "/it/vendita/bologna/bologna/{id}-locali/{id}",
+            4
+          ],
+          [
+            "/it/vendita/bologna/valsamoggia/casa-indipendente/{id}",
+            4
+          ],
+          [
+            "https://tempocasa.it/it/valuta-la-tua-casa",
+            3
+          ],
+          [
+            "https://tempocasa.it/it/piu-mutui",
+            3
+          ],
+          [
+            "/it/vendita/bologna/valsamoggia/",
+            3
+          ],
+          [
+            "https://tempocasa.it/it/agenzie-immobiliari",
+            2
+          ],
+          [
+            "https://tempocasa.it/it/lavora-con-noi",
+            2
+          ],
+          [
+            "https://tempocasa.it/it/contatti",
+            2
+          ],
+          [
+            "/itit/vendita/bologna/bologna/quadrilocale/{id}",
+            2
+          ],
+          [
+            "/it/vendita/bologna/bologna/san-donato",
+            2
+          ]
+        ],
+        "totalDeclared": "1122 case",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Cerca Casa Valuta Casa Agenzie Calcola Mutuo Magazine Lavora con noi Contatti Prezzo Superficie Tipologia Locali Bagni Piano Ricerca Avanzata Aree Esterne Pertinenze Clima e Riscaldamento Stato Immobile Efficienza Energetica Virtual Tour Mostra Agenzie Home |Vendita |Immobili In Provincia Di Bologna 1122 case in vendita a Bologna Ordina Per: Più Recenti 275.000 € Quadrilocale in Vendita a Bologna San Donato Via Della Concordia 95 mq 4 locali 1 bagno 2 piano 269.000 € Quadrilocale in Vendita a Bologna San Donato Via San Donato 89 mq 4 locali 1 bagno 3 piano 349.000 € 5+ locali in Vendita a Bolo"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "remax",
+    "name": "RE/MAX",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:01:16.129Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.remax.it/",
+        "title": "REMAX Italia | Case, appartamenti e immobili in vendita o affitto",
+        "url": "https://www.remax.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList"
+        ],
+        "cardSelectors": {
+          "[class*=\"card\"]": 107,
+          "[class*=\"listing\"]": 251,
+          "li[class*=\"item\"]": 40,
+          "a[href*=\"/vendita\"]": 228
+        },
+        "topLinkPatterns": [
+          [
+            "/vendita-case",
+            5
+          ],
+          [
+            "//www.remax.it/valuta-la-tua-casa",
+            5
+          ],
+          [
+            "/vendita-case/genova",
+            2
+          ],
+          [
+            "/vendita-ville",
+            2
+          ],
+          [
+            "//www.remax.it/blog/case-infestate-e-immobili-stigmatizzati",
+            1
+          ],
+          [
+            "//www.remax.it/blog/mercato-immobiliare-in-puglia",
+            1
+          ],
+          [
+            "/vendita-appartamenti/milano",
+            1
+          ],
+          [
+            "/vendita-ville/firenze",
+            1
+          ],
+          [
+            "/vendita-appartamenti/roma",
+            1
+          ],
+          [
+            "/vendita-appartamenti/bologna",
+            1
+          ],
+          [
+            "/vendita-loft/milano",
+            1
+          ],
+          [
+            "/vendita-appartamenti",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Passa al contenuto principale Compra Vendi Perché noi Lavora con REMAX Blog ITA Accedi a My REMAX Cerca immobili in vendita e in affitto in tutta Italia Compra Affitta Vendi Valuta Agenti Agenzie Inizia la tua ricerca PROVA LA RICERCA AI Cerco un appartamento con due bagni a Roma, sotto i 500.000€ Chiedi all'AI PERCHÉ AFFIDARE LA TUA CASA ALL'AGENTE GIUSTO Più competenze, più contatti, più visibilità per aiutarti a prendere decisioni con maggiore serenità. Affidati a un professionista REMAX che integra conoscenza del territorio, condivisione delle opportunità e una rete internazionale unica ne"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.remax.it/immobili/vendita/bologna",
+        "status": 404,
+        "finalUrl": "https://www.remax.it/immobili/vendita/bologna",
+        "title": "Errore 404 | Pagina non trovata",
+        "url": "https://www.remax.it/immobili/vendita/bologna",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization",
+          "WebSite",
+          "BreadcrumbList"
+        ],
+        "cardSelectors": {
+          "[class*=\"listing\"]": 251,
+          "li[class*=\"item\"]": 40,
+          "a[href*=\"/vendita\"]": 228
+        },
+        "topLinkPatterns": [
+          [
+            "/vendita-case",
+            5
+          ],
+          [
+            "//www.remax.it/valuta-la-tua-casa",
+            3
+          ],
+          [
+            "/vendita-ville",
+            2
+          ],
+          [
+            "/vendita-appartamenti/milano",
+            1
+          ],
+          [
+            "/vendita-ville/toscana",
+            1
+          ],
+          [
+            "/vendita-appartamenti/roma",
+            1
+          ],
+          [
+            "/vendita-case/liguria",
+            1
+          ],
+          [
+            "/vendita-appartamenti/bologna",
+            1
+          ],
+          [
+            "/vendita-loft/milano",
+            1
+          ],
+          [
+            "/vendita-appartamenti",
+            1
+          ],
+          [
+            "/vendita-nuove-costruzioni",
+            1
+          ],
+          [
+            "/vendita-attici",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Passa al contenuto principale Compra Vendi Perché noi Lavora con REMAX Blog ITA Accedi a My REMAX QUALCOSA È ANDATO STORTO Non troviamo la pagina che stai cercando. Prova a cercare un immobile o un agente REMAX, oppure contattaci! Cerca immobili in vendita e in affitto in tutta Italia Compra Affitta Vendi Valuta Agenti Agenzie Inizia la tua ricerca PROVA LA RICERCA AI Cerco un appartamento con due bagni a Roma, sotto i 500.000€ Chiedi all'AI ESPLORA IMMOBILI PER LOCALITÀ Trova case in vendita e affitto in tutta Italia RICERCHE POPOLARI Appartamenti a Milano Ville in Toscana Bilocale a Roma Cas"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "trovit",
+    "name": "Trovit",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:01:35.832Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://case.trovit.it/",
+        "title": "Case in vendita e in affitto - Trovit",
+        "url": "https://case.trovit.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "WebSite"
+        ],
+        "cardSelectors": {},
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Con il tuo consenso, noi e i nostri 1041 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legittimo interesse commerciale. È possibile ritirare il proprio consenso od opporsi al trattamento dei dati basato sul legittimo interesse in qualsiasi momento cliccando su \"Per saperne di più\" o sulla nostra Informativa sulla privacy su questo sito web. "
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://case.trovit.it/index.php/cod.search_homes/type.1/what.Bologna/price_max.160000",
+        "status": 404,
+        "finalUrl": "https://case.trovit.it/index.php/cod.search_homes/type.1/what.Bologna/price_max.160000",
+        "title": "404 Not Found",
+        "url": "https://case.trovit.it/index.php/cod.search_homes/type.1/what.Bologna/price_max.160000",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {},
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "404 Not Found nginx"
+      }
+    ],
+    "verdict": "empty-or-js"
+  },
+  {
+    "id": "mitula",
+    "name": "Mitula",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:01:50.975Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://immobiliare.mitula.it/",
+        "title": "Motore di ricerca di Immobili. Case in affitto e in vendita - Mitula Case",
+        "url": "https://immobiliare.mitula.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "Organization"
+        ],
+        "cardSelectors": {
+          "[class*=\"result\"]": 2
+        },
+        "topLinkPatterns": [
+          [
+            "https://immobiliare.mitula.it/favorites",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Con il tuo consenso, noi e i nostri 1047 partner utilizziamo i cookie per migliorare i nostri prodotti e personalizzare annunci pubblicitari e altri contenuti sul nostro sito web, elaborando i tuoi dati personali a questo scopo (ad esempio, il tuo indirizzo IP). Cliccando su \"Accetta e chiudi\" accetti che i cookie vengano memorizzati sul tuo dispositivo per questi scopi. Se clicchi su \"Continua senza accettare\", sul tuo dispositivo verranno installati solo i cookie necessari per il corretto funzionamento del sito. È possibile esercitare il diritto di revocare il cons"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://immobiliare.mitula.it/appartamenti-bologna",
+        "status": 200,
+        "finalUrl": "https://immobiliare.mitula.it/appartamento-bologna",
+        "title": "5.800 Appartamenti in vendita a Bologna - Mitula Case",
+        "url": "https://immobiliare.mitula.it/appartamento-bologna",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "SearchResultsPage",
+          "Organization"
+        ],
+        "cardSelectors": {
+          "article": 30,
+          "[class*=\"card\"]": 753,
+          "[class*=\"listing\"]": 904,
+          "[class*=\"result\"]": 23,
+          "a[href*=\"/casa\"]": 1
+        },
+        "topLinkPatterns": [
+          [
+            "/appartamento-bologna-{id}-euro",
+            8
+          ],
+          [
+            "https://immobiliare.mitula.it/appartamento-bologna",
+            6
+          ],
+          [
+            "https://immobiliare.mitula.it/favorites",
+            2
+          ],
+          [
+            "/appartamento-bologna-barbiano",
+            2
+          ],
+          [
+            "/appartamento-bologna-fiera-district",
+            2
+          ],
+          [
+            "/appartamento-bologna-casaralta",
+            2
+          ],
+          [
+            "/appartamento-bologna-cirenaica",
+            2
+          ],
+          [
+            "/appartamento-bologna-beverara",
+            2
+          ],
+          [
+            "/appartamento-bologna-belcantone",
+            2
+          ],
+          [
+            "/appartamento-bologna-chiesanuova",
+            2
+          ],
+          [
+            "/appartamento-bologna-arcoveggio",
+            2
+          ],
+          [
+            "/appartamento-bologna-fossolo",
+            2
+          ]
+        ],
+        "totalDeclared": "2741 risultati",
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Continua senza accettare → Con il tuo consenso, noi e i nostri 1047 partner utilizziamo i cookie per migliorare i nostri prodotti e personalizzare annunci pubblicitari e altri contenuti sul nostro sito web, elaborando i tuoi dati personali a questo scopo (ad esempio, il tuo indirizzo IP). Cliccando su \"Accetta e chiudi\" accetti che i cookie vengano memorizzati sul tuo dispositivo per questi scopi. Se clicchi su \"Continua senza accettare\", sul tuo dispositivo verranno installati solo i cookie necessari per il corretto funzionamento del sito. È possibile esercitare il diritto di revocare il cons"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "caasa",
+    "name": "Caasa",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:02:10.423Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.caasa.it/",
+        "title": "Tutte le case e gli appartamenti in vendita in Italia",
+        "url": "https://www.caasa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "WebSite",
+          "WebPage"
+        ],
+        "cardSelectors": {
+          "article": 4,
+          "[class*=\"card\"]": 2,
+          "li[class*=\"item\"]": 6,
+          "a[href*=\"/casa\"]": 3
+        },
+        "topLinkPatterns": [
+          [
+            "/valutazione-immobiliare/in-vendita.html",
+            3
+          ],
+          [
+            "https://blog.caasa.it/servizi/dati-strumenti-analisi-mercato-immobiliare/",
+            3
+          ],
+          [
+            "https://www.mercato-immobiliare.info/",
+            2
+          ],
+          [
+            "/roma/roma/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/roma/roma/casa-indipendente/in-vendita.html",
+            1
+          ],
+          [
+            "/torino/torino/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/firenze/firenze/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/genova/genova/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/bivano/in-vendita.html",
+            1
+          ],
+          [
+            "/roma/roma/trivano/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/casa-indipendente/in-vendita.html",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Mercato Immobiliare Valutazionenew Tutto su Caasa Il motore di ricerca degli immobili in vendita in Italia. IN VENDITA IN AFFITTO COMUNE: POSIZIONE ATTUALE SELEZIONA UN COMUNE TIPOLOGIA albergo appartamento attico attivita commerciale azienda agricola baita bifamiliare bivano box auto bungalow campidanese capannone caposchiera casa indipendente casa semindipendente casale dammuso esavano esercizio commerciale intera palazzina locale commerciale locale di sgombero loft mansarda maso monolocale multiproprieta multivano negozio pentavano quadrivano rudere terreno terreno agricolo terreno edificab"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.caasa.it/",
+        "status": 200,
+        "finalUrl": "https://www.caasa.it/",
+        "title": "Tutte le case e gli appartamenti in vendita in Italia",
+        "url": "https://www.caasa.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [
+          "WebSite",
+          "WebPage"
+        ],
+        "cardSelectors": {
+          "article": 4,
+          "[class*=\"card\"]": 2,
+          "li[class*=\"item\"]": 6,
+          "a[href*=\"/casa\"]": 3
+        },
+        "topLinkPatterns": [
+          [
+            "/valutazione-immobiliare/in-vendita.html",
+            3
+          ],
+          [
+            "https://blog.caasa.it/servizi/dati-strumenti-analisi-mercato-immobiliare/",
+            3
+          ],
+          [
+            "https://www.mercato-immobiliare.info/",
+            2
+          ],
+          [
+            "/roma/roma/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/roma/roma/casa-indipendente/in-vendita.html",
+            1
+          ],
+          [
+            "/torino/torino/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/firenze/firenze/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/genova/genova/appartamento/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/bivano/in-vendita.html",
+            1
+          ],
+          [
+            "/roma/roma/trivano/in-vendita.html",
+            1
+          ],
+          [
+            "/milano/milano/casa-indipendente/in-vendita.html",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Mercato Immobiliare Valutazionenew Tutto su Caasa Il motore di ricerca degli immobili in vendita in Italia. IN VENDITA IN AFFITTO COMUNE: POSIZIONE ATTUALE SELEZIONA UN COMUNE TIPOLOGIA albergo appartamento attico attivita commerciale azienda agricola baita bifamiliare bivano box auto bungalow campidanese capannone caposchiera casa indipendente casa semindipendente casale dammuso esavano esercizio commerciale intera palazzina locale commerciale locale di sgombero loft mansarda maso monolocale multiproprieta multivano negozio pentavano quadrivano rudere terreno terreno agricolo terreno edificab"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "flatsearch",
+    "name": "Flatsearch",
+    "category": "standard",
+    "probedAt": "2026-11-15T01:02:26.781Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://flatsearch.it/",
+        "title": "Flatsearch - Tutti gli annunci in un unico posto",
+        "url": "https://flatsearch.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 4,
+          "li[class*=\"item\"]": 8
+        },
+        "topLinkPatterns": [],
+        "totalDeclared": "4.195 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Home Chi Siamo Contattaci FAQ IT EN Accedi / Registrati UN NUOVO MODO DI CERCARE CASA Tutti gli annunci in un unico posto Il primo assistente AI nel mondo immobiliare Compra Affitta Chiedi all’assistente AI Filtri Dalla ricerca alle chiavi in tre passaggi Un'unica ricerca su tutti i principali portali: descrivi la casa, confronta gli annunci e contatta l'inserzionista. Descrivi la casa che cerchi Usa i filtri oppure scrivi all'assistente AI con parole tue: cerchiamo per te tra gli annunci di tutti i principali portali. Trova l'annuncio giusto Confronta foto, prezzi e prezzo al metro quadro del"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://flatsearch.it/",
+        "status": 200,
+        "finalUrl": "https://flatsearch.it/",
+        "title": "Flatsearch - Tutti gli annunci in un unico posto",
+        "url": "https://flatsearch.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 4,
+          "li[class*=\"item\"]": 8
+        },
+        "topLinkPatterns": [],
+        "totalDeclared": "4.021 annunci",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Home Chi Siamo Contattaci FAQ IT EN Accedi / Registrati UN NUOVO MODO DI CERCARE CASA Tutti gli annunci in un unico posto Il primo assistente AI nel mondo immobiliare Compra Affitta Chiedi all’assistente AI Filtri Dalla ricerca alle chiavi in tre passaggi Un'unica ricerca su tutti i principali portali: descrivi la casa, confronta gli annunci e contatta l'inserzionista. Descrivi la casa che cerchi Usa i filtri oppure scrivi all'assistente AI con parole tue: cerchiamo per te tra gli annunci di tutti i principali portali. Trova l'annuncio giusto Confronta foto, prezzi e prezzo al metro quadro del"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "intesasanpaolo",
+    "name": "Proprietà Intesa Sanpaolo",
+    "category": "aste",
+    "probedAt": "2026-11-15T01:02:42.766Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.proprieta.intesasanpaolo.com/",
+        "title": "Intesa Sanpaolo Proprietà",
+        "url": "https://www.proprieta.intesasanpaolo.com/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 40,
+          "li[class*=\"item\"]": 3
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.proprieta.intesasanpaolo.com/immobili",
+            3
+          ],
+          [
+            "https://www.intesasanpaolo.com/it/persone-e-famiglie/prodotti/mutui/mutuoup-per-acquistare-casa.html",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "CHI SIAMO VETRINA CONTATTI Le migliori opportunità immobiliari di proprietà del Gruppo Intesa Sanpaolo Seleziona la tua area d'interesse PROVINCIA Seleziona la provincia COMUNE Seleziona la città TIPOLOGIA Qualsiasi PREZZO € 5.000 € 2.000.000 0€ 500.000€ 1ML€ 1.500.000€ 2ML€+ METRI 8m² 500m² 0 250mq 500mq+ MOSTRA I RISULTATI (850) Annunci in evidenza ISP Filiale Bancaria a Castellanza corso Giacomo Matteotti, 16 470 m² 445.000,00 € ISP Locale Commerciale a Castrocaro Terme e Terra del Sole borgo Mazzini, 1 1429 m² 650.000,00 € ISP Ufficio a Castel Goffredo piazza Gonzaga, 3 300 m² 232.000,00 €"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.proprieta.intesasanpaolo.com/",
+        "status": 200,
+        "finalUrl": "https://www.proprieta.intesasanpaolo.com/",
+        "title": "Intesa Sanpaolo Proprietà",
+        "url": "https://www.proprieta.intesasanpaolo.com/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 40,
+          "li[class*=\"item\"]": 3
+        },
+        "topLinkPatterns": [
+          [
+            "https://www.proprieta.intesasanpaolo.com/immobili",
+            3
+          ],
+          [
+            "https://www.intesasanpaolo.com/it/persone-e-famiglie/prodotti/mutui/mutuoup-per-acquistare-casa.html",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "CHI SIAMO VETRINA CONTATTI Le migliori opportunità immobiliari di proprietà del Gruppo Intesa Sanpaolo Seleziona la tua area d'interesse PROVINCIA Seleziona la provincia COMUNE Seleziona la città TIPOLOGIA Qualsiasi PREZZO € 5.000 € 2.000.000 0€ 500.000€ 1ML€ 1.500.000€ 2ML€+ METRI 8m² 500m² 0 250mq 500mq+ MOSTRA I RISULTATI (850) Annunci in evidenza ISP Filiale Bancaria a Castellanza corso Giacomo Matteotti, 16 470 m² 445.000,00 € ISP Locale Commerciale a Castrocaro Terme e Terra del Sole borgo Mazzini, 1 1429 m² 650.000,00 € ISP Ufficio a Castel Goffredo piazza Gonzaga, 3 300 m² 232.000,00 €"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "prelios",
+    "name": "Prelios",
+    "category": "aste",
+    "probedAt": "2026-11-15T01:02:59.435Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://prelios.com/it",
+        "title": "Prelios Corporate Website |",
+        "url": "https://prelios.com/it",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 1,
+          "li[class*=\"item\"]": 108
+        },
+        "topLinkPatterns": [
+          [
+            "/it/societa-operative/prelios-agency/immobili",
+            2
+          ],
+          [
+            "/it/societa-operative/prelios-agency/immobili/track-record",
+            2
+          ],
+          [
+            "/it/comunicati-stampa/prelios-agency-advisor-nella-vendita-di-palazzo-cilestri-catania",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Salta al contenuto principale EN Form di ricerca Cerca Gruppo Governance Media Carriere Leader nell’alternative asset management, nel credit servicing e nei servizi immobiliari specializzati PRELIOS CREDIT SERVICING PRELIOS SGR PRELIOS INTEGRA PRELIOS VALUATIONS PRELIOS AGENCY PRELIOS BLINKS PLATFORM ARECNEPRIX Con circa 35 miliardi di € di Asset Under Management, siamo uno dei principali Gruppi italiani attivi nell’alternative asset management Scopri di più COMUNICATI Prelios Agency advisor nella vendita di Palazzo Cilestri a Catania Prelios SGR finalizza l’acquisizione dell’“ex Palazzo della"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.prelios.com/it/real-estate",
+        "status": 404,
+        "finalUrl": "https://prelios.com/it/real-estate",
+        "title": "Pagina non trovata | Prelios Corporate Website",
+        "url": "https://prelios.com/it/real-estate",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 108
+        },
+        "topLinkPatterns": [
+          [
+            "/it/societa-operative/prelios-agency/immobili",
+            2
+          ],
+          [
+            "/it/societa-operative/prelios-agency/immobili/track-record",
+            2
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Salta al contenuto principale EN DE PL Form di ricerca Cerca Gruppo Governance Media Carriere PRELIOS CREDIT SERVICING PRELIOS SGR PRELIOS INTEGRA PRELIOS VALUATIONS PRELIOS AGENCY PRELIOS BLINKS PLATFORM ARECNEPRIX Pagina non trovata La pagina richiesta non è stata trovata. © 2026 Prelios s.p.a. P.iva 02473170153 Disclaimer Fornitori Company info Cartolarizzazioni Piani di Sostituzione Questo sito utilizza cookie propri e di terze parti. Se vuoi saperne di più, o se vuoi negare il consenso all'installazione di alcuni cookie, clicca qui. Se accedi a qualunque elemento del presente sito esterno"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "dovalue",
+    "name": "doValue",
+    "category": "aste",
+    "probedAt": "2026-11-15T01:03:17.066Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://dovalue.it/it",
+        "title": "doValue: servizi finanziari strategici in Europa",
+        "url": "https://dovalue.it/it",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 1,
+          "li[class*=\"item\"]": 85
+        },
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Il Gruppo Le società del Gruppo Paese Language Whistleblowing Lavora con noi Chi siamo Servizi Investor relations Governance ESG Comunicazione Contatti Area broker L’evoluzione del credit management in Europa Scopri i nostri servizi Business Plan 2027-2029 Ready • Set • Scale Scopri di più Il Gruppo Scopri di più L’evoluzione del credit management in Europa Scopri i nostri servizi Business Plan 2027-2029 Ready • Set • Scale Scopri di più doValue, l’operatore paneuropeo attivo in 14 mercati Il Gruppo offre servizi finanziari strategici lungo l’intero ciclo di vita del credito. Una piattaforma t"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://dovalue.it/it/real-estate.html",
+        "status": 404,
+        "finalUrl": "https://dovalue.it/it/real-estate.html",
+        "title": "Pagina non trovata | doValue",
+        "url": "https://dovalue.it/it/real-estate.html",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "li[class*=\"item\"]": 85
+        },
+        "topLinkPatterns": [],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Il Gruppo Le società del Gruppo Paese Language Whistleblowing Lavora con noi Chi siamo Servizi Investor relations Governance ESG Comunicazione Contatti Area broker Opps This is not the page you were looking for, is it? Chi siamo Servizi Investor relations Governance Comunicazione ESG Contatti Dichiarazione di accessibilità doValue S.p.A. Viale del Commercio 47 37135, Verona VR dovalue.pec@actaliscertymail.it Follow us on RECLAMI, RICORSI E CONCILIAZIONE INFORMATIVA COOKIES DATI SOCIETARI LEGAL DISCLAIMER PRIVACY LEGGE 62/2001 INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI Utilizziamo i cookie "
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "agenziademanio",
+    "name": "Agenzia Demanio",
+    "category": "aste",
+    "probedAt": "2026-11-15T01:03:33.621Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.agenziademanio.it/it/",
+        "title": "Agenzia del Demanio - Homepage",
+        "url": "https://www.agenziademanio.it/it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 4,
+          "[class*=\"card\"]": 208,
+          "li[class*=\"item\"]": 58
+        },
+        "topLinkPatterns": [
+          [
+            "/it/gare-aste/immobiliare/",
+            1
+          ],
+          [
+            "/it/la-nostra-missione-cura-del-patrimonio-dello-stato/#integriamo-gli-immobili",
+            1
+          ],
+          [
+            "/it/immobili-di-proprieta-e-in-uso-allo-stato/",
+            1
+          ],
+          [
+            "/it/agenzia/accordi-protocolli-convenzioni/piani-citta-immobili-pubblici/",
+            1
+          ],
+          [
+            "/it/sala-stampa/notizie/notizia/Matera-unita-immobiliari-dei-Sassi-trasferite-al-Comune.-Primo-passo-del-Piano-Citta",
+            1
+          ],
+          [
+            "/it/sala-stampa/notizie/notizia/Matera-firmato-il-Piano-Citta-degli-immobili-pubblici",
+            1
+          ],
+          [
+            "/it/sala-stampa/comunicati/dettaglio-comunicatistampa/Matera-firmato-il-Piano-Citta-degli-immobili-pubblici-{id}",
+            1
+          ],
+          [
+            "/it/sala-stampa/comunicati/dettaglio-comunicatistampa/Verona-Cinta-Magistrale-lAgenzia-del-Demanio-completa-il-trasferimento-al-Comune",
+            1
+          ],
+          [
+            "/it/sala-stampa/comunicati/dettaglio-comunicatistampa/Immobili-dello-Stato-Manutentore-Unico-sul-sito-dellAgenzia-la-nuova-piattaforma-digitale-per-la-gestione-degli-interventi",
+            1
+          ],
+          [
+            "/it/sala-stampa/comunicati/dettaglio-comunicatistampa/Vicenza-firmato-il-Piano-Citta-degli-Immobili-Pubblici",
+            1
+          ],
+          [
+            "/it/sala-stampa/articoli-e-approfondimenti/dettaglio-articoli-notizia/Matera-la-pietra-che-si-fa-futuro-il-Piano-Citta-degli-Immobili-Pubblici-ricuce-Sassi-centro-storico-e-quartieri",
+            1
+          ],
+          [
+            "/it/sala-stampa/articoli-e-approfondimenti/dettaglio-articoli-notizia/Da-custode-della-memoria-drammatica-di-Roma-a-rigeneratore-culturale-della-periferia-di-Tor-Sapienza-rinasce-la-caserma-VIII-Cerimant-ospitera-il-patrimonio-materiale-e-immateriale-del-cinema-italiano",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": true,
+        "loginWall": false,
+        "bodySnippet": "Agenzia del Demanio - Menu di accesso rapido Vai al menu principale Vai al campo cerca nel sito Contenuti della Pagina Vai al contenuto del footer Torna in Home page - Access key:H Back to top - Access key: 0 Ministero dell'Economia e delle Finanze Agenzia del Demanio Agenzia del Demanio Seguici su: Cerca nel sito: Cerca Menu principale Agenzia Sostenibilità Gare e Aste Servizi Online Lavora con noi Comunicazione Contatti Facciamo rete sull'onda dell'innovazione La nostra missione è la cura del Patrimonio dello Stato Cisterne sotterranee di Pier Luigi Nervi a Palermo 06 Manteniamo viva la nost"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.agenziademanio.it/opencms/it/gare-aste/",
+        "status": 200,
+        "finalUrl": "https://www.agenziademanio.it/opencms/it/gare-aste/",
+        "title": "Agenzia del Demanio - Gare e aste",
+        "url": "https://www.agenziademanio.it/opencms/it/gare-aste/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "article": 4,
+          "[class*=\"card\"]": 18,
+          "li[class*=\"item\"]": 46
+        },
+        "topLinkPatterns": [
+          [
+            "/it/gare-aste/immobiliare/",
+            3
+          ]
+        ],
+        "totalDeclared": "2024\nImmobili",
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "Agenzia del Demanio - Menu di accesso rapido Vai al menu principale Vai al campo cerca nel sito Contenuti della Pagina Vai al contenuto del footer Torna in Home page - Access key:H Back to top - Access key: 0 Ministero dell'Economia e delle Finanze Agenzia del Demanio Agenzia del Demanio Seguici su: Cerca nel sito: Cerca Menu principale Agenzia Sostenibilità Gare e Aste Servizi Online Lavora con noi Comunicazione Contatti Home Gare e Aste Gare e aste Piattaforma approvvigionamento a partire dal 21 novembre 2024 Immobiliare Servizi Tecnici e Lavori - sino al 20 novembre 2024 Forniture e altri S"
+      }
+    ],
+    "verdict": "scrapeable"
+  },
+  {
+    "id": "invimit",
+    "name": "Invimit",
+    "category": "aste",
+    "probedAt": "2026-11-15T01:03:50.280Z",
+    "steps": [
+      {
+        "step": "home",
+        "status": 200,
+        "finalUrl": "https://www.invimit.it/",
+        "title": "Home Page - INVIMIT Sgr S.p.a.",
+        "url": "https://www.invimit.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 1,
+          "li[class*=\"item\"]": 23
+        },
+        "topLinkPatterns": [
+          [
+            "https://vetrinaimmobili.invimit.it/",
+            3
+          ],
+          [
+            "https://www.invimit.it/scalera-sulla-serata-di-riapertura-dellex-ospedale-dei-bastardini-a-bologna-non-e-solo-recupero-di-un-immobile-iconico-ma-trasformazione-di-patrimonio-inutilizzato-in-infrastruttura-urbana-capac/",
+            2
+          ],
+          [
+            "https://www.invimit.it/min-giorgetti-alla-presentazione-della-guida-agli-enti-locali-per-la-valorizzazione-del-patrimonio-immobiliare-pubblico-grande-interesse-mercato-per-fondo-invimit-sgr/",
+            2
+          ],
+          [
+            "https://www.invimit.it/piano-casa/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "VETRINA IMMOBILI AREA RISERVATA HOME LA SGR SOCIETÀ TRASPARENTE NEWS LAVORA CON NOI INVIMIT Siamo Investimenti Immobiliari Italiani Sgr S.p.A. Siamo la società di gestione del risparmio detenuta interamente dal Ministero dell’Economia e delle Finanze, fondata a marzo 2013 con lo scopo di offrire servizi di gestione collettiva del risparmio. Lo facciamo promuovendo, istituendo, organizzando e gestendo il patrimonio di fondi comuni di investimento immobiliare chiusi, fondi immobiliari e di altri organismi di investimento collettivo, sia italiani che esteri. Operiamo sia tramite fondi diretti che"
+      },
+      {
+        "step": "search",
+        "requestedUrl": "https://www.invimit.it/",
+        "status": 200,
+        "finalUrl": "https://www.invimit.it/",
+        "title": "Home Page - INVIMIT Sgr S.p.a.",
+        "url": "https://www.invimit.it/",
+        "hasNextData": false,
+        "hasNuxt": false,
+        "jsonLdTypes": [],
+        "cardSelectors": {
+          "[class*=\"card\"]": 1,
+          "li[class*=\"item\"]": 23
+        },
+        "topLinkPatterns": [
+          [
+            "https://vetrinaimmobili.invimit.it/",
+            3
+          ],
+          [
+            "https://www.invimit.it/scalera-sulla-serata-di-riapertura-dellex-ospedale-dei-bastardini-a-bologna-non-e-solo-recupero-di-un-immobile-iconico-ma-trasformazione-di-patrimonio-inutilizzato-in-infrastruttura-urbana-capac/",
+            2
+          ],
+          [
+            "https://www.invimit.it/min-giorgetti-alla-presentazione-della-guida-agli-enti-locali-per-la-valorizzazione-del-patrimonio-immobiliare-pubblico-grande-interesse-mercato-per-fondo-invimit-sgr/",
+            2
+          ],
+          [
+            "https://www.invimit.it/piano-casa/",
+            1
+          ]
+        ],
+        "totalDeclared": null,
+        "hasPagination": false,
+        "loginWall": false,
+        "bodySnippet": "HOME LA SGR SOCIETÀ TRASPARENTE NEWS LAVORA CON NOI INVIMIT Siamo Investimenti Immobiliari Italiani Sgr S.p.A. Siamo la società di gestione del risparmio detenuta interamente dal Ministero dell’Economia e delle Finanze, fondata a marzo 2013 con lo scopo di offrire servizi di gestione collettiva del risparmio. Lo facciamo promuovendo, istituendo, organizzando e gestendo il patrimonio di fondi comuni di investimento immobiliare chiusi, fondi immobiliari e di altri organismi di investimento collettivo, sia italiani che esteri. Operiamo sia tramite fondi diretti che tramite “Fondi di Fondi”, istit"
+      }
+    ],
+    "verdict": "scrapeable"
+  }
+]

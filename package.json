@@ -1,0 +1,22 @@
+{
+  "name": "radar-flip",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Radar multi-portale per flip immobiliare (Bologna / Pianoro / San Lazzaro di Savena)",
+  "scripts": {
+    "radar": "node run-all.mjs",
+    "radar:resume": "node run-all.mjs --resume",
+    "probe": "node probe-all.mjs",
+    "probe:save": "node core/probe-save.mjs",
+    "probe:verify": "node core/probe-verify.mjs",
+    "build": "node build-site.mjs",
+    "global": "node build-site.mjs",
+    "login": "node login-all.mjs",
+    "login:check": "node login-all.mjs --check",
+    "login:required": "node login-all.mjs --required"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

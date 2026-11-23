@@ -1,0 +1,2567 @@
+[
+  {
+    "id": "casait",
+    "detailUrl": "https://www.casa.it/immobili/54981210/",
+    "detail": {
+      "url": "https://www.casa.it/immobili/54981210/",
+      "title": "Appartamento in Vendita in Via Ugo Lenzi 1 a Bologna - 150mq - Casa.it",
+      "jsonLdTypes": [
+        "graph"
+      ],
+      "jsonLd": [
+        {
+          "@context": "http://schema.org/",
+          "@graph": [
+            {
+              "@id": "https://www.casa.it",
+              "@type": [
+                "Organization",
+                "WebSite"
+              ],
+              "name": "Casa.it",
+              "logo": "https://www.casa.it/portal-srp/assets/img/casalogo2024.svg",
+              "url": "https://www.casa.it",
+              "sameas": [
+                "https://www.facebook.com/casa.it",
+                "https://twitter.com/casapuntoit",
+                "https://www.youtube.com/user/casaitchannel",
+                "https://www.linkedin.com/company/casa-it",
+                "https://www.instagram.com/casapuntoit/"
+              ]
+            },
+            {
+              "@id": "https://www.casa.it/agenzie/sviluppi-immobiliari-di-stefano-pastore-59462/",
+              "@type": "RealEstateAgent",
+              "name": "Sviluppi Immobiliari di Stefano Pastore",
+              "image": "https://images-1.casa.it/logo/d66f0b8cf75440783dc6e3713e47c5a5",
+              "url": "https://www.casa.it/agenzie/sviluppi-immobiliari-di-stefano-pastore-59462/",
+              "telephone": "+39051252900",
+              "logo": {
+                "@type": "ImageObject",
+                "contentUrl": "https://images-1.casa.it/logo/d66f0b8cf75440783dc6e3713e47c5a5"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Italia",
+                "addressLocality": "Bologna",
+                "addressRegion": "Emilia-Romagna",
+                "streetAddress": "Via dell'Indipendenza 66",
+                "postalCode": "40121"
+              }
+            },
+            {
+              "@id": "https://www.casa.it/immobili/54981210/",
+              "@type": [
+                "SingleFamilyResidence",
+                "Product",
+                "RealEstateListing",
+                "Apartment"
+              ],
+              "name": "Appartamento in Vendita in Via Ugo Lenzi 1 a Bologna",
+              "description": "Appartamento in Vendita - Piazza Azzarita  Splendido appartamento di circa 150 m² situato al sesto piano di uno stabile molto signorile degli... - 54981210",
+              "category": "Appartamento",
+              "lastReviewed": "2026-11-14",
+              "accommodationCategory": "RESI",
+              "floorSize": {
+                "@type": "QuantitativeValue",
+                "value": 150,
+                "unitCode": "MTK"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Bologna",
+                "addressRegion": "BO",
+                "streetAddress": "Via Ugo Lenzi 1"
+              },
+              "image": [
+                {
+                  "@type": "ImageObject",
+                  "contentUrl": "https://images-1.casa.it/800x600/mobileplaceholder.jpg"
+                }
+              ],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "price": 585000,
+                "url": "https://www.casa.it/immobili/54981210/",
+                "availability": "https://schema.org/InStock",
+                "offeredBy": {
+                  "@type": "RealEstateAgent",
+                  "@id": "https://www.casa.it/agenzie/sviluppi-immobiliari-di-stefano-pastore-59462/"
+                }
+              },
+              "telephone": "+39051252900",
+              "floorLevel": "6",
+              "numberOfBathroomsTotal": 2,
+              "numberOfBedrooms": 6,
+              "yearBuilt": 1963,
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Casa.it",
+                    "item": "https://www.casa.it"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Vendita",
+                    "item": "https://www.casa.it/vendita/residenziale/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Appartamento",
+                    "item": "https://www.casa.it/vendita/appartamenti/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Bologna",
+                    "item": "https://www.casa.it/vendita/appartamenti/bologna/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Centro Storico",
+                    "item": "https://www.casa.it/vendita/appartamenti/bologna/centro-storico/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Marconi",
+                    "item": "https://www.casa.it/vendita/appartamenti/bologna/centro-storico/marconi/"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "nextDataKeys": [
+        "pdp"
+      ],
+      "nextDataSample": "{\"pdp\":{\"id\":54981210,\"idlId\":37144695,\"refPublisher\":\"01537\",\"channel\":\"vendita\",\"category\":\"residenziale\",\"propertyTypeGroup\":\"case\",\"isProjectProfile\":false,\"isProjectProfileUnit\":false,\"depth\":\"platinum\",\"proposeGeneric\":true,\"status\":\"\",\"propertyType\":{\"label\":\"Appartamento\",\"value\":\"appartamento\",\"idlPropertyType\":\"1\"},\"mainLicenseTypeGroup\":null,\"mainLicenseType\":null,\"secondaryLicenseType\":null,\"seoPropertyType\":{\"label\":\"Appartamento\",\"value\":\"appartamento\",\"idlPropertyType\":\"1\"},\"seoLinks\":{\"available\":true,\"cities\":[{\"href\":\"/vendita/appartamenti/bologna/con-ascensore/\",\"text\":\"Appartamenti in vendita a Bologna con ascensore\",\"title\":\"Appartamenti in vendita a Bologna con ascensore\",\"label\":\"Appartamenti con ascensore\",\"name\":\"Bologna\"},{\"href\":\"/vendita/appartamenti/bologna/con-riscaldamento-centralizzato/\",\"text\":\"Appartamenti in vendita a Bologna con riscaldamento centralizzato\",\"title\":\"Appartamenti in vendita a Bologna con riscaldamento centralizzato\",\"label\":\"Appartamenti con riscaldamento centralizzato\",\"name\":\"Bologna\"},{\"href\":\"/vendita/appartamenti/bologna/con-box-posto-auto/\",\"text\":\"Appartamenti in vendita a Bologna con box posto auto\",\"title\":\"Appartamenti in vendita a Bologna con box posto auto\",\"label\":\"Appartamenti con box posto auto\",\"name\":\"Bologna\"},{\"href\":\"/vendita/appartamenti/bologna/con-giardino-comune/\",\"text\":\"Appartamenti in vendita a Bologna con giardino comune\",\"title\":\"Appartamenti in vendita a Bologna con giardino comune\",\"label\":\"App",
+      "bodyText": "Continua senza accettare → In Casa.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 14 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche scegliere quali cookie accettare facendo clic su \"Più informazioni\". In qualsiasi momento, puoi revocare il tuo consenso o manifestare la tua opposizione al trattamento basato su un legittimo interesse selezionando \"Gestione consenso cookie” riportato nel footer delle pagine del Sito. Per approfondimenti consulta la nostra Cookie Policy.Con il tuo consenso, noi e i nostri 14 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legittimo interesse commerciale. È possibile ritirare il proprio consenso od opporsi al trattamento dei dati basato sul legittimo interesse in qualsiasi momento cliccando su \"Per saperne di più\" o sulla nostra Informativa sulla privacy su questo sito web.Noi e i nostri partner ci atteniamo al seguente trattamento dei dati:Archiviare informazioni su dispositivo e/o accedervi, Dati di geolocalizzazione precisi e identificazione attraverso la scansione del dispositivo, Pubblicità e contenuti personalizzati, misurazione delle prestazioni dei contenuti e degli annunci, ricerche sul pubblico, sviluppo di servizi Più informazioni ACCETTA Menu Accedi Home Pubblica annuncio GRATIS Valuta la tua casa GRATIS Vendi casa Trova agenzia Blog Servizi Inquadra il qr code e scarica l'app. È semplice Seguici sui nostri social Tutta Italia Bologna (prov.) Case a Bologna Appartamenti Centro Storico Marconi Appartamento in Vendita in Via Ugo Lenzi 1 a Bologna Torna ai risultati Appartamento in Vendita in Via Ugo Lenzi 1 a Bologna Marconi (Centro Storico) € 585.000 tua da € 1.694/mese 150 m² 6 locali 2 bagni 6° piano 1 Condividi Salva Ingrandisci 1/36 Foto Planimetria Mappa Descrizione Italiano English Français Appartamento in Vendita - Piazza Azzarita Splendido appartamento di circa 150 m² situato al sesto piano di uno stabile molto signorile degli anni '60, in via Ugo Lenzi. Questa proprietà rappresenta un'opportunità straordinaria per chi ricerca eleganza, spaziosità e una vista panoramica sull",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "wikicasa",
+    "detailUrl": "https://www.wikicasa.it/annuncio/31383438",
+    "detail": {
+      "url": "https://www.wikicasa.it/annuncio/31383438",
+      "title": "Appartamento in vendita, Via di Mattiolo Pietro 4, Bologna, In buone condizioni con balcone e posto auto, 112 mq • Wikicasa",
+      "jsonLdTypes": [
+        "graph"
+      ],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@id": "https://www.wikicasa.it/#website",
+              "@type": "WebSite",
+              "description": "Wikicasa, annunci che contano",
+              "inLanguage": "it-IT",
+              "name": "Wikicasa",
+              "url": "https://www.wikicasa.it/",
+              "workTranslation": [
+                {
+                  "@id": "https://www.wikicasa.it/en/#website"
+                },
+                {
+                  "@id": "https://www.wikicasa.it/de/#website"
+                }
+              ]
+            },
+            {
+              "@id": "https://www.wikicasa.it/annuncio/31383438#webpage",
+              "description": "Rif: C118 - 5 LOCALI CON 3 CAMERE DA LETTO RISCALDAMENTO AUTONOMO E AUTORIMESSA    In zona MAZZINI, più precisamente in via di Mattiolo, proponiamo al secondo piano appartamento 5 locali di 112 mq commerciali CON RISCALDAMENTO AUTONOMO così disposto: corridoio (10,75 mq), sala da pranzo (15,62 mq) con balcone (5 mq), salotto (14,19 mq), cucinotto (5,03 mq), camera da letto (15,90 mq), camera da letto (14,43 mq), camera da letto (11,54 mq), bagno (5,25 mq). Completa la soluzione volendo AUTORIMESSA a parte al piano terra. L’appartamento è stato ristrutturato intorno agli anni ‘90: pavimentazione in parquet in tutti gli ambienti ad eccezione del cucinotto e del bagno, infissi in alluminio con vetrocamera e riscaldamento autonomo. L’immobile gode di una tripla esposizione (NORD, EST e SUD) che garantisce un’ottima luminosità durante tutto l’arco della giornata. Il condominio è privo di ascensore e dispone di 8 posti auto condominiali, che garantiscono un posto auto sicuro anche per questo appartamento. Le spese condominiali sono di circa 1500 euro annui. La presenza di due ampi ambienti in zona giorno e di tre camere da letto offre grande flessibilità di utilizzo e ampie possibilità di personalizzazione. Questo tipo di soluzione è particolarmente indicata per chi sia alla ricerca di un’ampia metratura con tre camere da letto, ideale per una famiglia, in una zona comoda a tutti i servizi. Classe energetica G. Perché acquistare questo immobile? - 3 CAMERE DA LETTO - AMPIEZZA - AUTORIMESSA E POSTO AUTO - RISCALDAMENTO AUTONOMO - UBICAZIONE    Autorimessa: 2,44 x 4,90 m, con bocca di entrata di 2,16 m allargabile fino a 2,34 m.",
+              "name": "Via di Mattiolo Pietro 4, Bologna, Emilia Romagna | wikicasa.it",
+              "url": "https://www.wikicasa.it/annuncio/31383438",
+              "@type": [
+                "WebPage",
+                "RealEstateListing",
+                "Product"
+              ],
+              "image": {
+                "@id": "https://www.wikicasa.it/#/schema/image/1"
+              },
+              "isPartOf": {
+                "@id": "https://www.wikicasa.it/#website"
+              },
+              "mainEntity": {
+                "@type": [
+                  "SingleFamilyResidence"
+                ],
+                "@id": "https://www.wikicasa.it/annuncio/31383438#property",
+                "numberOfBedrooms": 3,
+                "numberOfRooms": 5,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": [
+                    "QuantitativeValue"
+                  ],
+                  "value": 112,
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 44.48244,
+                  "longitude": 11.37474
+                },
+                "address": {
+                  "@type": [
+                    "PostalAddress"
+                  ],
+                  "streetAddress": "Via di Mattiolo Pietro 4",
+                  "addressLocality": "Bologna",
+                  "addressRegion": "Emilia Romagna",
+                  "addressCountry": "IT"
+                }
+              },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                  "@type": "Organization",
+                  "@id": "urn:wikicasa:agency:58513",
+                  "name": "Bologna - Mazzini - Tempocasa",
+                  "url": "https://www.wikicasa.it/agenzia-immobiliare/bologna-mazzini-tempocasa-58513",
+                  "telephone": "051344078"
+                },
+                "offeredBy": {
+                  "@type": [
+                    "Person",
+                    "RealEstateAgent"
+                  ],
+                  "@id": "https://www.wikicasa.it/annuncio/31383438#agent",
+                  "name": "Tempocasa Bologna - Mazzini",
+                  "telephone": "0039051344078",
+                  "memberOf": {
+                    "@id": "urn:wikicasa:agency:58513"
+                  }
+                },
+                "price": 349000
+              },
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://www.wikicasa.it/annuncio/31383438"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "https://www.wikicasa.it/#/schema/image/1",
+              "@type": "ImageObject",
+              "contentUrl": "https://images.wk-cdn.it/355010f7cda498f894b56fb355ec6eeb44762e72f77af0ea9e9ddf5bf9bb7c65//original",
+              "inLanguage": "it-IT",
+              "url": "https://images.wk-cdn.it/355010f7cda498f894b56fb355ec6eeb44762e72f77af0ea9e9ddf5bf9bb7c65//original"
+            }
+          ]
+        }
+      ],
+      "bodyText": "Continua senza accettare → Noi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)” come specificato nella cookie policy. Per quanto riguarda la pubblicità, noi e 1236 terze parti selezionate, potremmo utilizzare dati di geolocalizzazione precisi e l’identificazione attraverso la scansione del dispositivo, al fine di archiviare e/o accedere a informazioni su un dispositivo e trattare dati personali come i tuoi dati di utilizzo, per le seguenti finalità pubblicitarie: pubblicità e contenuti personalizzati, misurazione delle prestazioni dei contenuti e degli annunci, ricerche sul pubblico, sviluppo di servizi. Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento, accedendo al pannello delle preferenze. Le tue scelte si applicano solo a questo dominio. Il rifiuto del consenso può rendere non disponibili le relative funzioni. Usa il pulsante “Accetta” per acconsentire. Chiudi questa informativa per continuare senza accettare. PERSONALIZZA ACCETTA Accedi Registrati Case a Mazzini, Fossolo, Savena Wikicasa Emilia Romagna Provincia (BO) Bologna Mazzini, Fossolo, Savena 1/1.529 Successivo Tour 41 Foto Planimetria Street View Mappa € 349.000 Appartamento in Vendita, Via di Mattiolo Pietro 4, Bologna 112m2 5Locali 1Bagno Mutuo€ 1.170 / Mese Servizio erogato tramite Condividi Aggiungi nota Salva Rif: C118 - 5 LOCALI CON 3 CAMERE DA LETTO RISCALDAMENTO AUTONOMO E AUTORIMESSA In zona MAZZINI, più precisamente in via di Mattiolo, proponiamo al secondo piano appartamento 5 locali di 112 mq commerciali CON RISCALDAMENTO AUTONOMO così disposto: corridoio (10,75 mq), sala da pranzo (15,62 mq) con balcone (5 mq), salotto (14,19 mq), cucinotto (5,03 mq), camera da letto (15,90 mq), camera da letto (14,43 mq), camera da letto (11,54 mq), bagno (5,25 mq). Completa la soluzione volendo AUTORIMESSA a parte al piano terra. L’appartamento è stato ristrutturato intorno agli anni ‘90: pavimentazione in parquet in tutti gli ambienti ad eccezione del cucinotto e del bagno, infissi in alluminio con vetrocamera e riscaldamento autonomo. L’immobile gode di una tripla esposizione (NORD, EST e SUD) che garantisce un’ottima luminosità durante tutto l’arco della giornata. Il condominio è privo di ascensore e dispone di 8 posti auto condominiali, che garantiscono un posto auto sicuro anche per questo",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "tecnocasa",
+    "detailUrl": "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61299751.html",
+    "detail": {
+      "url": "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61299751.html",
+      "title": "Annunci case e appartamenti in vendita e in affitto - Tecnocasa.it",
+      "jsonLdTypes": [],
+      "jsonLd": [],
+      "bodyText": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI € 257.000 4 locali 90 Mq 1 bagno Trilocale in vendita Bologna, Via Leonardo da Vinci - Barca LISTA ANNUNCI CALCOLA IL TUO MUTUO Home Appartamenti in vendita Appartamenti Bologna Bologna Barca Trilocale in vendita Video Video 360° Foto Planimetria Mappa Affiliato: Metropolis Immobiliare Srlsu Via Della Barca, 36 40133 Bologna (BO) bocd4@tecnocasa.it +390516142464 TELEFONO APPUNTAMENTO Sito agenzia Vendi un immobile +49 Caratteristiche RIF.: 61299751 Piano: 2 di 2 (ultimo piano) Balconi: 1 Camere da letto: 2 Arredamento: Assente Condizionamento: Autonomo MOSTRA TUTTO STAMPA PDF Costi Prezzo: € 257.000 Rata mutuo: € 1.246 / mese Spese annue: € 2.000 PROPONI IL TUO PREZZO CALCOLA IL TUO MUTUO Descrizione Zona Barca - Via Da Vinci In una posizione interna e tranquilla, proponiamo in vendita un raffinato appartamento dal carattere contemporaneo, situato all’interno di una piccola palazzina in pietravista di sole 6 unità, anch'essa ristrutturata e in perfetto stato conservativo. L’immobile è stato oggetto di una ristrutturazione integrale nel 2017 in pieno stile urban, frutto di uno studio attento degli spazi volto a massimizzare la funzionalità, il comfort abitativo, garantito anche dalla presenza dell'impianto dell'aria condizionata, e la luce naturale. La zona giorno di ca 40 mq è il vero cuore pulsante della casa. Un ambiente ampio, arioso e inondato di luce grazie alle grandi superfici vetrate degli infissi. La zona cottura si integra perfettamente nel living ed è impreziosita da una splendida e funzionale penisola attrezzata con lavello e spazio colazione, ideale per la convivialità quotidiana. Completa la zona giorno un comodo accesso diretto alla loggia adibita ad uso lavanderia. La zona notte è ben disimpegnata, ospita due camere da letto accoglienti, di cui la matrimoniale arricchita da una pratica e capiente cabina armadio. Il bagno, una vera chicca di design, rifinito con materiali di pregio. Spicca l’ampia doccia walk-in, delimitata da un elegante muretto rivestito con piastrelle ricercate perfettamente in palette con lo stile della casa. Completa la proprietà un pratico garage di piccole dimensioni, ideale per una city car e perfetto come spazio sicuro e coperto per scooter, moto e biciclette. Vivere qui significa godere della massima quiete senza rinunciare a nulla. L'immobile è im",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "tempocasa",
+    "detailUrl": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale/593338",
+    "detail": {
+      "url": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale/593338",
+      "title": "Quadrilocale in Vendita a Bologna | Euro 275.000 | Mq 95 | Tempocasa",
+      "jsonLdTypes": [
+        "RealEstateListing",
+        "BreadcrumbList"
+      ],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "RealEstateListing",
+          "name": "Quadrilocale in Vendita a Bologna",
+          "url": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale/593338",
+          "datePublished": "2026-11-13T16:32:31+01:00",
+          "dateModified": "2026-11-13T16:32:31+01:00",
+          "description": "Proponiamo in vendita quadrilocale, piano intermedio con ascensore, zona residenziale, comoda a tutti i servizi. Porta d'ingresso in legno rinforzato con cancelletto esterno in ferro, pavimentazione in marmo in tutta la casa tranne ceramica in bagno e cucina, infissi in alluminio vetrocamera, porte interne in legno temperato, con balcone, cantina ciclabile e volendo garage ad €20.000,00.  Libero subito. Per vederlo contattare la Tempocasa di Bologna San Donato in piazza A.Mickieiwicz 3/d al numero 0516335379 oppure via email a bolognasandonato@tempocasa.it  Le presenti informazioni non costituiscono elemento contrattuale.",
+          "mainEntity": {
+            "@type": "Apartment",
+            "name": "Quadrilocale in Vendita a Bologna",
+            "image": [
+              "https://cdn.tempocasa.com/images/2026/11/13/c5b9c5e5-d6aa-4b86-9b4f-838d4842c36d/high.jpg",
+              "https://cdn.tempocasa.com/images/2026/11/13/7e7faab6-514a-4157-b38d-4f652bc655e7/high.jpg",
+              "https://cdn.tempocasa.com/images/tempocasa/immobile-certificato.png?v=1"
+            ],
+            "identifier": [
+              {
+                "@type": "PropertyValue",
+                "name": "Tempocasa ID",
+                "value": "593338"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IT",
+              "addressLocality": "Bologna",
+              "postalCode": "40100",
+              "streetAddress": "Via Della Concordia"
+            },
+            "numberOfRooms": 4,
+            "numberOfBathroomsTotal": 1,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 95,
+              "unitCode": "MTK"
+            },
+            "amenityFeature": [
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Classe Energetica",
+                "value": "G"
+              }
+            ]
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": 275000,
+            "priceCurrency": "EUR",
+            "url": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale/593338",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2027-05-14",
+            "seller": {
+              "@type": "RealEstateAgent",
+              "name": "Bologna - San Donato"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Vendita",
+              "item": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale/593338"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Immobili provincia Bologna",
+              "item": "https://tempocasa.it/it/vendita/bologna/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Immobili Bologna",
+              "item": "https://tempocasa.it/it/vendita/bologna/bologna/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Quadrilocale a Bologna",
+              "item": "https://tempocasa.it/it/vendita/bologna/bologna/quadrilocale"
+            }
+          ]
+        }
+      ],
+      "bodyText": "Cerca Casa Valuta Casa Agenzie Calcola Mutuo Magazine Lavora con noi Contatti Home |Vendita |Immobili Provincia Bologna |Immobili Bologna |Quadrilocale A Bologna Quadrilocale in Vendita a Bologna San Donato Via Della Concordia 275.000 € 95 mq 4 locali 1 bagno 2 piano Foto Planimetria Questo immobile è gestito da FEDERICO ZANIBONI Bologna - San Donato Piazza Adam Mickiewicz, 3/D Bologna (BO) 0516335379 SCRIVICI VISITA AGENZIA Dettagli Locali 4 Mq 95 Bagni 1 Cucina Abitabile Camere da letto 2 Balconi 1 Giardino condominiale Si Cantina Si GUARDA TUTTI Descrizione Riferimento immobile: 111 Proponiamo in vendita quadrilocale, piano intermedio con ascensore, zona residenziale, comoda a tutti i servizi. Porta d'ingresso in legno rinforzato con cancelletto esterno in ferro, pavimentazione in marmo in tutta la casa tranne ceramica in bagno e cucina, infissi in alluminio vetrocamera, porte interne in legno temperato, con balcone, cantina ciclabile e volendo garage ad €20.000,00. Libero subito. Per vederlo contattare la Tempocasa di Bologna San Donato in piazza A.Mickieiwicz 3/d al numero 0516335379 oppure via email a bolognasandonato@tempocasa.it Le presenti informazioni non costituiscono elemento contrattuale. LEGGI TUTTO Prestazione Energetica G Riscaldamento: Centralizzato Tipo riscaldamento: Metano Tipologia riscaldamento: A radiatori Costi Immobile: 275.000 € Spese annue: 1.500 € AFFIDATI AI PROFESSIONISTI DELL' IMMOBILIARE CALCOLA IL TUO MUTUO VALUTA LA TUA CASA PROTEGGI I TUOI BENI SCOPRI IL MUTUO PERFETTO PER TE PRENOTA UNA CONSULENZA ALTRI IMMOBILI PROPOSTI 480.000 € Quadrilocale in Vendita a Bologna Saffi 107 mq 4 locali 2 bagni 3 piano 279.000 € Quadrilocale in Vendita a Bologna Borgo Panigale Via Galeazza, 51 83 mq 4 locali 1 bagno rialzato 389.000 € Quadrilocale in Vendita a Bologna Centro Storico Via Del Borgo Di San Pietro 116 mq 4 locali 2 bagni 1 piano 340.000 € Quadrilocale in Vendita a Bologna Cirenaica Via Libia 90 mq 4 locali 2 bagni 2 piano 390.000 € Quadrilocale in Vendita a Bologna Saffi 93 mq 4 locali 2 bagni 1 piano 255.000 € Quadrilocale in Vendita a Bologna Savena 83 mq 4 locali 1 bagno 3 piano 265.000 € Quadrilocale in Vendita a Bologna Bolognina 81 mq 4 locali 1 bagno rialzato 350.000 € Quadrilocale in Vendita a Bologna Massarenti 85 mq 4 locali 1 bagno 1 piano 270.000 € Quadrilocale in Vendita a Bologna Savena Via Bellaria 107 mq 4 locali 1 bagno 1 piano CONTATTA AGENZIA Confermo di aver preso visione dell'informativa privacy Consenso ",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "remax",
+    "detailUrl": "https://prestige.remax.it/vendita-appartamento/bologna/centro-31831070-1169",
+    "detail": {
+      "url": "https://prestige.remax.it/vendita-appartamento/bologna/centro-31831070-1169",
+      "title": "Appartamento in vendita a Bologna, Centro storico | REMAX",
+      "jsonLdTypes": [
+        "Organization",
+        "RealEstateListing",
+        "BreadcrumbList"
+      ],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://www.remax.it/#organization",
+          "inLanguage": "it",
+          "url": "https://www.remax.it",
+          "name": "REMAX Italia",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.remax.it/images/remax-logo.svg"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "RealEstateListing",
+          "@id": "https://prestige.remax.it/vendita-appartamento/bologna/centro-31831070-1169#listing",
+          "inLanguage": "it",
+          "url": "https://prestige.remax.it/vendita-appartamento/bologna/centro-31831070-1169",
+          "name": "Appartamento in vendita a Bologna, Centro storico",
+          "description": "L'appartamento in vendita si trova nel cuore del centro storico di Bologna, in una zona ricca di storia e cultura. Si presenta in buono stato, completamente libero al rogito, pronto per essere abitato. L'edificio risale al 1930, ma è stato oggetto di ristrutturazioni che lo hanno mantenuto in ottimo stato nel corso degli anni. Le spese condominiali ammontano a circa 100 euro al mese. L'appartamento si estende su una superficie totale di 115 metri quadrati, di cui 100 calpestabili. Gli spazi son…",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via dei Bibbiena 8",
+            "addressLocality": "Bologna",
+            "addressRegion": "Bologna",
+            "addressCountry": "IT"
+          },
+          "image": [
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/3a85700a4ad0.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/c25d07b09e22.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/116580ce0dae.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a64a2aa72e03.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/bf5edc09b034.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/22e53d214376.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/f11c84dfbe34.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/786c9c8ad58c.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a1fa54cfa237.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/b3bf19fcfe2b.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/5aae9c7731d7.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a290cd47ee13.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/d9d7339be678.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/d3d1b63561ca.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/060fe1d70a0c.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a2200f6d27e8.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/200abc3a9f6f.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/42bb9528f8bb.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/d137c2c013e2.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/4e0010225277.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/c4905b20f248.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/89f37b1b4217.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/5822dc5220eb.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/4e8540f4afa6.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/903fff47802f.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/442c39c1017d.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/c74ae31bb29a.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/05f6acb55955.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/ea3be30b925f.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/76db545bfda4.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/ac95a7579d5d.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/7158fbde54ab.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/45fc01c8a865.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/e2becb4d36e7.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/6a212ef4c4b4.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/c4679f284ada.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/262d4feec2e4.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/2497cc3f8a94.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/b3c0834fcfa7.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/4084e8fd73b0.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/45926b6a21eb.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/53154bda8c21.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/ce9e8a9c5beb.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/fd1e3f155203.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/59e406b74d1e.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/df1d26720739.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/211c3c8b6de8.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/dd8bb57d3221.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/0e9f7b6042a2.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/73fbb9725494.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a3503097fbf4.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/e35f03dd2f97.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/175495bb4bbc.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/3b29d27df375.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/76b55dbe0e9a.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/7d5f1e879817.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/456a828efd56.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/c35afad5e7af.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/a46ea31272c2.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/5b795df4b1cd.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/0075efffeae6.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/3252cceb78b0.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/3d1dce700795.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/b3bb5c461311.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/fd034ee82c1f.jpeg",
+            "https://doc9yh1c57ux2.cloudfront.net/properties/1026969/eb64c6df977d.jpeg"
+          ],
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "44.49541900",
+            "longitude": "11.35207390"
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 115,
+            "unitCode": "MTK"
+          },
+          "numberOfRooms": 4,
+          "numberOfBedrooms": 2,
+          "numberOfBathroomsTotal": 2,
+          "yearBuilt": 1930,
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Animali ammessi",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Adatto a studenti",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Disponibilità immediata",
+              "value": true
+            }
+          ],
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Classe energetica",
+              "value": "G"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Stato di conservazione",
+              "value": "buono"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Riscaldamento",
+              "value": "autonomo"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Cucina",
+              "value": "abitabile"
+            }
+          ],
+          "datePosted": "2026-02-24T00:00:00.000Z",
+          "offers": {
+            "@type": "Offer",
+            "price": 405000,
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "businessFunction": "https://schema.org/Sell"
+          },
+          "provider": {
+            "@type": "RealEstateAgent",
+            "@id": "https://www.remax.it/agenzia/prestige/agenzia#agency",
+            "name": "REMAX Prestige - Cesena Viale Giosuè Carducci",
+            "url": "https://prestige.remax.it/"
+          },
+          "realEstateAgent": {
+            "@type": "RealEstateAgent",
+            "@id": "https://prestige.remax.it/agenti/marzio-venturi#agent",
+            "name": "Marzio Venturi",
+            "url": "https://prestige.remax.it/agenti/marzio-venturi"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "inLanguage": "it",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://prestige.remax.it/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Immobili in vendita",
+              "item": "https://prestige.remax.it/vendita-case"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Appartamento in vendita a Bologna, Centro storico",
+              "item": "https://prestige.remax.it/vendita-appartamento/bologna/centro-31831070-1169"
+            }
+          ]
+        }
+      ],
+      "bodyText": "Salta al contenuto principale Prestige Immobili Agenzie Agenti Lavora con noi Menu Prestige Immobili Agenzie Agenti Lavora con noi ITA Accedi a My REMAX Appartamento in vendita a Bologna, Centro storico Vedi tutte 1/66 + 63 IMMAGINI Lista Annunci Lista Annunci APPARTAMENTO IN VENDITA A BOLOGNA, CENTRO STORICO Via dei Bibbiena 8, Bologna (Bologna) Rif. 31831070-1169 405.000 € In evidenza 115 mq 4 locali 2 bagni 1° piano DESCRIZIONE L'Immobile Perché comprare qui L'IMMOBILE L'appartamento in vendita si trova nel cuore del centro storico di Bologna, in una zona ricca di storia e cultura. Si presenta in buono stato, completamente libero al rogito, pronto per essere abitato. L'edificio risale al 1930, ma è stato oggetto di ristrutturazioni che lo hanno mantenuto in ottimo stato nel corso degli anni. Le spese condominiali ammontano a circa 100 euro al mese. L'appartamento si estende su una superficie totale di 115 metri quadrati, di cui 100 calpestabili. Gli spazi sono ben distribuiti e sfruttati al massimo, con un totale di 4 locali, tra cui ampi corridoi, salone con camino e affreschi sul soffito, cucina abitabile, due camere da letto di cui una con bagno in suite, ripostiglio/cabina armadio e bagno. L'impianto di riscaldamento è a radiatori/pannelli radianti e funziona a metano, garantendo un elevato livello di comfort. Inoltre, l'appartamento dispone di un sistema di riscaldamento autonomo, che permette di regolare la temperatura in base alle proprie esigenze. Lo stato di conservazione dell'immobile è buono, grazie anche alla cura e manutenzione dei proprietari. L'appartamento viene venduto arredato, con una cucina abitabile completa di tutti gli elettrodomestici. La presenza di una cantina permette di avere uno spazio extra per riporre oggetti e attrezzi. Inoltre, l'appartamento gode di una buona luminosità grazie alle numerose finestre presenti in ogni ambiente. In sintesi, si tratta di un appartamento ideale per chi desidera vivere nel cuore della città, in un contesto storico e ben servito, senza rinunciare al comfort e alla praticità. Ottimo anche come investimento in quanto situato nella zona Universitaria. Leggi di più PERCHÉ COMPRARE UN QUADRILOCALE IN ZONA CENTRO STORICO Questo appartamento situato nel cuore del centro storico di Bologna rappresenta un'opportunità imperdibile per chi desidera vivere in una delle città più affascinanti d'Italia. Con una superficie di 115 mq, l'immobile offre spazi ampi e luminosi, perfetti per soddisfare le esigenze ",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "mitula",
+    "detailUrl": "https://immobiliare.mitula.it/appartamento-bologna-140000-euro",
+    "detail": {
+      "url": "https://immobiliare.mitula.it/appartamento-bologna-140000-euro",
+      "title": "158 Appartamenti in vendita 140000 euro a Bologna - Mitula Case",
+      "jsonLdTypes": [
+        "?"
+      ],
+      "jsonLd": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "SearchResultsPage",
+            "breadcrumb": {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Bologna",
+                  "item": "https://immobiliare.mitula.it/bologna"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Appartamenti Bologna",
+                  "item": "https://immobiliare.mitula.it/appartamento-bologna"
+                }
+              ]
+            },
+            "about": [
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1040000792145863715.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Rif: B150V - BILOCALE ARREDATO CON AMPIA CANTINA E BASSE SPESE CONDOMINIALI! COMFORT, FUNZIONALITÀ E POSIZIONE STRATEGICA A POCHI MINUTI DALL'AEROPORTO! In Via del Triumvirato, in una posizione comod",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via del Triumvirato, 47",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "53",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5185",
+                  "longitude": "11.294"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_4510000793960468875.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "In palazzo moderno, appartamento con vedute panoramiche sulla città e colline, ampia balconata, esposizione a levante e ponente, ingresso su soggiorno con cucina vista, zona notte con una camera matr",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "postalCode": "40131",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "48",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5334",
+                  "longitude": "11.314"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1640000792836954418.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "MONOLOCALE IN VENDITA A BOLOGNA. Occasione per necessità di trasferimento, si vende al primo piano un grazioso monolocale con ampio ingresso rifinito ed accessoriato volendo completo di arredamento d",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via della Beverara",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "50",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5096",
+                  "longitude": "11.3293"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2890000792578082691.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bologna, nel quartiere di Borgo Panigale l'agenzia immobiliare ICONACASA è lieta di proporre in vendita un appartamento sito al piano primo di uno stabile interno alla via Emilia Ponente adiacente a",
+                "numberOfBedrooms": 3,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Emilia Ponente, 310",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "48",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5125",
+                  "longitude": "11.2864"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2760000792491640631.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Zona Areoporto in casale immerso nel verde silenzioso e comodo alle viabilità Vendesi Appartamento con tipologia loft diviso in zona giorno con soggiorno con angolo cottura e zona notte con letto mat",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via dell'Aeroporto",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "45",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.525",
+                  "longitude": "11.2909"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6400000789899287428.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Info e visite: Paolo 345.82.20.837 Bilocale al piano terra in vendita. Corticella più precisamente in Via San Savino è disponile in costruzione di recente ristrutturazione grazioso bilocale al piano",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via San Savino, 1",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "45",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5494",
+                  "longitude": "11.3543"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_8430000791973016206.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Rif: M08 - A Bologna, più precisamente in Via della Beverara, proponiamo in vendita appartamento MONOLOCALE di 46 MQ internamente suddiviso, situato al PIANO TERRA di una palazzina dei primi del '900",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via della Beverara",
+                  "postalCode": "40131",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "46",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5193",
+                  "longitude": "11.3307"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1030000790763382252.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "All'inizio di Via del Triumvirato, proponiamo in vendita appartamento al piano terra con entrata indipendente, in piccola palazzina di sole due unità. L'appartamento, di una superficie di circa 52 mq",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via del Triumvirato",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "52",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5129",
+                  "longitude": "11.2917"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2640000776680270079.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bolognina via Calzolari Rif.18: In condominio ben tenuto proponiamo in vendita appartamento di recente ristrutturazione composto da Ingresso, tinello, cucinotto, camera da letto matrimoniale, bagno.B",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Alfredo Calzolari, 3",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "52",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5189",
+                  "longitude": "11.3558"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6740000790936191581.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita in zona Zanardi proponiamo bilocale sito al piano terra con ingresso indipendente. L’immobile si trova in una posizione strategica, comodamente servita da mezzi pubblici, scuo",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Francesco Zanardi, 241",
+                  "postalCode": "40131",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "47",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5242",
+                  "longitude": "11.3186"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6940000785233690968.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "In contesto immerso nel verde vicino a Bologna, e al centro commerciale Meraville, proponiamo un'ottima opportunità. L'immobile, posto al piano terra di una piccola palazzina, è composto da: ingresso",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Piratino",
+                  "postalCode": "40127",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "50",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5176",
+                  "longitude": "11.4242"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1400000784715606690.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Investi in una delle zone più strategiche e servite di Bologna, fuori dalla ZTL.Trasforma questo locale commerciale di 69 mq in un appartamento residenziale unico e moderno.Progetta la tua nuova casa",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "postalCode": "40134",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "69",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.4899",
+                  "longitude": "11.3182"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_8560000782382027119.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "ZONA SANT'ORSOLA - BILOCALE - 50 MQ - DA RISTRUTTURARE - OTTIMO INVESTIMENTO - Ad.ze via Massarenti, proponiamo in vendita un appartamento mansardato di 48 mq situato al quinto e ultimo piano senza a",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Pietro Albertoni, 23",
+                  "postalCode": "40138",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "48",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.4919",
+                  "longitude": "11.3649"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6540000781691510975.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bolognina via Creti Rif.16: In condominio degli anni '56 proponiamo in vendita appartamento Bilocale al 2° piano con ascensore composto da Ingresso, tinello, cucinotto, camera matrimoniale, bagno.Ba",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Donato Creti, 55",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "54",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5101",
+                  "longitude": "11.3532"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6570000794651492722.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bologna, nel cuore del quartiere di Borgo Panigale e più precisamente in un grazioso interno della lunga via Emilia Ponente l'agenzia ICONACASA di Bologna Borgo Panigale propone in vendita un comodo",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Emilia Ponente, 401",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "38",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5139",
+                  "longitude": "11.2854"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_4450002771411928039.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bologna - Barca - Via Gamberini - In zona ben servita dai mezzi e comoda ai servizi proponiamo in condominio di recente costruzione appartamento di mq 40 sito al piano primo non servito da ascensore",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Gamberini, 8",
+                  "postalCode": "40133",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "40",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5023",
+                  "longitude": "11.2917"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_3570000794393877020.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Vendesi appartamento composto da ingresso su cucina abitabile, camera matrimoniale, bagno, cortile esclusivo e cantina. Comodo appartamento come prima casa o persone comode al piano terra. Interessan",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Porrettana, 21",
+                  "postalCode": "40135",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "41",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.4908",
+                  "longitude": "11.3099"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2390000794393838700.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Via Ferrarese ( con affacci interni ) VENDIAMO IDEALE ANCHE COME INVESTIMENTO LIBERO fine Gennaio 2027 già arredato appartamento sito al piano rialzato composto di ingresso, corridoio, ampia camera",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Ferrarese",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "42",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.513",
+                  "longitude": "11.3523"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1340000794305986071.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "In zona Corticella, proponiamo un Bilocale di 55 mq situato al terzo piano, ideale per chi cerca una soluzione pronta da vivere, in un ambiente curato e funzionale. L'appartamento è stato ristruttura",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via di Corticella, 184",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "56",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5329",
+                  "longitude": "11.3539"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6780000794046604204.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "VIA FERRARESE A pochi passi dal CINECA Data Center e in posizione strategica rispetto alla Fiera di Bologna, proponiamo in vendita un luminoso Bilocale di circa 54 mq, situato al 3° ed ultimo piano",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Ferrarese",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "54",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5278",
+                  "longitude": "11.3657"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_7040000793874063168.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Scopri questa proprietà nel cuore della Bolognina, in Via Algardi, un'occasione unica nel quartiere Navile di Bologna. Si tratta di una nuda proprietà che rappresenta un'interessante opportunità di i",
+                "numberOfBedrooms": 3,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Algardi 12",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "84",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5097",
+                  "longitude": "11.3493"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_3780000793874065643.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Proponiamo in vendita bilocale situato in Via Panigale, posto al primo piano di una palazzina senza ascensore. L'immobile è composto da ingresso, cucina abitabile, camera matrimoniale, ripostiglio e",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Panigale, 52",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "43",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5201",
+                  "longitude": "11.2781"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2100000793874036150.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "In via della Grazia, a Bologna Eden House racconta Oltre le foto, dentro la casa Principali caratteristiche Bilocale ristrutturato di circa 40 m² Primo piano di una piccola palazzina in pietra a vist",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "postalCode": "40131",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "40",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5177",
+                  "longitude": "11.327"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_1270000793874061961.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "BILOCALE IN VENDITA VIA BOMBELLI (BORGO PANIGALE) - CLASSE ENERGETICA F 34MQ APPARTAMENTO - 20MQ CANTINA Ci troviamo in una zona ad altissima richiesta di immobili in locazione, a breve distanza dall",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Raffaele Bombelli",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "43",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5204",
+                  "longitude": "11.2771"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_4530000793269065652.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "BOLOGNA – MURRI / LUNETTA GAMBERINI | BILOCALE CON POSTO AUTO – OCCASIONE DA NON PERDERE! 45 MQ, POSTO AUTO ASSEGNATO, ABITABILITÀ COME APPARTAMENTO E RENDITA CATASTALE INFERIORE A 195 €! Prima casa",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Domenico Morelli, 2",
+                  "postalCode": "40137",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "45",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.4752",
+                  "longitude": "11.3747"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6970000791368182470.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "La Tempocasa di Bologna Borgo Panigale propone in vendita in un interno di Via Marco Emilio Lepido, un ampio monolocale ristrutturato con entrata semi indipendente e con ampio soppalco con altezze ab",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Marco Emilio Lepido",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "50",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5179",
+                  "longitude": "11.2749"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_6920000793701051544.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Proponiamo in vendita un bilocale con studio al secondo ed ultimo piano di una caratteristica palazzina. CONTESTO L’immobile è nel quartiere Corticella, all’interno di una palazzina storica, oggetto",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via delle Fonti, 70",
+                  "postalCode": "40129",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "58",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5466",
+                  "longitude": "11.3538"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2620000793441999412.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Per info: Riccardo Rizzieri - 348/7439803 Ad.ze Via Irnerio - Via Mascarella - è disponibile in vendita grazioso monolocale ristrutturato ed arredato con ingresso indipendente posto al piano terra in",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Mascarella, 102",
+                  "postalCode": "40126",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "37",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5013",
+                  "longitude": "11.3517"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_2450000793182463045.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bolognina via Ferrarese ad.ze Via Cignani Rif.20:In in piccola palazzina degli anni '56 proponiamo in vendita appartamento Trilocale al 2° piano composto da Ingresso su cucina, 2 camere da letto, bag",
+                "numberOfBedrooms": 3,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Ferrarese, 127",
+                  "postalCode": "40128",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "58",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5132",
+                  "longitude": "11.3533"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Apartment",
+                "image": "https://imganuncios.mitula.net/appartamento_in_vendita_a_bologna_bo_3340000793096406313.jpg",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Nel cuore di Borgo Panigale IN VIA BOMBELLI, a Bologna, proponiamo un appartamento di 65 mq, ideale per chi cerca una soluzione abitativa funzionale e ben collegata. L'immobile offre un ingresso ind",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "streetAddress": "Via Raffaele Bombelli, 38",
+                  "postalCode": "40132",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": "65",
+                  "unitCode": "MTK"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "44.5184",
+                  "longitude": "11.2756"
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Mitula",
+            "logo": "https://img.mitula.net/favicon/logo_og.png",
+            "url": "https://immobiliare.mitula.it",
+            "description": "Mitula is an international vertical search engine for property, car, job, holiday rentals and fashion classifieds. We work exclusively with portals aggregating and indexing their content to drive qualified traffic back to their listings."
+          }
+        ]
+      ],
+      "bodyText": "Preferiti Gestire notifiche 126K € - 154K € Più filtri Salva ricerca Appartamenti in vendita 140000 euro a Bologna 158 proprietà disponibili Ordinare: In ordine di rilevanza 4 foto Appartamento 150.000 € La Birra, Bologna 2 Locali 1 Bagno 53 m² Cantina Completamente arredato 1 settimana, 1 giorno fa in Immobiliare.it 4 foto Appartamento 148.000 € Noce, Bologna 2 Locali 1 Bagno 48 m² 1 settimana, 2 giorni fa in Immobiliare.it Barbiano 2741 risultati Fiera District 2581 risultati Casaralta 2414 risultati Cirenaica 2351 risultati Beverara 2200 risultati Belcantone 2187 risultati Chiesanuova 2113 risultati Arcoveggio 2070 risultati Fossolo 2033 risultati Bitone 2006 risultati Due Madonne 1865 risultati Cavedone 1707 risultati Croce del Biacco 1637 risultati Calamosco 1527 risultati Dozza 1514 risultati Borgo Panigale 1464 risultati Borgo Panigale Reno 1464 risultati Foscherara 1356 risultati Croce Coperta 1185 risultati 4 foto Appartamento 138.000 € Lame, Bologna 1 Locale 1 Bagno 50 m² 1 settimana, 3 giorni fa in Immobiliare.it 4 foto Molto richiesta Appartamento 145.000 € La Scala, Bologna 3 Locali 1 Bagno 48 m² 21 ott 2026 in Immobiliare.it 4 foto Appartamento 130.000 € La Birra, Bologna 2 Locali 1 Bagno 45 m² 20 ott 2026 in Immobiliare.it 4 foto Appartamento 143.000 € Corticella, Bologna 2 Locali 1 Bagno 45 m² 19 ott 2026 in Immobiliare.it 4 foto Appartamento 139.000 € Beverara, Bologna 1 Locale 1 Bagno 46 m² 14 ott 2026 in Immobiliare.it 4 foto Appartamento 140.000 € La Birra, Bologna 2 Locali 1 Bagno 52 m² 14 ott 2026 in Immobiliare.it 4 foto Molto richiesta Appartamento 145.000 € Casaralta, Bologna 2 Locali 1 Bagno 52 m² 8 ott 2026 in Immobiliare.it 4 foto Appartamento 132.000 € Pescarola, Bologna 2 Locali 1 Bagno 47 m² 2 ott 2026 in Immobiliare.it 4 foto Molto richiesta Appartamento 150.000 € Quarto Superiore, Bologna 2 Locali 1 Bagno 50 m² 28 lug 2026 in Immobiliare.it 4 foto Appartamento 145.000 € Saragozza, Bologna 2 Locali 1 Bagno 69 m² 22 lug 2026 in Immobiliare.it 4 foto Appartamento 130.000 € Cirenaica, Bologna 2 Locali 1 Bagno 48 m² 25 giu 2026 in Immobiliare.it 4 foto Appartamento 147.000 € Bolognina, Bologna 2 Locali 1 Bagno 54 m² Ascensore 17 giu 2026 in Immobiliare.it 4 foto Nuovo Appartamento 149.000 € La Scala, Bologna 1 Locale 1 Bagno 38 m² 1 giorno, 1 ora fa in Immobiliare.it 4 foto Appartamento 149.000 € Barca, Bologna 1 Locale 1 Bagno 40 m² Ascensore 3 giorni, 1 ora fa in Immobiliare.it 4 foto Appartamento 130.000 € Saragozza, Bologna ",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "trovit",
+    "detailUrl": "https://case.trovit.it/appartamento-bologna-provincia",
+    "detail": {
+      "url": "https://case.trovit.it/appartamento-bologna-provincia",
+      "title": "5.425 appartamentos provincia in vendita a Bologna - Trovit",
+      "jsonLdTypes": [
+        "?"
+      ],
+      "jsonLd": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "SearchResultsPage",
+            "breadcrumb": {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Trovit",
+                  "item": "https://case.trovit.it/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Emilia-Romagna",
+                  "item": "https://case.trovit.it/appartamento-emilia-romagna"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Provincia di Bologna",
+                  "item": "https://case.trovit.it/appartamento-provincia-bologna"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Bologna",
+                  "item": "https://case.trovit.it/appartamento-bologna"
+                }
+              ]
+            },
+            "about": [
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjg5MDAwMDc5MjU3ODA4MjY5MS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bologna, nel quartiere di Borgo Panigale l'agenzia immobiliare ICONACASA è lieta di proporre in vendita un appartamento sito al piano primo di uno stabile interno alla via Emilia Ponente adiacente a",
+                "numberOfBedrooms": 3,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTcwMDAwMDc5MzcwMDk4ODM0NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Ubicazione: Nel cuore del centro storico, a pochi passi dalle principali vie dello shopping e dai servizi essenziali, in Via Oberdan sorge un elegante palazzo storico che è stato oggetto di un import",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjgwMDAwMDc5MzYxNDgxMTMyOC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "BOLOGNA – SANTA VIOLA UN PROGETTO DA PERSONALIZZARE, UNA CASA DA IMMAGINARE Non il solito appartamento già definito, ma un’opportunità per creare una soluzione abitativa su misura o realizzare un inv",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjc4MDAwMDc5MzYxNDgxMTMyNi5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "BOLOGNA – SANTA VIOLA | UN OPEN SPACE DA PERSONALIZZARE, UNA CASA DA IMMAGINARE Un ambiente da reinventare secondo il proprio stile, con la libertà di creare una soluzione abitativa su misura o reali",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fODYzMDAwMzc1ODYyNDAzMzM3MS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 4.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNzk5MDAwMDc4NDYyOTAxMjM0My5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "L'intervento consente di beneficiare delle agevolazioni fiscali previste dal Sismabonus Acquisti, offrendo un importante vantaggio economico a chi sceglie di investire in una residenza di nuova gener",
+                "numberOfBedrooms": 4,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNjc1MDAwMDc5NDMwNTYxNDI4MS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Corticella, Via di Saliceto: in piccolo condominio all’ultimo piano, particolare immobile mansardato con travi a vista, accatastato C/2, ingresso su ampia zona giorno, camera da letto, bagno, aria co",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNjIyMDAwMzc2MzQ2NTEwNDgxMS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 4.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNjEzMDAwMzc2MzQ2NTEwNDgwMS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTE4MDAwMzc2MzQ2NTEwNDY5NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 4.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTA4MDAwMzc2MzQ2NTEwNDY4NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 4.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTAxMDAwMzc2MzQ2NTEwNDY3Ni5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNDkwMDAwMzc2MzQ2NTEwNDY2NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNDgxMDAwMzc2MzQ2NTEwNDY1NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNDcyMDAwMzc2MzQ2NTEwNDY0NC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjQ5MDAwMDc5Mzc4NzU4MzQ4OC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "NON PERDERE L' OCCASIONE DI PARTECIPARE ALL' OPEN HOUSE DI VENERDì 13 NOVEMBRE DALLE ORE 16:30 ALLE ORE 18:30! ULTIMI 2 POSTI! Cantina con Potenziale da Pied-à-terre in Zona Residenziale Homesì Real",
+                "numberOfBedrooms": 1,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNjk0MDAwMDc4NTIzMzY5MDk2OC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "In contesto immerso nel verde vicino a Bologna, e al centro commerciale Meraville, proponiamo un'ottima opportunità. L'immobile, posto al piano terra di una piccola palazzina, è composto da: ingresso",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTU4MDAwMzc2MzQ2NTEwNDczOC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTQ5MDAwMzc2MzQ2NTEwNDcyOS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTI3MDAwMzc2MzQ2NTEwNDcwNC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fODgxMDAwMDc5MDUwNDEwMzYyMC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Si propone in vendita la nuda proprietà di un delizioso appartamento sito a Bologna in via Buonarroti 30 al 1 piano completamente arredato. L'appartamento con doppio affaccio, sulla via Buonarroti",
+                "numberOfBedrooms": 4,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fODUzMDAwMzc1ODYyNDAzMzM2MC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTM5MDAwMzc2MzQ2NTEwNDcxNy5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNTM0MDAwMzc2MzQ2NTEwNDcxMi5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 2.00 Dimensione (mq)",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjU0MDAwMDc5MzA5NjQwNjI1NS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Eleganza, comfort e prestigio nel cuore di una delle zone più ricercate della città. In uno dei contesti residenziali più esclusivi di Bologna, proponiamo in vendita una prestigiosa residenza, situat",
+                "numberOfBedrooms": 5,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNDk2MDAwMDc3MTMyNjEzNTc0NS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Appartamento in vendita a Bologna(BO). Numero Locali: 3 Dimensione (mq)",
+                "numberOfBedrooms": 3,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMzE1MDAwMDc4NjcwMjU1ODcwOC5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Splendido Bilocale Nuova Ristrutturazione in Vendita (Nuda Proprietà) Proponiamo in vendita un'eccellente opportunità d'investimento a Bologna, nella tranquilla e servita zona di Borgo Panigale (Via",
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fMjkxMDAwMDc4MTY5MTUwNTI0OS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Nel cuore di una delle zone più ricercate di Bologna, in Via Favilli 4, sorge uno straordinario attico che ridefinisce il concetto di lusso e comfort urbano. Situato al quinto piano di una palazzina",
+                "numberOfBedrooms": 6,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fODYwMDAwMDc5MzA5NjQ0NTE2My5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "A pochi passi da Via Murri, in una delle zone residenziali più esclusive e prestigiose di Bologna, disponiamo di splendido appartamento sito al secondo piano (senza ascensore) ed inserito in piccola",
+                "numberOfBedrooms": 4,
+                "numberOfBathroomsTotal": 1,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SingleFamilyResidence",
+                "image": "https://images.trovit.com/v1/eyJrZXkiOiJhcHBhcnRhbWVudG9faW5fdmVuZGl0YV9hX2JvbG9nbmFfYm9fNzM1MDAwMDc4MzkzNzgyOTQyMS5qcGciLCJicmFuZCI6InRyb3ZpdCIsImNvdW50cnkiOiJJVCIsIndpZHRoIjo2NDAsImhlaWdodCI6NDgwfQ==",
+                "name": "Appartamento in vendita a Bologna BO",
+                "description": "Bologna- Via Castiglione: Appartamento con 3 camere letto Bologna- Via Castiglione (fuori porta): A 10 minuti a piedi dal centro di Bologna, in posizione panoramica, tranquilla e circondata dal ver",
+                "numberOfBedrooms": 4,
+                "numberOfBathroomsTotal": 2,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Emilia-Romagna",
+                  "addressLocality": "Bologna",
+                  "addressCountry": {
+                    "@type": "Country",
+                    "name": "IT"
+                  }
+                },
+                "accommodationCategory": "RESI"
+              }
+            ],
+            "relatedLink": [
+              "https://case.trovit.it/appartamento-navile",
+              "https://case.trovit.it/appartamento-borgo-panigale-reno",
+              "https://case.trovit.it/appartamento-savena",
+              "https://case.trovit.it/appartamento-saragozza-porto",
+              "https://case.trovit.it/appartamento-santo-stefano",
+              "https://case.trovit.it/appartamento-san-donato-vitale",
+              "https://case.trovit.it/san-lazzaro-savena-appartamento",
+              "https://case.trovit.it/san-lazzaro-savena-via-appartamento",
+              "https://case.trovit.it/appartamento-casalecchio-reno",
+              "https://case.trovit.it/appartamento-casalecchio-reno-centro",
+              "https://case.trovit.it/appartamento-san-lazzaro-savena-terrazza",
+              "https://case.trovit.it/appartamento-calderara-reno",
+              "https://case.trovit.it/appartamento-castel-maggiore",
+              "https://case.trovit.it/appartamento-piano-terra-san-lazzaro-savena",
+              "https://case.trovit.it/appartamento-zola-predosa",
+              "https://case.trovit.it/appartamento-giardino-san-lazzaro-savena",
+              "https://case.trovit.it/piano-appartamento-casalecchio-reno",
+              "https://case.trovit.it/appartamento-bagni-san-lazzaro-savena",
+              "https://case.trovit.it/appartamento-bologna-zona-casalecchio-reno",
+              "https://case.trovit.it/appartamento-via-garibaldi-casalecchio-reno",
+              "https://case.trovit.it/appartamento-giardino-privato-san-lazzaro-savena",
+              "https://case.trovit.it/appartamento-camere-casalecchio-reno",
+              "https://case.trovit.it/appartamento-idice-san-lazzaro-savena",
+              "https://case.trovit.it/appartamento-giardino-casalecchio-reno",
+              "https://case.trovit.it/san-lazzaro-savena-appartamento-nuova-costruzione",
+              "https://case.trovit.it/appartamento-giardino-castel-maggiore",
+              "https://case.trovit.it/palazzo-bologna",
+              "https://case.trovit.it/attico-bologna",
+              "https://case.trovit.it/casa-bologna",
+              "https://case.trovit.it/casa-bologna-provincia",
+              "https://case.trovit.it/trifamiliare-bologna",
+              "https://case.trovit.it/case-casa-bologna",
+              "https://case.trovit.it/attico-via-bologna",
+              "https://case.trovit.it/casa-piano-bologna",
+              "https://case.trovit.it/monolocale-bologna",
+              "https://case.trovit.it/attico-bologna-ascensore",
+              "https://case.trovit.it/appartamento-bologna",
+              "https://case.trovit.it/appartamento-viale-bologna",
+              "https://case.trovit.it/appartamento-via-romagna-bologna",
+              "https://case.trovit.it/appartamento-bologna-terrazza-piano",
+              "https://case.trovit.it/appartamento-bologna-terrazza",
+              "https://case.trovit.it/bologna-appartamento-soppalco",
+              "https://case.trovit.it/appartamento-via-grada-bologna",
+              "https://case.trovit.it/appartamento-via-m-bologna",
+              "https://case.trovit.it/appartamento-bologna-ascensore",
+              "https://case.trovit.it/appartamento-bologna-3-camere",
+              "https://case.trovit.it/bologna-appartamento-4-camere",
+              "https://case.trovit.it/appartamento-2-camere-bologna",
+              "https://case.trovit.it/appartamento-3-camere-terrazza-bologna",
+              "https://case.trovit.it/appartamento-bologna-1-camera",
+              "https://case.trovit.it/appartamento-3-camere-bologna-ristrutturato",
+              "https://case.trovit.it/appartamento-2-camere-bologna-ristrutturato",
+              "https://case.trovit.it/appartamento-3-camere-letto-bologna",
+              "https://case.trovit.it/bologna-appartamento-pilastro-3-camere",
+              "https://case.trovit.it/appartamento-bologna-4-camere-letto",
+              "https://case.trovit.it/appartamento-bologna-300000-euro",
+              "https://case.trovit.it/appartamento-bologna-400000-euro",
+              "https://case.trovit.it/appartamento-bologna-200000-euro",
+              "https://case.trovit.it/appartamento-bologna-500000-euro",
+              "https://case.trovit.it/appartamento-bologna-600000-euro",
+              "https://case.trovit.it/appartamento-bologna-700000-euro",
+              "https://case.trovit.it/appartamento-150000-euro-bologna",
+              "https://case.trovit.it/appartamento-bologna-120000-euro"
+            ]
+          }
+        ]
+      ],
+      "bodyText": "Continua senza accettare → Con il tuo consenso, noi e i nostri 1041 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legittimo interesse commerciale. È possibile ritirare il proprio consenso od opporsi al trattamento dei dati basato sul legittimo interesse in qualsiasi momento cliccando su \"Per saperne di più\" o sulla nostra Informativa sulla privacy su questo sito web. Noi e i nostri partner ci atteniamo al seguente trattamento dei dati: Archiviare informazioni su dispositivo e/o accedervi, Cookie strettamente necessari, Dati di geolocalizzazione precisi e identificazione attraverso la scansione del dispositivo, Pubblicità e contenuti personalizzati, misurazione delle prestazioni dei contenuti e degli annunci, ricerche sul pubblico, sviluppo di servizi Maggiori informazioni → Accetta e chiudi Case in vendita Preferiti Accedi Trovit Emilia-Romagna Provincia di Bologna Bologna 1-30 di 5.425 case 5.425 appartamentos provincia in vendita a Bologna Ricevi nuovi annunci via mail Salvare ricerca Ordina per Attinenza Prezzo Nessun minimo Nessun massimo Locali 0+ 1+ 2+ 3+ 4+ Bagni 0+ 1+ 2+ 3+ 4+ Superficie Nessun minimo Nessun massimo Approfindisci la tua ricerca Appartamento Navile (943) Appartamento Borgo Panigale Reno (812) Appartamento Savena (585) Appartamento Saragozza Porto (552) Appartamento Santo Stefano (421) Appartamento San Donato Vitale (234) Zone vicine San Lazzaro Savena Appartamento (647) San Lazzaro Savena Via Appartamento (573) Appartamento Casalecchio Reno (374) Appartamento Casalecchio Reno Centro (271) Appartamento San Lazzaro Savena Terrazza (238) Appartamento Calderara Reno (191) Appartamento Castel Maggiore (187) Appartamento Piano Terra San Lazzaro Savena (181) Appartamento Zola Predosa (180) Appartamento Giardino San Lazzaro Savena (179) Piano Appartamento Casalecchio Reno (176) Appartamento Bagni San Lazzaro Savena (135) Appartamento Bologna Zona Casalecchio Reno (122) Appartamento Via Garibaldi Casalecchio Reno (105) Appartamento Giardino Privato San Lazzaro Savena (90) Appartamento Camere Casalecchio Reno (84) Appartamento Idice San Lazzaro Savena (79) Appartamento Giardino Casalecchio Reno (68) San Lazzaro Savena Appartamento Nuova Costruzione (65) Appartamento Giardino Castel Maggiore (56) Tipo immobile Palazzo",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "bakeca",
+    "detailUrl": "https://www.bakeca.it/annunci/case/",
+    "detail": {
+      "url": "https://www.bakeca.it/annunci/case/",
+      "title": "Case e appartamenti in vendita e affitto Novembre 2026 su Bakeca",
+      "jsonLdTypes": [
+        "Organization",
+        "BreadcrumbList",
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "LocalBusiness"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "Place"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "Room"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "Room"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "Room"
+        ],
+        [
+          "Product",
+          "Room"
+        ],
+        [
+          "Product",
+          "Hotel"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ],
+        [
+          "Product",
+          "SingleFamilyResidence"
+        ]
+      ],
+      "jsonLd": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Bakeca S.r.l.",
+          "url": "https://www.bakeca.it/www",
+          "logo": "https://static.bakeca.it/asset/design/images/logo-bakeca.min.png",
+          "sameAs": [
+            "https://www.facebook.com/bakeca",
+            "https://twitter.com/bakecait",
+            "https://www.linkedin.com/company/bakeca-it/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://www.bakeca.it",
+                "name": "Bakeca Italia"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://www.bakeca.it/annunci/case/",
+                "name": "Case"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": [
+            "Product",
+            "SingleFamilyResidence"
+          ],
+          "url": "https://torino.bakeca.it/dettaglio/offro-casa/quadrilocale-completamente-arredato-na8b295131926",
+          "identifier": {
+            "@type": "PropertyValue",
+            "name": "Bakeca",
+            "value": "na8b295131926"
+          },
+          "description": "QUADRILOCALE ARREDATO COMPOSTO DA AMPI INGRESSO SU SOGGIORNO , DUE CAMERE DA LETTO, SALONE , CUCINA, BAGNO , DUE BALCONI EURO 480 + SPESE SOLO REFERENZIATI",
+          "name": "QUADRILOCALE COMPLETAMENTE ARREDATO",
+          "productID": "na8b295131926",
+          "category": "Offro casa in affitto",
+          "additionalType": "http://www.productontology.org/doc/Real_estate",
+          "image": "https://static.bakeca.it/immagini/4f7/offro-casa-in-affitto-torino-quadrilocale-completamente-arredato-4f742941b799298d0e8e26899c2c1ajd.jpg",
+          "offers": {
+            "@type": "Offer",
+            "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+            "price": "480",
+            "priceCurrency": "EUR",
+            "seller": {
+              "@type": "RealEstateAgent",
+              "name": "TORINO LOCAZIONI",
+              "url": "https://www.bakeca.it/vetrina/immobiliare/torinolocazioni-1147/",
+              "image": "https://static.bakeca.it/immagini/cbf/cbfadde2c83498abcd3d921d5455bcjb.jpg"
+            }
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Torino",
+            "addressRegion": "Torino",
+            "addressCountry": {
+              "@type": "Country",
+              "name": "IT"
+            }
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.070602,
+            "longitude": 7.68671
+          }
+        }
+      ],
+      "bodyText": "Preferiti Accedi Registrati INSERISCI ANNUNCIO Tutto case CERCA Bakeca Italia Case Annunci immobiliari – Vendita e affitto casa – Annunci case e monolocali Dal più recente CATEGORIE Cerco camera in affitto Cerco casa in affitto Offro camera in affitto Offro casa in affitto Case in vendita Terreni - rustici Capannoni - magazzini Locali e attività commerciali Box - garage Nuove costruzioni Case vacanza - bed & breakfast Case vacanza all'estero 145.759 annunci 2 QUADRILOCALE COMPLETAMENTE ARREDATO 480 € 100 mq . Quadrilocale QUADRILOCALE ARREDATO COMPOSTO DA AMPI INGRESSO SU SOGGIORNO , DUE CAMERE DA LETTO, SALONE , CUCINA, BAGNO , DUE BALCONI EURO 480 + … Agenzia: TORINO LOCAZIONI PREMIUM Torino | Offro casa in affitto 20 VA0345 - CARPI – CIBENO – ESCLUSIVA MAISONETTE DEL 2024 CON 270 MQ DI GIARD … 369.000 € 163 mq . Maisonette CARPI – CIBENO – “NUOVA ESCLUSIVA” NUOVA IMMOBILIARE propone una SPLENDIDA MAISONETTE DI NUOVA COSTRUZIONE, REALIZZATA NEL 2024, GIÀ LI … Agenzia: NUOVA immobiliare PREMIUM Carpi | Case in vendita 15 Casa padronale 75.000 € 300 mq . Cinque e più locali CASA PADRONALE Vicino Bassano del Grappa in Campolongo sul Brenta grande casa datata e abitata fino a pochi anni fa, con 2 ingressi dis … Agenzia: Agenzia immobiliare S.Giustina PREMIUM Valbrenta | Case in vendita 20 NUOVO Villa a schiera a Ravenna 284.000 € 130 mq . Villa CASTIGLIONE DI RAVENNA - VILLETTA CLASSE A4 Proimmobiliare propone in vendita una villetta a schiera indipendente su due livelli, con … Agenzia: PROIMMOBILIARE PREMIUM Ravenna | Case in vendita 10 NUOVO 11/2026 U FE - Tribunale Ferrara - RGE 11/2026 - LOTTO U - ASTA 20/11/2026 67.000 € 150 mq . Quadrilocale piena proprietà di abitazione con corte esclusiva, in modesto stato di manutenzione, disposta su tre piani, sita in Ferrara, Via Schia … Agenzia: AstaService PREMIUM Ferrara | Case in vendita Vuoi più contatti dai tuoi annunci? Promuovili con le nostre soluzioni! Scopri come 14 Stanza in appartamento in affitto a Catanzaro 310 € 90 mq A Catanzaro Lido, via Fiume, in zona centralissima e ben servita a soli 100 metri da piazza A. Garibaldi, camera singola in confortevol … Agenzia: CORRADINO REAL ESTATE PREMIUM Catanzaro | Offro casa in affitto 10 Investimento Immobiliare Mandello: Tre Unità con Giardino 163 190.000 € 70 mq . Bilocale La Contrada di Gorlo è una delle zone più affascinanti e caratteristiche di Mandello del Lario, un borgo storico che unisce il fascino … Agenzia: Case Domus PREMIUM Mandello del Lario | ",
+      "geoMeta": []
+    }
+  },
+  {
+    "id": "caasa",
+    "detailUrl": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING",
+    "detail": {
+      "url": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING",
+      "title": "Migliaia di appartamenti in vendita a Bologna.",
+      "jsonLdTypes": [
+        "WebSite",
+        "WebPage",
+        "WebPageElement",
+        "ItemList",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement",
+        "WebPageElement"
+      ],
+      "jsonLd": [
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Caasa.it",
+          "url": "https://www.caasa.it",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Caasa",
+            "url": "https://www.caasa.it",
+            "logo": "https://cdn.caasa.it/logo/caasa-gray.svg",
+            "sameAs": [
+              "https://www.facebook.com/caasa.it/",
+              "https://twitter.com/caasaIT"
+            ]
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "url": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@id": "https://www.caasa.it/",
+                  "name": "Immobili in vendita",
+                  "image": "https://cdn.caasa.it/static/img/ico/breadcrumb-vendita-64x64.png"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@id": "https://www.caasa.it/emilia-romagna/cerco-case-in-vendita.html",
+                  "name": "Emilia Romagna",
+                  "image": "https://cdn.caasa.it/static/img/ico/breadcrumb-regione-64x64.png"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@id": "https://www.caasa.it/emilia-romagna/bologna/cerco-case-in-vendita.html",
+                  "name": "Bologna",
+                  "image": "https://cdn.caasa.it/static/img/ico/breadcrumb-provincia-64x64.png"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@id": "https://www.caasa.it/emilia-romagna/bologna/bologna/cerco-case-in-vendita.html",
+                  "name": "Bologna",
+                  "image": "https://cdn.caasa.it/static/img/ico/breadcrumb-citta-64x64.png"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@id": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING",
+                  "name": "appartamenti-1",
+                  "image": "https://cdn.caasa.it/static/img/ico/breadcrumb-risultati-64x64.png"
+                }
+              }
+            ]
+          },
+          "mainContentOfPage": {
+            "@type": "WebPageElement",
+            "@id": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING#maincontent",
+            "dateModified": "2026-11-15",
+            "contentLocation": {
+              "@type": "Place",
+              "name": "Bologna (BO)",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "44.493936",
+                "longitude": "11.342744"
+              }
+            },
+            "additionalType": "ItemList"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPageElement",
+          "@id": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?orderby=STRENGTH&orderdir=ASCENDING#re-info",
+          "headline": "Mercato immobiliare a Bologna",
+          "isBasedOn": "https://www.mercato-immobiliare.info/emilia-romagna/bologna/bologna.html",
+          "contentLocation": {
+            "@type": "Place",
+            "name": "a Bologna",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "44.493936",
+              "longitude": "11.342744"
+            }
+          }
+        }
+      ],
+      "bodyText": "Mercato Immobiliare Valutazionenew Ricerca HA TROVATO MIGLIAIA DI ANNUNCI PER: Appartamenti in vendita a Bologna MODIFICA QUESTA RICERCA Valore appartamenti in vendita a Bologna In tutta Bologna sono al momento presenti 5.134 offerte per appartamenti in vendita, ovvero quasi il 40% degli annunci di questa tipologia nell'intera città metropolitana. Il prezzo al m² degli appartamenti in vendita mediamente richiesto in città è attualmente pari a 3.880 €/m² ed è nella maggioranza dei casi compreso tra 2.900 €/m² e 4.710 €/m². Limitatamente alla zona Centro Storico, che è tra le più importanti per numero di annunci, il prezzo mediamente richiesto degli appartamenti in vendita è invece pari a 4.865 €/m² (circa il 25% superiore alla media in città). Questi prezzi sono molto simili a quelli presso la zona Santo Stefano che è la più costosa in assoluto, mentre quelli più bassi si attestano mediamente a 2.650 €/m² nella zona Pilastro. LEGGI ANCORA ALTRE INFORMAZIONI Bologna Comune di Bologna Mappa: Bologna Quotazioni a Bologna Quotazioni OMI Geopoi QUOTAZIONE APPARTAMENTI IN VENDITA RICERCHE SUGGERITE MODIFICA RICERCA ORDINA PG.1 DI 165 2 Appartamento in vendita a Bologna PREMIUM gio 12 novembre 2026 305.000 € | m² 81 prezzo al m²: 3765 €/m² Viale della Repubblica, San Donato, Bologna piano: 4 (con ascensore) bagni: 1 zona OMI: D5 con balcone cantina RICHIEDI LA SCHEDA: COMPILA IL MODULO E SCOPRI TUTTI I DETTAGLI - In Viale della Repubblica, proponiamo in vendita un luminoso appartamento situato al quarto piano ed ultimo di uno stabile servito da ascensore. L'immobile, oggetto di una ri […] LEGGI ANCORA ULTERIORI DETTAGLI NOVITA' ESCLUSIVA:VALUTA questo immobile Leggi l'Opinione di Caasa® Aggiungi ai preferiti Segnala un problema su questo annuncio prezzo medio appartamento in zona OMI D5 : 3637 €/m² prezzo medio casa indipendente in zona OMI D5 : 3363 €/m² Appartamento in vendita a Bologna mar 31 marzo 2026 225.000 € | m² 65 prezzo al m²: 3461 €/m² Lame, Bologna bagni: 1 zona OMI: D9 cucina abitabile APPARTAMENTO LAME 225.000 € TRILOCALE CON INGRESSO INDIPENDENTE Trilocale con doppio ingresso di cui uno indipendente al piano terra, disposto su due livelli. Posizione comoda ai principali servizi. L’immobile è così composto: ingresso al piano terra su cucina abitabile e angolo lavanderia, al primo piano troviamo un ampio soggiorn […] LEGGI ANCORA ALTRE FONTI NOVITA' ESCLUSIVA:VALUTA questo immobile Leggi l'Opinione di Caasa® Aggiungi ai preferiti Segnala un problema ",
+      "geoMeta": []
+    }
+  }
+]

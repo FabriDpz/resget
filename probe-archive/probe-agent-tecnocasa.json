@@ -1,0 +1,33 @@
+{
+  "id": "tecnocasa",
+  "name": "Tecnocasa",
+  "category": "agenzia",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html?max_price=160000&min_surface=40",
+      "url": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html?max_price=160000&min_surface=40",
+      "title": "Case in vendita a Bologna - Tecnocasa",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        "a[href*=\"/vendita/\"]"
+      ],
+      "topLinkPatterns": [
+        "/vendita/[^/]+/[^/]+/[^/]+/(\\d+)\\.html"
+      ],
+      "sampleLinks": [
+        "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61299143.html",
+        "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61267916.html",
+        "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61302902.html",
+        "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/61291401.html"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi query VERIFICATI: ?max_price=160000&min_surface=40 (generati dal sito: pannello Prezzo textbox 'Prezzo max' + Enter; pannello Superficie textbox 'Mq da' + Enter). Chips attivi 'Fino a 160.000 ?' e 'Da 40 mq'. Bologna: 6 card (vs 15 non filtrata), prezzi max 150000, mq min 52 (tutti >=40). pag-2.html con query da Oops (sole 6 card, 1 pagina: comportamento corretto, hasNext dell'adapter gestisce). Valori arbitrari accettati (160000 non e nelle fasce proposte). Stessa piattaforma/DB di tecnorete: parametri identici verificati anche li."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "trovit",
+  "name": "Trovit",
+  "category": "aggregatore",
+  "probedAt": "2026-11-21T00:00:00Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://case.trovit.it/appartamenti-bologna-160000-euro",
+      "title": "297 immobili appartamenti in vendita a Bologna intorno 160.000 ? - Trovit",
+      "url": "https://case.trovit.it/appartamenti-bologna-160000-euro",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": {
+        "a[href*=\"detailPageUrl=\"]": 30
+      },
+      "topLinkPatterns": [
+        "/click?detailPageUrl="
+      ],
+      "sampleLinks": [
+        "https://case.trovit.it/detail/trovit-IT-4710004791540570156?trovit_type=1&search_terms=case+bologna"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtro prezzo nativo stile mitula VERIFICATO: /appartamenti-bologna-160000-euro = 297 annunci vs 5475 non filtrati. Semantica 'intorno': tollera ~+5k (max osservato 165k su 30 card, ~23%); serve safety-net client-side <=160k. /case-bologna-160000-euro = 26 annunci (max 175k). /case-bologna-130000-euro = 4 annunci. Paginazione ?page=N compatibile. -fino-160000-euro e -prezzo-massimo- NON funzionano (ignorati/geo errata). Pannello filtri UI custom non apre dropdown in automazione."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "tempocasa",
+  "name": "Tempocasa",
+  "category": "agenzia",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://tempocasa.it/it/vendita/bologna/bologna",
+      "url": "https://tempocasa.it/it/vendita/bologna/bologna",
+      "title": "Vendita Bologna - Tempocasa",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        "a[href*=\"/it/vendita/\"]"
+      ],
+      "topLinkPatterns": [
+        "/it/vendita/[^/]+/[^/]+/[^/]+/(\\d+)"
+      ],
+      "sampleLinks": [],
+      "blocked": false,
+      "loginWall": false,
+      "note": "NESSUN filtro nativo esprimibile via URL: il filtro prezzo e una UI client-side (dropdown con fasce fisse 150k/170k, no 160k; applicandolo la URL NON cambia e i risultati sono filtrati via JS). Query ?prezzo_max=160000 IGNORATA (2 card a 165k ancora presenti). Superficie: solo fasce fisse da 10/50/60... mq (no 40). Strategia: filtro client-side <=160000 e >=40mq nel runner/adapter (MAX_PREZZO come attico/casadaprivato). volumi piccoli (12 card/pagina Bologna). Nessun cambiamento URL adapter."
+    }
+  ]
+}

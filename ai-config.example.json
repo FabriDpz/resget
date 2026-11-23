@@ -1,0 +1,10 @@
+{
+  "_comment": "Copia in ai-config.json per personalizzare. Nessuna API key qui: token-plan legge ~/.bailian/config.json, deepseek legge env DEEPSEEK_API_KEY o ~/.radar-ai.json (fuori dal repo).",
+  "provider": "token-plan",
+  "model": "qwen3.8-flash",
+  "deepseekModel": "deepseek-chat",
+  "ollamaBaseUrl": "http://localhost:11434/v1",
+  "ollamaModel": "qwen3.5:4b",
+  "maxCallsPerRun": 60,
+  "minConfidence": 0.8
+}

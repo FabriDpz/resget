@@ -1,0 +1,88 @@
+{
+  "id": "wikicasa",
+  "name": "Wikicasa",
+  "category": "portale",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": 200,
+      "finalUrl": "https://www.wikicasa.it/vendita-case/bologna/",
+      "title": "Case in vendita a Bologna • Wikicasa",
+      "url": "https://www.wikicasa.it/vendita-case/bologna/",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": {
+        "a[href*=\"/annuncio/\"]": 75
+      },
+      "topLinkPatterns": [],
+      "sampleLinks": [
+        "https://www.wikicasa.it/annuncio/31424022",
+        "https://www.wikicasa.it/annuncio/31400037",
+        "https://www.wikicasa.it/annuncio/31399155",
+        "https://www.wikicasa.it/annuncio/31383438",
+        "https://www.wikicasa.it/annuncio/31380717",
+        "https://www.wikicasa.it/annuncio/31371813",
+        "https://www.wikicasa.it/annuncio/31362438",
+        "https://www.wikicasa.it/annuncio/31358505",
+        "https://www.wikicasa.it/annuncio/31353099",
+        "https://www.wikicasa.it/annuncio/31338786",
+        "https://www.wikicasa.it/annuncio/31337880",
+        "https://www.wikicasa.it/annuncio/31323261",
+        "https://www.wikicasa.it/annuncio/31313751",
+        "https://www.wikicasa.it/annuncio/31311918",
+        "https://www.wikicasa.it/annuncio/31308312"
+      ],
+      "blocked": false,
+      "loginWall": false
+    },
+    {
+      "step": "detail",
+      "status": 200,
+      "finalUrl": "https://www.wikicasa.it/annuncio/31400037",
+      "title": "Appartamento in vendita, Via Giacomo Matteotti 20, Bologna, In buone condizioni con terrazzo e box, 130 mq • Wikicasa",
+      "url": "https://www.wikicasa.it/annuncio/31400037",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [
+        "WebSite",
+        "WebPage",
+        "RealEstateListing",
+        "Product",
+        "ImageObject"
+      ],
+      "cardSelectors": {},
+      "topLinkPatterns": [],
+      "sampleLinks": [],
+      "blocked": false,
+      "loginWall": false
+    },
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://www.wikicasa.it/vendita-case/bologna/?PrezzoMassimo=160000&SuperficieMinima=40",
+      "url": "https://www.wikicasa.it/vendita-case/bologna/?PrezzoMassimo=160000&SuperficieMinima=40",
+      "title": "Case in vendita a Bologna - Wikicasa",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        "a[href*=\"/annuncio/\"]"
+      ],
+      "topLinkPatterns": [
+        "/annuncio/(\\d+)"
+      ],
+      "sampleLinks": [
+        "https://www.wikicasa.it/annuncio/31441014",
+        "https://www.wikicasa.it/annuncio/31225701",
+        "https://www.wikicasa.it/annuncio/30855384",
+        "https://www.wikicasa.it/annuncio/30831348",
+        "https://www.wikicasa.it/annuncio/30822138"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi verificati via pannello Filtri: query string ?PrezzoMassimo=160000&SuperficieMinima=40 (case-sensitive, generata dal sito stesso). 61 annunci vs lista non filtrata; pag1 25 card max 160000, pag2 25 card mq tutti >=40 (min 40). Paginazione &p=N combinabile coi filtri (verificato p=2). Slug alternativo prezzo-fino-a-160000/ funziona ma solo prezzo; superficie-minima-40 come slug viene ignorato. Comuni: bologna, pianoro, san-lazzaro-di-savena. Link annuncio /annuncio/{id}."
+    }
+  ]
+}

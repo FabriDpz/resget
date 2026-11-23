@@ -1,0 +1,63 @@
+# Dipendenze
+node_modules/
+
+# Dati raccolti (annunci, falliti, storico prezzi) — rigenerabili con i run
+*/output/
+
+# Profili browser Playwright (contengono cookie/sessioni di login: MAI su git)
+*/profile/
+*/profile-fresh/
+*/profile-test/
+core/.profile-verify/
+
+# Profili Chromium finiti per errore nella root del portale
+*/Default/
+*/Crashpad/
+*/ShaderCache/
+*/GrShaderCache/
+*/GPUPersistentCache/
+*/component_crx_cache/
+*/extensions_crx_cache/
+*/Safe Browsing/
+*/segmentation_platform/
+*/OptimizationGuideModelsManifest
+*/Last Browser
+*/Last Version
+*/Local State
+*/Variations
+
+# Probe: screenshot PNG e dump DOM (l'evidenza utile è già in probe-archive/*.json)
+*/probe/
+
+# Log dei run
+logs/
+*.log
+
+# Backup locali
+.bak-sanitize/
+
+# Stato/memoria locale dei run — dati, non codice
+ledger.json
+core/portal-health.json
+
+# Cache geocoding/POI/origini — rigenerabili a runtime
+core/poi-cache.json
+core/origini-cache.json
+core/frazione-cache.json
+ai-cache.json
+
+# Registri generati dagli script AI (dati dei lead)
+ai-residui.json
+lead-verifiche.json
+
+# Configurazione reale (credenziali/API key) — su git solo ai-config.example.json
+ai-config.json
+
+# Sito generato da build-site.mjs (il sorgente è site-src/)
+site/
+immobiliare.it/site/
+
+# File di sistema/editor
+Thumbs.db
+Desktop.ini
+.DS_Store

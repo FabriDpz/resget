@@ -1,0 +1,31 @@
+{
+  "id": "bakeca",
+  "name": "Bakeca",
+  "category": "listing",
+  "probedAt": "2026-11-21T00:00:00Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://bologna.bakeca.it/annunci/vendita-case/mqcaseinvendita/40-0/prezzoimmobile/0-160000/",
+      "title": "Annunci di case in vendita a Bologna Novembre 2026 su Bakeca",
+      "url": "https://bologna.bakeca.it/annunci/vendita-case/mqcaseinvendita/40-0/prezzoimmobile/0-160000/",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": {
+        "a[href*=\"/dettaglio/vendita-case/\"]": 25
+      },
+      "topLinkPatterns": [
+        "/dettaglio/vendita-case/N"
+      ],
+      "sampleLinks": [
+        "https://bologna.bakeca.it/dettaglio/vendita-case/appartamento-in-vendita-a-zola-predosa-q9ft300926506",
+        "https://bologna.bakeca.it/dettaglio/vendita-case/appartamento-in-vendita-in-zona-vado-8vn8300923944"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi VERIFICATI via UI (tab in foreground): Prezzo A=160.000 + Mq Da=40 produce URL slug /annunci/vendita-case/mqcaseinvendita/40-0/prezzoimmobile/0-160000/. 141 annunci vs 519 non filtrati; 0/25 prezzi >160k su pag1 e pag2. Paginazione /page/N/ appended dopo gli slug, verificata page/2 (24 card, 0 over). Query string (?range_prezzoimmobile[]...) IGNORATA dal server: usare SOLO il path slug. Select nativi: automazione possibile solo con tab attivato (popup OS)."
+    }
+  ]
+}

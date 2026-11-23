@@ -1,0 +1,28 @@
+{
+  "id": "remax",
+  "name": "RE/MAX",
+  "category": "agenzia",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://www.remax.it/vendita-appartamenti/bologna?prezzo_max=160000&superficie_min=40",
+      "url": "https://www.remax.it/vendita-appartamenti/bologna?prezzo_max=160000&superficie_min=40",
+      "title": "Appartamenti in vendita a Bologna - RE/MAX",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        "a[href*=\"prestige.remax.it/vendita-\"]"
+      ],
+      "topLinkPatterns": [
+        "prestige\\.remax\\.it/vendita-[a-z-]+/[a-z-]+/.+-(\\d+-\\d+)$"
+      ],
+      "sampleLinks": [],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi query VERIFICATI: ?prezzo_max=160000&superficie_min=40 (generati dal sito: pannello Fascia di prezzo textbox A + Enter, pannello Superficie textbox Da + Enter). Baseline Bologna: 6 annunci tutti >200k (min 204000). Con prezzo_max=160000: 'Nessun annuncio trovato' (0 in target, corretto). Attenzione: a 0 risultati il sito mostra card 'annunci attivi di questo tipo' FUORI COMUNE (es. Santa Croce Camerina 98k) ? adapter deve ignorarle (link fuori zona; il filtro comune esistente a dettaglio gia copre). sampleLinks vuoti perche 0 risultati in target al momento del probe; selettori card invariati rispetto alla baseline. Paginazione ?page=N da combinare: &page=N."
+    }
+  ]
+}

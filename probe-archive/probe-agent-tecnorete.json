@@ -1,0 +1,33 @@
+{
+  "id": "tecnorete",
+  "name": "Tecnorete",
+  "category": "agenzia",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html?max_price=160000&min_surface=40",
+      "url": "https://www.tecnorete.it/annunci/immobili/emilia-romagna/bologna/bologna.html?max_price=160000&min_surface=40",
+      "title": "Case in vendita a Bologna - Tecnorete",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        "a[href*=\"/vendita/\"]"
+      ],
+      "topLinkPatterns": [
+        "/vendita/[^/]+/[^/]+/[^/]+/(\\d+)\\.html"
+      ],
+      "sampleLinks": [
+        "https://www.tecnorete.it/vendita/appartamenti/bologna/bologna/61299143.html",
+        "https://www.tecnorete.it/vendita/appartamenti/bologna/bologna/61267916.html",
+        "https://www.tecnorete.it/vendita/appartamenti/bologna/bologna/61302902.html",
+        "https://www.tecnorete.it/vendita/appartamenti/bologna/bologna/61291401.html"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Stessa piattaforma/DB di tecnocasa (identici id annuncio). Filtri query ?max_price=160000&min_surface=40 VERIFICATI direttamente su tecnorete.it: chips 'Fino a 160.000 ?'/'Da 40 mq', 6 card, 0 over-160k, mq tutti >=40. makeAdapter condiviso: basta aggiungere i query params nella URL in makeAdapter."
+    }
+  ]
+}

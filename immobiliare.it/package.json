@@ -1,0 +1,14 @@
+{
+  "name": "immobiliare-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scraping personale di Immobiliare.it con Playwright: ricerca salvata + Pianoro + San Lazzaro di Savena, analisi FLIP e sito web statico.",
+  "scripts": {
+    "scrape": "node scrape.mjs",
+    "login": "node scrape.mjs --login"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

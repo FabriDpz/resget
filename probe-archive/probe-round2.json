@@ -1,0 +1,851 @@
+[
+  {
+    "id": "idealista",
+    "tries": [
+      {
+        "url": "https://www.idealista.it/vendita-case/bologna/",
+        "status": 404,
+        "title": "www.idealista.it — Case vendita. Case affitto. Appartamenti. Ville — idealista, N.1 in Italia",
+        "total": null,
+        "patterns": [
+          [
+            "https://www.idealista.it/info/pubblica-annuncio",
+            1
+          ]
+        ],
+        "cards": 0,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Continua senza accettare → In idealista utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 25 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi sia accettare tutti i cookie sia sceglierne alcuni facendo clic su “Più inform"
+      },
+      {
+        "url": "https://www.idealista.it/vendita-case/bologna/con-prezzo-max_160000/",
+        "status": 404,
+        "title": "www.idealista.it — Case vendita. Case affitto. Appartamenti. Ville — idealista, N.1 in Italia",
+        "total": null,
+        "patterns": [
+          [
+            "https://www.idealista.it/info/pubblica-annuncio",
+            1
+          ]
+        ],
+        "cards": 0,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Continua senza accettare → In idealista utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 25 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi sia accettare tutti i cookie sia sceglierne alcuni facendo clic su “Più inform"
+      }
+    ]
+  },
+  {
+    "id": "wikicasa",
+    "tries": [
+      {
+        "url": "https://www.wikicasa.it/vendita-case/bologna/",
+        "status": 200,
+        "title": "Case in vendita a Bologna • Wikicasa",
+        "total": "1.529Case",
+        "patterns": [
+          [
+            "/annuncio/{id}",
+            75
+          ],
+          [
+            "/vendita-case/bologna/",
+            12
+          ],
+          [
+            "/valutazione-immobile",
+            3
+          ],
+          [
+            "/quotazione-immobili/",
+            3
+          ],
+          [
+            "/vendita-case/provincia-bo/",
+            1
+          ],
+          [
+            "/vendita-case/bologna/zona-aeroporto/",
+            1
+          ],
+          [
+            "/vendita-case/bologna/zona-barca/",
+            1
+          ],
+          [
+            "/vendita-case/bologna/zona-battindarno-santa-viola/",
+            1
+          ]
+        ],
+        "cards": 126,
+        "nextData": false,
+        "nuxt": true,
+        "snippet": "Continua senza accettare → Noi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)” come specificato nella cookie policy. Per quanto riguarda la pubblicità, noi e 1236 terze parti selezi"
+      }
+    ]
+  },
+  {
+    "id": "trovacasa",
+    "tries": [
+      {
+        "url": "https://www.trovacasa.it/vendita-case/bologna/",
+        "error": "page.goto: Timeout 40000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.trovacasa.it/vendita-case/bologna/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "blocked": false
+      },
+      {
+        "url": "https://www.trovacasa.it/annunci/bologna/",
+        "status": 404,
+        "title": "NotFound - TrovaCasa",
+        "total": "2026 Immobili",
+        "patterns": [
+          [
+            "/agenzie-immobiliari",
+            2
+          ],
+          [
+            "/pubblica-annuncio",
+            2
+          ]
+        ],
+        "cards": 5,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "PUBBLICA ANNUNCIO Accedi PAGINA NON TROVATA (404) Sembra che ti sei perso a causa di un errore di battitura o di un link errato. TORNA ALLA HOME PAGE © 2026 Immobiliare.it S.p.A. con sede in via Carlo Farini 41, Milano 20159 INFORMAZIONI Chi siamo Assistenza SEZIONI Annunci immobiliari Agenzie immobiliari Annunci da privati Immobili all'asta Pubbli"
+      }
+    ]
+  },
+  {
+    "id": "subito",
+    "tries": [
+      {
+        "url": "https://www.subito.it/annunci-bologna/vendita/appartamenti/bologna/bologna/",
+        "status": 404,
+        "title": "Subito.it",
+        "total": null,
+        "patterns": [
+          [
+            "https://areariservata.subito.it/annunci",
+            1
+          ],
+          [
+            "https://www.subito.it/magazine/motori/#",
+            1
+          ],
+          [
+            "https://www.subito.it/sitemaps/",
+            1
+          ]
+        ],
+        "cards": 8,
+        "nextData": true,
+        "nuxt": false,
+        "snippet": "Continua senza accettare → Questo sito ed i suoi Partners fanno uso di cookie tecnici, analitici e di altre tecnologie per archiviare, accedere ed elaborare dati personali - incluse la geolocalizzazione e l’identificazione del dispositivo - per finalità di profilazione attraverso le seguenti attività: annunci e contenuti personalizzati, valutazione"
+      }
+    ]
+  },
+  {
+    "id": "attico",
+    "tries": [
+      {
+        "url": "https://www.attico.it/vendita/emilia-romagna/bologna/",
+        "status": 200,
+        "title": "Case in vendita - Attico.it",
+        "total": null,
+        "patterns": [
+          [
+            "/vendita-residenziale/lista-{id}",
+            6
+          ],
+          [
+            "/vendita-residenziale/mappa-{id}",
+            2
+          ],
+          [
+            "/immobile-appartamento-piemonte-torino-{id}/",
+            2
+          ],
+          [
+            "/immobile-villa-puglia-putignano-{id}/",
+            2
+          ],
+          [
+            "/immobile-appartamento-puglia-acquaviva delle fonti-{id}/",
+            2
+          ],
+          [
+            "/immobile-appartamento-puglia-vieste-{id}/",
+            1
+          ],
+          [
+            "/immobile-casa+indipendente-lombardia-castelli calepio-{id}/",
+            1
+          ],
+          [
+            "/immobile-casa+indipendente-veneto-zimella-{id}/",
+            1
+          ]
+        ],
+        "cards": 0,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Attico.it Vendita Affitto Agenzie CERCA Immobili in vendita Ripeti ricerca in Affitti Imposta filtri CATEGORIA Residenziale Commerciale TIPOLOGIA (scelta multipla) Tutte Tutte Appartamento Attico Cantina/Solaio Casa Bi/Trifamiliare Casa indipendente Garage/Box auto Loft Mansarda Palazzo Rustico/Casale Stanza Terreno Terreno edificabile Villa Villet"
+      }
+    ]
+  },
+  {
+    "id": "casadaprivato",
+    "tries": [
+      {
+        "url": "https://www.casadaprivato.it/annunci-vendita/bologna",
+        "status": 404,
+        "title": "Pagina non trovata - CasaDaPrivato.it",
+        "total": null,
+        "patterns": [
+          [
+            "/pubblica-annuncio-residenziale",
+            1
+          ],
+          [
+            "/annunci-affitto",
+            1
+          ],
+          [
+            "/annunci-case-vacanza",
+            1
+          ],
+          [
+            "/annunci-stanze-posti-letto",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/comprare/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/affittare/",
+            1
+          ]
+        ],
+        "cards": 0,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": " Accedi Registrati Pagina non trovata! La pagina che stai cercando non è presente sul nostro sito o non è più disponibile. TORNA IN HOMEPAGE CasaDaPrivato.it Chi siamo Perché scegliere CasaDaPrivato Domande frequenti Le nostre recensioni Contatti Annunci e Ricerca Pubblica un annuncio Cerca case in vendita Cerca case in affitto Cerca case vacanze C"
+      },
+      {
+        "url": "https://www.casadaprivato.it/annunci-vendita/emilia-romagna/bologna",
+        "status": 404,
+        "title": "Pagina non trovata - CasaDaPrivato.it",
+        "total": null,
+        "patterns": [
+          [
+            "/pubblica-annuncio-residenziale",
+            1
+          ],
+          [
+            "/annunci-affitto",
+            1
+          ],
+          [
+            "/annunci-case-vacanza",
+            1
+          ],
+          [
+            "/annunci-stanze-posti-letto",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/vendere/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/comprare/",
+            1
+          ],
+          [
+            "https://www.casadaprivato.it/guida/casa/affittare/",
+            1
+          ]
+        ],
+        "cards": 0,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": " Accedi Registrati Pagina non trovata! La pagina che stai cercando non è presente sul nostro sito o non è più disponibile. TORNA IN HOMEPAGE CasaDaPrivato.it Chi siamo Perché scegliere CasaDaPrivato Domande frequenti Le nostre recensioni Contatti Annunci e Ricerca Pubblica un annuncio Cerca case in vendita Cerca case in affitto Cerca case vacanze C"
+      }
+    ]
+  },
+  {
+    "id": "bakeca",
+    "tries": [
+      {
+        "url": "https://www.bakeca.it/annunci/vendita-case/bologna/?price_max=160000",
+        "status": 200,
+        "title": "Vendita immobili, appartamenti e case in vendita Novembre 2026 su Bakeca",
+        "total": "73.855 annunci",
+        "patterns": [
+          [
+            "https://www.bakeca.it/annunci/vendita-case/",
+            4
+          ],
+          [
+            "https://www.bakeca.it/inserisci/annuncio/",
+            3
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/page/{id}/",
+            2
+          ],
+          [
+            "https://www.bakeca.it/annunci/case/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/inserzionistacase/privato/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/inserzionistacase/agenzia/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/monolocale/",
+            1
+          ],
+          [
+            "https://www.bakeca.it/annunci/vendita-case/tipoimmobile/bilocale/",
+            1
+          ]
+        ],
+        "cards": 1,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Preferiti Accedi Registrati INSERISCI ANNUNCIO Case in vendita CERCA Bakeca Italia Case Case in vendita Vendita appartamenti, immobili residenziali - Vendita case Dal più recente INSERZIONISTA Privato Agenzia TIPOLOGIA IMMOBILE Monolocale Bilocale Trilocale Quadrilocale Cinque e più locali Attico Mansarda Villa Altro PREZZO (EURO) Da 50.000 80.000 "
+      }
+    ]
+  },
+  {
+    "id": "remax",
+    "tries": [
+      {
+        "url": "https://www.remax.it/vendita-appartamenti/bologna",
+        "status": 200,
+        "title": "Appartamenti in vendita a Bologna | REMAX Italia",
+        "total": "6 annunci",
+        "patterns": [
+          [
+            "https://prestige.remax.it/vendita-appartamento/bologna/centro-{id}-{id}",
+            3
+          ],
+          [
+            "/vendita-appartamenti/bologna",
+            3
+          ],
+          [
+            "/vendita-case",
+            2
+          ],
+          [
+            "https://prestige.remax.it/vendita-appartamento/bologna/bolognina-corticella-pescarola-{id}-{id}",
+            1
+          ],
+          [
+            "https://prestige.remax.it/vendita-appartamento/bologna/barca-santa-viola-{id}-{id}",
+            1
+          ],
+          [
+            "https://famosa.remax.it/vendita-appartamento/bologna/san-donato-pilastro-{id}-{id}",
+            1
+          ],
+          [
+            "/vendita-case/bologna",
+            1
+          ],
+          [
+            "/vendita-ville/bologna",
+            1
+          ]
+        ],
+        "cards": 72,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Compra Appartamenti Bologna Ricerca AI Menu Fascia di prezzo Superficie Locali Piano Tutti i filtri 2 Salva ricerca Menu Compra Immobili Residenziali Immobili di lusso - Collection Immobili Commerciali Mutui Agenti REMAX Agenzie REMAX REMAX Europe REMAX nel Mondo Vendi Max Match Valuta il tuo immobile Perché noi La nostra Vision REMAX News Contatta"
+      }
+    ]
+  },
+  {
+    "id": "trovit",
+    "tries": [
+      {
+        "url": "https://case.trovit.it/case-bologna",
+        "status": 200,
+        "title": "634 immobili case in vendita a Bologna - Trovit",
+        "total": "634 case",
+        "patterns": [
+          [
+            "https://case.trovit.it/appartamento-bologna-provincia",
+            2
+          ],
+          [
+            "https://case.trovit.it/appartamento-bologna",
+            2
+          ],
+          [
+            "https://case.trovit.it/appartamento-viale-bologna",
+            2
+          ],
+          [
+            "https://case.trovit.it/appartamento-via-romagna-bologna",
+            2
+          ]
+        ],
+        "cards": 34,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Continua senza accettare → Con il tuo consenso, noi e i nostri 1041 partner utilizziamo cookie o tecnologie simili per conservare, consultare ed elaborare dati personali come la visita a questo sito web, gli indirizzi IP e gli identificatori legati ai cookie. Alcuni partner non chiedono il consenso al trattamento dei dati e ricorrono al loro legitt"
+      }
+    ]
+  },
+  {
+    "id": "caasa",
+    "tries": [
+      {
+        "url": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html",
+        "status": 200,
+        "title": "Migliaia di appartamenti in vendita a Bologna.",
+        "total": null,
+        "patterns": [
+          [
+            "/ClickTag",
+            160
+          ],
+          [
+            "/valutazione-immobiliare/BO/bologna/in-vendita.html",
+            24
+          ],
+          [
+            "/report",
+            22
+          ],
+          [
+            "/bologna/bologna/appartamento/in-vendita.html",
+            9
+          ],
+          [
+            "/emilia-romagna/bologna/bologna/vendita-{id}-opinione.html",
+            6
+          ],
+          [
+            "/emilia-romagna/bologna/bologna/vendita-{id}e{id}-opinione.html",
+            6
+          ],
+          [
+            "/emilia-romagna/bologna/bologna/vendita-{id}f{id}-opinione.html",
+            4
+          ],
+          [
+            "https://www.mercato-immobiliare.info/emilia-romagna/bologna/bologna.html",
+            3
+          ]
+        ],
+        "cards": 9,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Mercato Immobiliare Valutazionenew Ricerca HA TROVATO MIGLIAIA DI ANNUNCI PER: Appartamenti in vendita a Bologna MODIFICA QUESTA RICERCA Valore appartamenti in vendita a Bologna In tutta Bologna sono al momento presenti 5.134 offerte per appartamenti in vendita, ovvero quasi il 40% degli annunci di questa tipologia nell'intera città metropolitana. "
+      }
+    ]
+  },
+  {
+    "id": "flatsearch",
+    "tries": [
+      {
+        "url": "https://flatsearch.it/compra",
+        "status": 404,
+        "title": "Pagina non trovata | Flatsearch",
+        "total": null,
+        "patterns": [],
+        "cards": 8,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Home Chi Siamo Contattaci FAQ IT EN Accedi / Registrati 404 Ops! Sembra che tu ti sia perso. La pagina che stai cercando non è disponibile. Torna alla home per continuare a cercare la casa dei tuoi sogni. Torna alla home Hai bisogno di supporto? info@flatsearch.it Il tuo assistente AI per cercare casa DISPONIBILE Descrivi la casa che cerchi e l'ass"
+      },
+      {
+        "url": "https://flatsearch.it/ricerca?comune=bologna",
+        "status": 404,
+        "title": "Pagina non trovata | Flatsearch",
+        "total": null,
+        "patterns": [],
+        "cards": 8,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Home Chi Siamo Contattaci FAQ IT EN Accedi / Registrati 404 Ops! Sembra che tu ti sia perso. La pagina che stai cercando non è disponibile. Torna alla home per continuare a cercare la casa dei tuoi sogni. Torna alla home Hai bisogno di supporto? info@flatsearch.it Il tuo assistente AI per cercare casa DISPONIBILE Descrivi la casa che cerchi e l'ass"
+      }
+    ]
+  },
+  {
+    "id": "intesasanpaolo",
+    "tries": [
+      {
+        "url": "https://www.proprieta.intesasanpaolo.com/immobili?provincia=BO",
+        "status": 200,
+        "title": "Intesa Sanpaolo Proprietà",
+        "total": null,
+        "patterns": [
+          [
+            "https://www.proprieta.intesasanpaolo.com/immobili",
+            2
+          ]
+        ],
+        "cards": 3,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "CHI SIAMO VETRINA CONTATTI MODIFICA I CRITERI DI RICERCA Affina la tua ricerca PROVINCIA Seleziona la provincia COMUNE Seleziona la città TIPOLOGIA Qualsiasi PREZZO € 5.000 € 2.000.000 0€ 500.000€ 1ML€ 1.500.000€ 2ML€+ METRI 8m² 500m² 0 250mq 500mq+ STATO DELL'IMMOBILE Qualsiasi stato MOSTRA I RISULTATI (0) Nessun immobile corrisponde ai criteri di"
+      }
+    ]
+  },
+  {
+    "id": "prelios",
+    "tries": [
+      {
+        "url": "https://prelios.com/it/societa-operative/prelios-agency/immobili",
+        "status": 200,
+        "title": "Immobili | Prelios Corporate Website",
+        "total": null,
+        "patterns": [
+          [
+            "/it/societa-operative/prelios-agency/immobili",
+            4
+          ],
+          [
+            "/it/societa-operative/prelios-agency/immobili/track-record",
+            2
+          ]
+        ],
+        "cards": 109,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Salta al contenuto principale EN Form di ricerca Cerca Gruppo Governance Media Carriere PRELIOS CREDIT SERVICING PRELIOS SGR PRELIOS INTEGRA PRELIOS VALUATIONS PRELIOS AGENCY PRELIOS BLINKS PLATFORM ARECNEPRIX STAI CERCANDO UN IMMOBILE? SCOPRI LA NUOVA VETRINA DI TROVA LA SOLUZIONE GIUSTA PER TE Contattaci © 2026 Prelios s.p.a. P.iva 02473170153 Di"
+      }
+    ]
+  },
+  {
+    "id": "dovalue",
+    "tries": [
+      {
+        "url": "https://www.dovalue.it/it/real-estate",
+        "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.dovalue.it/it/real-estate\nCall log:\n\u001b[2m  - navigating to \"https://www.dovalue.it/it/real-estate\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "blocked": false
+      },
+      {
+        "url": "https://realestate.dovalue.it/",
+        "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://realestate.dovalue.it/\nCall log:\n\u001b[2m  - navigating to \"https://realestate.dovalue.it/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "blocked": false
+      }
+    ]
+  },
+  {
+    "id": "agenziademanio",
+    "tries": [
+      {
+        "url": "https://www.agenziademanio.it/opencms/it/gare-aste/immobiliare/",
+        "status": 200,
+        "title": "Agenzia del Demanio - Immobiliare",
+        "total": "3116risultati",
+        "patterns": [
+          [
+            "/it/gare-aste/immobiliare/",
+            2
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-vendita-di-n.-{id}-lotti-di-beni-immobili-siti-nella-Regione-Emilia-Romagna",
+            2
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-locazione-di-un-terreno-di-{id}-mq-sito-nel-Comune-di-Reggio-Calabria",
+            2
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-gara-per-la-locazione-di-un-terreno-sito-nel-Comune-di-Campobasso",
+            1
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-locazione-area-a-resede-sita-nel-Comune-di-Viareggio-LU",
+            1
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-vendita-di-quota-parte-di-un-bene-immobile-sito-nel-Comune-di-Torino",
+            1
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-locazione-di-un-terreno-di-{id}.{id}-mq-sito-nel-Comune-di-SantIlario-dello-Ionio-RC",
+            1
+          ],
+          [
+            "/it/gare-aste/immobiliare/gara/Avviso-di-vendita-di-bene-immobile-sito-nel-Comune-di-Settimo-Torinese-TO",
+            1
+          ]
+        ],
+        "cards": 128,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Agenzia del Demanio - Menu di accesso rapido Vai al menu principale Vai al campo cerca nel sito Contenuti della Pagina Vai al contenuto del footer Torna in Home page - Access key:H Back to top - Access key: 0 Ministero dell'Economia e delle Finanze Agenzia del Demanio Agenzia del Demanio Seguici su: Cerca nel sito: Cerca Menu principale Agenzia Sos"
+      }
+    ]
+  },
+  {
+    "id": "invimit",
+    "tries": [
+      {
+        "url": "https://vetrinaimmobili.invimit.it/",
+        "status": 200,
+        "title": "Home Page - Vetrina Immobili",
+        "total": null,
+        "patterns": [
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/Allegato-{id}-%E{id}%{id}%{id}-Standard-offerta-vincolante.doc",
+            6
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/Allegato-{id}-%E{id}%{id}%{id}-Modulo-identificazione-e-DD-acquirenti.docx",
+            6
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/Allegato-{id}-%E{id}%{id}%{id}-Dichiarazione-conflitti.docx",
+            6
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/Allegato-{id}-%E{id}%{id}%{id}-Dichiarazione-DPR-{id}.docx",
+            6
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/Allegato-{id}-%E{id}%{id}%{id}-Informativa-Privacy-Acquirenti.doc",
+            6
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/",
+            3
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/F{id}-{id}-FI-{id}_FIRENZE-Via-del-Romito-{id}.pdf",
+            3
+          ],
+          [
+            "https://vetrinaimmobili.invimit.it/wp-content/uploads/{id}/{id}/PO-{id}.{id}-Regolamento-Confronto-Competitivo-vendite.pdf",
+            1
+          ]
+        ],
+        "cards": 3,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "ELENCO VETRINA IMMOBILI Siamo impegnati nella valorizzazione del patrimonio immobiliare pubblico, offrendo un’ampia selezione di unità immobiliari. In questa sezione puoi utilizzare la tabella per localizzare rapidamente l’immobile di interesse, e consultare la relativa scheda per approfondire le caratteristiche tecniche, finanziarie e le modalità "
+      }
+    ]
+  },
+  {
+    "id": "casait",
+    "tries": [
+      {
+        "url": "https://www.casa.it/vendita/residenziale/bologna?prezzoMax=160000",
+        "status": 200,
+        "title": "Case in vendita a Bologna - Casa.it",
+        "total": null,
+        "patterns": [
+          [
+            "/immobili/{id}/",
+            292
+          ],
+          [
+            "/immobili/{id}/#{id}",
+            20
+          ],
+          [
+            "/vendita/residenziale/bologna",
+            13
+          ],
+          [
+            "/agenzie/casabo-immobiliare-{id}/",
+            4
+          ],
+          [
+            "/agenzie/prisma-immobiliare-srl-{id}/",
+            4
+          ],
+          [
+            "https://www.casa.it/liste/vendita/residenziale/bologna-provincia/comuni/",
+            1
+          ],
+          [
+            "https://www.casa.it/vendita/residenziale/bologna/",
+            1
+          ],
+          [
+            "/vendita/residenziale/bologna/barca-santa-viola/",
+            1
+          ]
+        ],
+        "cards": 1418,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Continua senza accettare → In Casa.it utilizziamo cookie e tecnologie simili, nostri e di terze parti (vedi i nostri 14 fornitori), per offrirti un'esperienza personalizzata. Facendo ciò, elaboriamo dati personali come identificatori univoci e dati di navigazione. Puoi accettare o rifiutare i cookie tramite i pulsanti corrispondenti. Puoi anche sce"
+      }
+    ]
+  },
+  {
+    "id": "tecnocasa",
+    "tries": [
+      {
+        "url": "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+        "status": 200,
+        "title": "Annunci case e appartamenti in vendita e in affitto - Tecnocasa.it",
+        "total": "168 immobili",
+        "patterns": [
+          [
+            "https://www.tecnocasa.it/vendita/appartamenti/bologna/bologna/{id}.html",
+            14
+          ],
+          [
+            "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html/pag-{id}",
+            8
+          ],
+          [
+            "https://www.tecnocasa.it/annunci+commerciali.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/vendo-immobile.html",
+            2
+          ],
+          [
+            "https://www.tecnocasa.it/vendita-immobili/bologna-provincia/comuni.html",
+            1
+          ],
+          [
+            "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna.html",
+            1
+          ],
+          [
+            "https://www.tecnocasa.it/vendita/ville/bologna/bologna/{id}.html",
+            1
+          ],
+          [
+            "https://www.tecnocasa.it/annunci/immobili/emilia-romagna/bologna/bologna.html",
+            1
+          ]
+        ],
+        "cards": 214,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": " Immobili per l'impresa Vuoi un mutuo? Vendo immobile Cerca agenzia Opt out Accedi HOME IMMOBILI PER L'IMPRESA VUOI UN MUTUO? VENDO IMMOBILE CERCA AGENZIA OPT OUT ACCEDI Provincia, comune, zona, riferimento Bologna (BO) Scegli zone Vendita Tipologia Prezzo Superficie Altri filtri SALVA RICERCA Home Case in vendita Case Bologna Bologna Case in vendi"
+      }
+    ]
+  },
+  {
+    "id": "tempocasa",
+    "tries": [
+      {
+        "url": "https://tempocasa.it/it/vendita/bologna/bologna",
+        "status": 200,
+        "title": "Case in Vendita a Bologna | Tempocasa",
+        "total": "346 case",
+        "patterns": [
+          [
+            "https://www.addtoany.com/share#url=https%{id}A%{id}F%{id}Ftempocasa.it%{id}Fit%{id}Fvendita%{id}Fbologna%{id}Fbologna&title=Case%{id}in%{id}Vendita%{id}a%{id}Bologna%{id}%{id}C%{id}Tempocasa",
+            12
+          ],
+          [
+            "/it/vendita/bologna/bologna/quadrilocale/{id}",
+            10
+          ],
+          [
+            "/itit/vendita/bologna/bologna/quadrilocale/{id}",
+            5
+          ],
+          [
+            "/it/vendita/bologna/bologna/{id}-locali/{id}",
+            4
+          ],
+          [
+            "/it/vendita/bologna/bologna/trilocale/{id}",
+            4
+          ],
+          [
+            "https://tempocasa.it/it/agenzie-immobiliari",
+            2
+          ],
+          [
+            "/it/vendita/bologna/bologna/san-donato",
+            2
+          ],
+          [
+            "/itit/vendita/bologna/bologna/{id}-locali/{id}",
+            2
+          ]
+        ],
+        "cards": 90,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Cerca Casa Valuta Casa Agenzie Calcola Mutuo Magazine Lavora con noi Contatti Prezzo Superficie Tipologia Locali Bagni Piano Ricerca Avanzata Aree Esterne Pertinenze Clima e Riscaldamento Stato Immobile Efficienza Energetica Virtual Tour Mostra Agenzie Home |Vendita |Immobili In Provincia Di Bologna |Immobili A Bologna 346 case in vendita a Bologna"
+      }
+    ]
+  },
+  {
+    "id": "mitula",
+    "tries": [
+      {
+        "url": "https://immobiliare.mitula.it/appartamento-bologna",
+        "status": 200,
+        "title": "5.800 Appartamenti in vendita a Bologna - Mitula Case",
+        "total": "2741 risultati",
+        "patterns": [
+          [
+            "/appartamento-bologna-{id}-euro",
+            8
+          ],
+          [
+            "https://immobiliare.mitula.it/appartamento-bologna",
+            6
+          ],
+          [
+            "https://immobiliare.mitula.it/favorites",
+            2
+          ],
+          [
+            "/appartamento-bologna-barbiano",
+            2
+          ],
+          [
+            "/appartamento-bologna-fiera-district",
+            2
+          ],
+          [
+            "/appartamento-bologna-casaralta",
+            2
+          ],
+          [
+            "/appartamento-bologna-cirenaica",
+            2
+          ],
+          [
+            "/appartamento-bologna-beverara",
+            2
+          ]
+        ],
+        "cards": 783,
+        "nextData": false,
+        "nuxt": false,
+        "snippet": "Preferiti Gestire notifiche Prezzo Più filtri Salva ricerca Appartamenti in vendita a Bologna 5.800 proprietà disponibili Ordinare: In ordine di rilevanza 4 foto Nuovo Appartamento 160.000 € Foscherara, Bologna 2 Locali 1 Bagno 61 m² Giardino 1 giorno, 1 ora fa in Immobiliare.it 4 foto Nuovo Appartamento 123.000 € Belcantone, Bologna 4 Locali 1 Bag"
+      }
+    ]
+  }
+]

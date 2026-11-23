@@ -1,0 +1,34 @@
+{
+  "id": "caasa",
+  "name": "Caasa",
+  "category": "aggregatore",
+  "probedAt": "2026-11-21T00:00:00.000Z",
+  "steps": [
+    {
+      "step": "listing",
+      "status": "ok",
+      "finalUrl": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?euro-a=160000&mq-da=40",
+      "url": "https://www.caasa.it/bologna/bologna/appartamento/in-vendita.html?euro-a=160000&mq-da=40",
+      "title": "Appartamenti di superficie maggiore di 40mq in vendita a meno di 160000? a Bologna",
+      "hasNextData": false,
+      "hasNuxt": false,
+      "jsonLdTypes": [],
+      "cardSelectors": [
+        ".result-item",
+        "[id^=\"ID_\"]",
+        "a[href*=\"ClickTag\"]"
+      ],
+      "topLinkPatterns": [
+        "ClickTag\\?url=([^&]+)"
+      ],
+      "sampleLinks": [
+        "https://www.immobiliare.it/annunci/134596839/",
+        "https://www.oikia.it/annunci/3213935/",
+        "https://www.trovacasa.it/annunci/bo-tc-7055-74185543"
+      ],
+      "blocked": false,
+      "loginWall": false,
+      "note": "Filtri nativi query string VERIFICATI: ?euro-a=160000&mq-da=40 (euro-a generato dal form refine; mq-da dedotto e confermato da h1 'superficie maggiore di 40mq ... meno di 160000?'). 13 pagine vs listing non filtrata molto piu ampia; pag1 e pag2: 0 prezzi >160000, mq minimo 40. IMPORTANTE: con filtri query la paginazione diventa &page=N sulla URL .html (NON page-N.html che da 404). Adapter deve cambiare schema paginazione. Prezzi card pattern 'NNN.NNN ? |', mq pattern 'm? NN'. Esclusione aste disponibile nel form (radio Escludi) ma non testata via URL."
+    }
+  ]
+}

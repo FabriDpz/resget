@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar Immobiliare — Analisi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">🏠 Radar<span>analisi immobiliare</span></div>
+    <nav id="portal-nav"></nav>
+    <div class="sidebar-footer">
+      <div id="meta"></div>
+      <div class="disclaimer">Margini e punteggi sono <strong>stime indicative</strong> (parametri in flip-config.mjs), non perizie.</div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <h1 id="view-title">Dashboard</h1>
+      <div class="controls">
+        <input type="search" id="q" placeholder="Cerca (zona, titolo, ID, agenzia…)">
+        <select id="f-zona"><option value="">Tutte le zone</option></select>
+        <select id="f-stato"><option value="">Tutti gli stati</option></select>
+        <select id="f-extra" class="hidden"></select>
+        <button id="btn-csv" type="button" title="Esporta la vista corrente (righe filtrate e ordinate) in CSV">⬇ CSV</button>
+      </div>
+    </header>
+    <section id="dashboard" class="hidden"></section>
+    <section id="table-wrap">
+      <div id="count" class="count"></div>
+      <div class="table-scroll"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
