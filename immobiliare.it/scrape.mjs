@@ -16,6 +16,7 @@ import { MIN_POI_RANK } from './poi-config.mjs';
 import { analyzeFlip, loadPriceHistory, updatePriceHistory } from './flip.mjs';
 import { zonaEsclusa, comuneContraddetto } from '../core/geo.mjs';
 import { detectAffitto, detectNudaProprieta } from '../core/filters.mjs';
+import { recordBlock, recordSuccess, inCooldown } from '../core/health.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROFILE_DIR = path.join(__dirname, 'profile');
@@ -63,6 +64,9 @@ const CUSTOM_URL = getOpt('--url', null);
 const RESUME_FILE = getOpt('--resume', null); // JSON di un run precedente: salta gli annunci già raccolti
 const REBUILD_SITE = hasFlag('--rebuild-site') || hasFlag('--sort-only'); // rigenera il sito da un JSON (--resume) senza browser (--sort-only: alias storico)
 const REAPPLY_FILTERS = hasFlag('--reapply-filters'); // riapplica i filtri ai dati del JSON (--resume), senza browser
+const FORCE = hasFlag('--force'); // ignora il cooldown 24h (solo dopo verifica manuale)
+// Id nel registro salute/run-all: cartella immobiliare.it, id "immobiliare".
+const HEALTH_ID = 'immobiliare';
 const ENRICH = hasFlag('--enrich'); // aggiunge le coordinate agli annunci del JSON (--resume) che ne sono privi
 const MAX_KM = parseFloat(getOpt('--max-km', '3')); // distanza max (linea d'aria) dal centro abitato più vicino
 const MIN_POI = parseFloat(getOpt('--min-poi', String(MIN_POI_RANK))); // rank POI minimo (se il campo poi è presente)
@@ -651,6 +655,15 @@ async function main() {
     return;
   }
 
+  // Cooldown anti-ban (policy D4, come core/runner.mjs): dopo un blocco si
+  // salta per 24h. Exit 3 = bloccato/saltato (distinto da errore), --force ignora.
+  const cd = inCooldown(HEALTH_ID);
+  if (cd && !FORCE) {
+    log(`In cooldown fino a ${cd.until} (${cd.hoursLeft}h residue) — ultimo blocco: ${cd.reason}. Salto (usa --force per ignorare).`);
+    process.exitCode = 3;
+    return;
+  }
+
   let context = await chromium.launchPersistentContext(PROFILE_DIR, {
     headless: HEADLESS,
     locale: 'it-IT',
@@ -724,7 +737,12 @@ async function main() {
             log('  → coordinate non trovate');
           }
         } catch (e) {
-          if (e instanceof BlockedError) { log(`STOP: ${e.message}`); break; }
+          if (e instanceof BlockedError) {
+            log(`STOP: ${e.message}. Nessun aggiramento.`);
+            recordBlock(HEALTH_ID, e.message);
+            process.exitCode = 3;
+            break;
+          }
           log(`  Errore: ${e.message}`);
         }
         fs.writeFileSync(RESUME_FILE, JSON.stringify(ads, null, 2)); // backup incrementale
@@ -748,7 +766,9 @@ async function main() {
   let browserClosed = false;
   context.on('close', () => { browserClosed = true; });
   page.on('close', () => { browserClosed = true; });
-  let blocked = false;
+  let blocked = null; // messaggio del blocco (null = nessun blocco)
+  const startedAt = Date.now();
+  const adsAtStart = ads.length;
   const save = () => {
     runFlipAnalysis(ads);
     fs.writeFileSync(jsonPath, JSON.stringify(ads, null, 2));
@@ -828,8 +848,9 @@ async function main() {
     }
   } catch (e) {
     if (e instanceof BlockedError) {
-      blocked = true;
-      log(`STOP: ${e.message}. Nessun aggiramento delle protezioni: salvo i dati parziali.`);
+      blocked = e.message;
+      recordBlock(HEALTH_ID, e.message);
+      log(`STOP: ${e.message}. Nessun aggiramento delle protezioni: salvo i dati parziali. Cooldown 24h registrato.`);
     } else {
       log('Errore inatteso:', e);
     }
@@ -846,7 +867,27 @@ async function main() {
       log('Nessun dato raccolto.');
     }
     try { await context.close(); } catch { /* già chiuso */ }
-    if (blocked) process.exitCode = 2;
+    // Run completato senza blocchi (nemmeno browser chiuso a metà): azzera il
+    // cooldown. Su blocco il cooldown è già stato registrato nel catch.
+    if (!blocked && !browserClosed) recordSuccess(HEALTH_ID);
+    // Summary del run (miglioria D): run-all lo legge per il report globale.
+    try {
+      const summary = {
+        id: HEALTH_ID,
+        startedAt: new Date(startedAt).toISOString(),
+        durationMin: +((Date.now() - startedAt) / 60000).toFixed(1),
+        ads: ads.length,
+        newAds: ads.length - adsAtStart,
+        big: ads.filter((a) => a.esito === 'Selezionato').length,
+        sma: ads.filter((a) => a.esito !== 'Selezionato' && a.esitoSma === 'Selezionato').length,
+        resumed: adsAtStart,
+        failed: 0,
+        blocked,
+        json: path.basename(jsonPath),
+      };
+      fs.writeFileSync(path.join(OUTPUT_DIR, `run-summary-${stamp}.json`), JSON.stringify(summary, null, 2));
+    } catch (e) { log(`Summary non scritto: ${e.message}`); }
+    if (blocked) process.exitCode = 3;
   }
 }
 

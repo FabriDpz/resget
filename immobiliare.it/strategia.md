@@ -8,6 +8,15 @@
 - Ricerca server-side con superset (≤160k, ≥55m², ≥1 locale) per comune (Bologna, Pianoro, San Lazzaro di Savena).
 - Browser Playwright headed, profilo persistente, pause umane, scroll graduale. Cookie banner gestito.
 - CAPTCHA/403/429 → STOP graceful, salvataggio parziale, nessun aggiramento.
+- **Cooldown D4 allineato al core (23/11/2026)**: lo scraper legacy ora usa
+  `core/health.mjs` con id `immobiliare` (la cartella è `immobiliare.it`).
+  Un blocco registra cooldown fisso 24h e esce con **exit 3** (prima era exit 2
+  senza registrazione → run-all lo riprovava subito, contro la policy D4).
+  Run pulito → `recordSuccess` azzera il cooldown. Scritto anche
+  `output/run-summary-<stamp>.json` per il report di run-all. `--force` ignora
+  il cooldown (solo dopo verifica manuale).
+- Storico: 403 al 15° annuncio su 33 nel run del 23/11 12:45 (14 annunci parziali
+  salvati, 2 BIG); blocco registrato postumo, cooldown fino al 24/11 ~14:51 UTC.
 
 ## Dati (dettaglio)
 - JSON-LD + DOM: prezzo, mq, locali, **camere verificate su planimetria**, bagni, piano, stato, APE, coordinate, agenzia, foto, date pubblicazione/modifica.
