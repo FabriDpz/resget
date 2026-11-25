@@ -55,6 +55,13 @@ ai-config.json
 
 # Sito generato da build-site.mjs (il sorgente è site-src/)
 site/
+
+# Bundle di produzione Cloudflare (generato da scripts/build-cf.mjs)
+dist-cf/
+data.mjs
+.wrangler/
+# Secrets locali per wrangler pages dev (mai su git)
+.dev.vars
 immobiliare.it/site/
 
 # File di sistema/editor

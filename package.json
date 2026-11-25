@@ -12,6 +12,9 @@
     "probe:save": "node core/probe-save.mjs",
     "probe:verify": "node core/probe-verify.mjs",
     "build": "node build-site.mjs",
+    "build:cf": "node scripts/build-cf.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "cf:dev": "node scripts/build-cf.mjs --skip-build && wrangler pages dev dist-cf",
     "global": "node build-site.mjs",
     "login": "node login-all.mjs",
     "login:check": "node login-all.mjs --check",
@@ -19,5 +22,12 @@
   },
   "dependencies": {
     "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.168.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261123.1": true
   }
 }

@@ -1,0 +1,20 @@
+# Cloudflare Pages — produzione remota del sito radar.
+# Il radar (Playwright) gira SOLO in locale su questa macchina; qui si pubblica
+# il risultato: npm run deploy = build sito + bundle + wrangler pages deploy.
+#
+# Secrets (MAI qui, si impostano una volta con wrangler pages secret put):
+#   AI_API_KEY      → chiave Alibaba token-plan (la stessa di ~/.bailian)
+#   CHAT_PASSWORD   → password della chat online
+# Variabili non segrete: vedi [vars].
+
+name = "radar-flip"
+pages_build_output_dir = "dist-cf"
+compatibility_date = "2026-11-01"
+# Account personale dalpozzo.business@gmail.com (NON M.diaco@alimentiamolasalute.org).
+# Pages non accetta account_id qui: lo imposto via env CLOUDFLARE_ACCOUNT_ID
+# negli script (scripts/deploy.mjs). Id pubblico, non un segreto.
+
+[vars]
+AI_PROVIDER = "token-plan"
+AI_MODEL = "qwen3.8-flash"
+CHAT_MAX_CALLS_PER_HOUR = "60"

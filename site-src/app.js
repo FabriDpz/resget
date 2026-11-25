@@ -41,7 +41,7 @@
     return;
   }
 
-  const state = { portal: 'global', view: 'dashboard', sortKey: null, sortDir: 1, expanded: null, chatFilter: null };
+  const state = { portal: 'global', view: 'dashboard', sortKey: null, sortDir: 1, expanded: null, chatFilter: null, chatRank: null, extra: '' };
 
   const isGlobal = () => state.portal === 'global';
   const rawAds = () => isGlobal() ? (D.global?.ads || []) : (D.portals.find((p) => p.id === state.portal)?.ads || []);
@@ -268,6 +268,9 @@
       state.view = b.dataset.view;
       state.sortKey = null; state.expanded = null;
       state.chatFilter = null; state.chatRank = null;
+      // BIG/SMA dalla navigazione: mostra subito i Selezionati (i "tutti"
+      // restano a un clic dal filtro Esito in alto).
+      state.extra = (state.view === 'big' || state.view === 'sma') ? 'Selezionato' : '';
       $('#q').value = '';
       closeNav();
       render();
@@ -293,8 +296,7 @@
     if (fz) rows = rows.filter((a) => subzona(a.zona) === fz);
     const fs = $('#f-stato').value;
     if (fs) rows = rows.filter((a) => (a.stato || 'n/d') === fs);
-    const fe = $('#f-extra');
-    if (v.extra && !fe.classList.contains('hidden') && fe.value) rows = rows.filter((a) => v.extra.get(a) === fe.value);
+    if (v.extra && state.extra) rows = rows.filter((a) => v.extra.get(a) === state.extra);
     // Filtro applicato dalla chat (AND con i filtri manuali della vista).
     if (state.chatFilter) rows = rows.filter((a) => chatMatch(a, state.chatFilter));
     // Classifica chat: ordine esplicito per id (gli annunci fuori lista in coda).
@@ -516,6 +518,8 @@
       state.sortKey = null;
       state.chatFilter = null; state.chatRank = null;
       state.expanded = el.dataset.id || null;
+      // I KPI "Selezionati BIG/SMA" aprono la vista già filtrata sui selezionati.
+      state.extra = (state.view === 'big' || state.view === 'sma') ? 'Selezionato' : '';
       render();
     }));
     $('#dashboard').querySelectorAll('[data-portal]').forEach((el) => el.addEventListener('click', () => {
@@ -559,9 +563,129 @@
     }
   }
 
+  // ------------------------------------------------------------- routing
+  // Ogni vista ha un URL condivisibile/preferibile: #/<portale>/<vista>?params
+  // (hash routing: niente regole server, funziona su Pages, in locale e file://).
+  // Params: q, zona, stato, extra, sort=key:dir, open=<id dettaglio>,
+  // cf=<filtro chat JSON>, cr=<ids classifica chat>. Push su cambio vista,
+  // replace su filtri/ordinamenti (back/forward tra viste, non tra keystroke).
+  let applyingHash = false;
+  let lastMainKey = null;
+  let lastHash = null;
+  let hashTimer = null;
+  let pendingSelects = null;
+
+  function stateToHash() {
+    const p = new URLSearchParams();
+    const v = VIEWS[state.view];
+    if (v && v.rows) {
+      const q = $('#q').value.trim(); if (q) p.set('q', q);
+      const fz = $('#f-zona').value; if (fz) p.set('zona', fz);
+      const fs = $('#f-stato').value; if (fs) p.set('stato', fs);
+      if (state.extra) p.set('extra', state.extra);
+      if (state.sortKey) p.set('sort', `${state.sortKey}:${state.sortDir}`);
+      if (state.expanded != null) p.set('open', String(state.expanded));
+      if (state.chatFilter) p.set('cf', JSON.stringify(state.chatFilter));
+      if (state.chatRank) p.set('cr', [...state.chatRank.keys()].join(','));
+    }
+    const qs = p.toString();
+    return `#/${encodeURIComponent(state.portal)}/${encodeURIComponent(state.view)}${qs ? '?' + qs : ''}`;
+  }
+
+  function knownPortal(id) {
+    return id === 'global' || id === 'aste' || id === 'differiti' || (D.portals || []).some((x) => x.id === id);
+  }
+
+  function applyHash(hash) {
+    const m = /^#\/([^/?]+)\/([^/?]+)(?:\?(.*))?$/.exec(hash || '');
+    if (!m) return false;
+    let portal, view;
+    try { portal = decodeURIComponent(m[1]); view = decodeURIComponent(m[2]); } catch { return false; }
+    if (!knownPortal(portal)) return false;
+    const infoOnly = portal === 'aste' || portal === 'differiti';
+    if (infoOnly ? view !== 'info' : !(view in VIEWS)) return false;
+    const p = new URLSearchParams(m[3] || '');
+    state.portal = portal;
+    state.view = view;
+    state.sortKey = null; state.sortDir = 1;
+    state.expanded = null; state.chatFilter = null; state.chatRank = null;
+    state.extra = p.get('extra') || '';
+    // I select vengono ripopolati da render() (keep=true): il valore nell'URL
+    // va impostato DOPO, o fillSelect lo scarterebbe come opzione inesistente.
+    pendingSelects = { q: p.get('q') || '', zona: p.get('zona') || '', stato: p.get('stato') || '' };
+    const sort = (p.get('sort') || '').split(':');
+    if (sort[0]) { state.sortKey = sort[0]; state.sortDir = sort[1] === '-1' ? -1 : 1; }
+    if (p.get('open')) state.expanded = p.get('open');
+    try { const cf = JSON.parse(p.get('cf') || 'null'); if (cf && typeof cf === 'object') state.chatFilter = cf; } catch { /* filtro chat malformato: ignora */ }
+    const cr = (p.get('cr') || '').split(',').filter(Boolean);
+    if (cr.length) state.chatRank = new Map(cr.map((id, i) => [id, i]));
+    applyingHash = true;
+    try {
+      render();
+      if (pendingSelects) {
+        $('#q').value = pendingSelects.q;
+        if ([...$('#f-zona').options].some((o) => o.value === pendingSelects.zona)) $('#f-zona').value = pendingSelects.zona;
+        if ([...$('#f-stato').options].some((o) => o.value === pendingSelects.stato)) $('#f-stato').value = pendingSelects.stato;
+        pendingSelects = null;
+        render(); // ri-render con i filtri dell'URL davvero applicati
+      }
+    } finally { applyingHash = false; pendingSelects = null; }
+    lastHash = location.hash;
+    lastMainKey = `${state.portal}/${state.view}`;
+    return true;
+  }
+
+  function syncHash() {
+    if (applyingHash) return;
+    const hash = stateToHash();
+    if (hash === location.hash) { lastMainKey = `${state.portal}/${state.view}`; lastHash = hash; return; }
+    const mainKey = `${state.portal}/${state.view}`;
+    const write = () => {
+      try {
+        if (lastMainKey !== null && mainKey !== lastMainKey) history.pushState(null, '', hash);
+        else history.replaceState(null, '', hash);
+      } catch { location.hash = hash; }
+      lastMainKey = mainKey;
+      lastHash = hash;
+    };
+    // Digitazione nella ricerca: debounce per non allagare la history.
+    clearTimeout(hashTimer);
+    if (lastMainKey === mainKey) hashTimer = setTimeout(write, 250);
+    else write();
+  }
+
+  function onHashNav() {
+    clearTimeout(hashTimer);
+    if (location.hash === lastHash) return;
+    if (!applyHash(location.hash)) {
+      // Hash sconosciuto (preferito vecchio con portale/vista rimossi): dashboard.
+      if (location.hash) {
+        state.portal = 'global'; state.view = 'dashboard';
+        state.sortKey = null; state.expanded = null;
+        state.chatFilter = null; state.chatRank = null; state.extra = '';
+        $('#q').value = ''; $('#f-zona').value = ''; $('#f-stato').value = '';
+        applyingHash = true;
+        try { render(); } finally { applyingHash = false; }
+        lastHash = location.hash;
+        lastMainKey = `${state.portal}/${state.view}`;
+      } else {
+        // Hash vuoto (back fino all'ingresso senza hash): ripristina la vista
+        // corrente e riscrivi l'hash, così la history resta coerente.
+        applyingHash = true;
+        try { render(); } finally { applyingHash = false; }
+        try { history.replaceState(null, '', stateToHash()); } catch { /* file:// */ }
+        lastHash = location.hash;
+        lastMainKey = `${state.portal}/${state.view}`;
+      }
+    }
+  }
+  window.addEventListener('popstate', onHashNav);
+  window.addEventListener('hashchange', onHashNav);
+
   // ------------------------------------------------------------- render
   function render() {
     renderNav();
+    syncHash();
     const infoSec = $('#info-section');
     if (state.view === 'info') { renderInfo(); return; }
     if (infoSec) infoSec.classList.add('hidden');
@@ -579,13 +703,14 @@
     const fe = $('#f-extra');
     if (v.extra) {
       fe.classList.remove('hidden');
-      const cur = fe.value;
+      if (!v.extra.options.includes(state.extra)) state.extra = '';
       fe.innerHTML = `<option value="">${esc(v.extra.label)}: tutti</option>` +
         v.extra.options.map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('');
-      fe.value = v.extra.options.includes(cur) ? cur : '';
+      fe.value = state.extra;
     } else {
       fe.classList.add('hidden');
       fe.value = '';
+      state.extra = '';
     }
 
     const rows = currentRows();
@@ -652,8 +777,18 @@
   }
   $('#btn-csv').addEventListener('click', exportCsv);
 
+  // Selettore tema (5 palette chiaro→scuro, persistite da theme.js).
+  const temaSel = $('#f-tema');
+  if (window.RADAR_THEMES && temaSel) {
+    temaSel.innerHTML = window.RADAR_THEMES.list
+      .map((t) => `<option value="${t.id}">${t.icon} ${t.label}</option>`).join('');
+    temaSel.value = window.RADAR_THEMES.current();
+    temaSel.addEventListener('change', () => window.RADAR_THEMES.apply(temaSel.value));
+  }
+
   $('#q').addEventListener('input', () => render());
-  for (const id of ['#f-zona', '#f-stato', '#f-extra']) $(id).addEventListener('change', () => render());
+  for (const id of ['#f-zona', '#f-stato']) $(id).addEventListener('change', () => render());
+  $('#f-extra').addEventListener('change', () => { state.extra = $('#f-extra').value; render(); });
 
   // ------------------------------------------------------------- drawer mobile
   function closeNav() {
@@ -703,7 +838,15 @@
     return true;
   }
 
-  const chat = { status: null, history: [], lastResult: null, busy: false };
+  const chat = { status: null, history: [], lastResult: null, busy: false, auth: sessionStorage.getItem('radar-chat-auth') || '' };
+  // In produzione (Cloudflare) l'INTERO sito è dietro password (cookie firmato
+  // impostato dalla pagina di login): se sei qui, il gate è già passato.
+  // L'header X-Chat-Auth resta per compatibilità; in locale è innocuo.
+  const chatHeaders = () => {
+    const h = { 'Content-Type': 'application/json' };
+    if (chat.auth) h['X-Chat-Auth'] = chat.auth;
+    return h;
+  };
   try {
     const saved = JSON.parse(sessionStorage.getItem('radar-chat') || 'null');
     if (saved && Array.isArray(saved.history)) { chat.history = saved.history.slice(-12); chat.lastResult = saved.lastResult || null; }
@@ -827,13 +970,19 @@
     try {
       const resp = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: chatHeaders(),
         body: JSON.stringify({ messages: chat.history.slice(-12), lastResult: chat.lastResult }),
         signal: chat.ctrl.signal,
       });
       const res = await resp.json();
       wait.remove();
-      if (!resp.ok) {
+      if (resp.status === 401) {
+        chat.history.pop();
+        chat.auth = '';
+        sessionStorage.removeItem('radar-chat-auth');
+        chatMsg('err', 'Accesso scaduto: ricarica la pagina e reinserisci la password del sito.');
+      } else if (!resp.ok) {
+        chat.history.pop();
         chatMsg('err', res.error || `Errore ${resp.status}`);
       } else {
         renderChatResult(res);
@@ -931,8 +1080,15 @@
   async function initChat() {
     const chips = ['I 5 migliori per ROI', 'Trilocali a San Lazzaro sotto 130k', 'I più negoziabili', 'Novità di oggi'];
     try {
-      const resp = await fetch('/api/chat/status');
-      chat.status = await resp.json();
+      let resp = await fetch('/api/chat/status', { headers: chatHeaders() });
+      // 401 = cookie di sito scaduto o assente: il gate ora copre tutto il sito,
+      // quindi basta ricaricare la pagina per riavere la pagina di login.
+      if (resp.status === 401) {
+        chat.auth = '';
+        sessionStorage.removeItem('radar-chat-auth');
+        chat.status = { enabled: false, authErrata: true };
+      } else if (resp.ok) chat.status = await resp.json();
+      else chat.status = { enabled: false };
     } catch { chat.status = { enabled: false }; }
     if (chat.status.enabled) {
       $('#chat-model').textContent = `${chat.status.provider} · ${chat.status.model}`;
@@ -945,15 +1101,27 @@
       $('#chat-chips').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => sendChat(b.textContent)));
     } else {
       $('#chat-model').textContent = 'non attiva';
-      const why = chat.status?.datiOk === false ? 'Dati del sito mancanti: esegui «node build-site.mjs».'
-        : chat.status?.provider ? `LLM non configurato (${chat.status.provider}): vedi ai-config.json / core/ai-config.mjs.`
-        : 'Il sito è aperto come file statico o il server chat non è attivo.';
-      chatMsg('bot', `La chat richiede il server locale.\n\n${why}\n\n1. Avvia: npm run chat\n2. Apri: http://localhost:8787\n\nIl resto del sito funziona normalmente anche senza chat.`);
+      if (chat.status?.authErrata) {
+        chatMsg('bot', 'Accesso al sito scaduto: ricarica la pagina e reinserisci la password.');
+      } else {
+        const online = location.hostname.endsWith('.pages.dev') || location.protocol === 'https:';
+        const why = chat.status?.datiOk === false ? 'Dati del sito mancanti: esegui «node build-site.mjs».'
+          : chat.status?.provider ? `LLM non configurato (${chat.status.provider}): ${online ? 'imposta il secret AI_API_KEY sul progetto Cloudflare.' : 'vedi ai-config.json / core/ai-config.mjs.'}`
+          : online ? 'La chat online non è configurata su questo progetto.' : 'Il sito è aperto come file statico o il server chat non è attivo.';
+        chatMsg('bot', online
+          ? `Chat non disponibile.\n\n${why}\n\nIl resto del sito funziona normalmente anche senza chat.`
+          : `La chat richiede il server locale.\n\n${why}\n\n1. Avvia: npm run chat\n2. Apri: http://localhost:8787\n\nIl resto del sito funziona normalmente anche senza chat.`);
+      }
       $('#chat-input').disabled = true;
       $('#chat-send').disabled = true;
     }
   }
   initChat();
 
-  render();
+  // Avvio: l'URL decide la vista (preferito/link condiviso), altrimenti dashboard.
+  if (!applyHash(location.hash)) {
+    render();
+    lastHash = location.hash;
+    lastMainKey = `${state.portal}/${state.view}`;
+  }
 })();

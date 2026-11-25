@@ -256,7 +256,7 @@ const dataJs = `// Generato da build-site.mjs — non modificare a mano.\nwindow
 fs.writeFileSync(path.join(OUT_DIR, 'data.js'), dataJs);
 
 const SRC_DIR = path.join(__dirname, 'site-src');
-for (const f of ['index.html', 'app.js', 'style.css']) {
+for (const f of ['index.html', 'app.js', 'style.css', 'theme.js']) {
   fs.copyFileSync(path.join(SRC_DIR, f), path.join(OUT_DIR, f));
 }
 

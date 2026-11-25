@@ -108,6 +108,34 @@ Utente: "tra i top ho 2 locali non abitabili e una casa completamente da demolir
 - Test: `node test-flip-pool.mjs` (7 casi, inclusi i contro-casi: demolizione già eseguita, "vicino al locale commerciale").
 - **Nota budget**: il capitale RENO include lavori stimati (600 €/m² ristr.) — un ROI alto su mq grandi può comunque richiedere un capitale oltre la disponibilità dell'utente. Parametri in flip-config.mjs; eventuale tetto di capitale in chat: chiedere.
 
+### 2026-11-25 — D12: Produzione su Cloudflare Pages (free tier), radar solo locale
+
+Decisione utente: il radar (Playwright) gira **manualmente in locale**; su Cloudflare si pubblica solo il risultato. Il radar NON può girare sui Worker free (niente Chromium, limite CPU 30s, run full ~200 min misurati).
+
+Architettura:
+- **Sito**: Cloudflare Pages, progetto `radar-flip` → https://radar-flip.pages.dev, account **dalpozzo.business@gmail.com** (`fe112f8917fa917595f44152d2fb6059`, impostato via `CLOUDFLARE_ACCOUNT_ID` in scripts/deploy.mjs — wrangler.toml Pages non accetta account_id). ATTENZIONE: il token OAuth può vedere più account; il primo deploy finì per errore su M.diaco@alimentiamolasalute.org, progetto cancellato e rifatto.
+- **Deploy**: `npm run deploy` = build-site → scripts/build-cf.mjs (statici in dist-cf/ + `wrangler pages functions build --outdir` → _worker.js, con data.mjs generato nella root come modulo ES dei dati) → `wrangler pages deploy --branch main`.
+- **Chat online**: Pages Functions in functions/api/ (chat.js, chat/status.js, _middleware.js). Logica condivisa con locale in **core/chat-core.mjs** (handleChatCore); chat-server.mjs locale delega allo stesso nucleo. LLM via fetch diretta (token-plan base URL `https://token-plan.ap-southeast-1.maas.aliyuncs.com`, NON dashscope: la key sk-sp- vale solo lì).
+- **Segreti produzione** (wrangler pages secret put, mai nel repo): AI_API_KEY (token-plan), CHAT_PASSWORD. Vars non segrete in wrangler.toml: AI_PROVIDER, AI_MODEL, CHAT_MAX_CALLS_PER_HOUR=60. Budget orario best-effort per isolate.
+- **Protezione**: ~~sito PUBBLICO~~ → **INTERO SITO PROTETTO DA PASSWORD** (decisione utente 25/11 sera, supera quella del pomeriggio: "mi chiede la password ma se non la inserisco non mi blocca" — la password sulla sola chat non bastava). Cloudflare Access resta rimosso; il gate è nel Worker, senza servizi esterni. Dettagli in D13.
+- **Ambienti**: develop locale = `npm run radar` + `npm run chat` (immutato); anteprima worker locale = `npm run cf:dev` (workerd, secrets da .dev.vars gitignored); produzione = Pages branch main.
+- Test: test-chat-core.mjs (8, LLM mockato, contratto fail-closed condiviso). Verificato end-to-end in produzione (rank roi → 3 risultati reali).
+
+### 2026-11-25 — D13: Gate password sull'INTERO sito (supera il sito pubblico di D12)
+
+Decisione utente (sera): senza password giusta **non si vede nulla**, non solo la chat. Riusa il secret **CHAT_PASSWORD** già configurato (nessun secret nuovo; il nome resta per compatibilità).
+
+Architettura:
+- **core/site-auth.mjs**: pagina login HTML (form POST `/__login`), cookie `radar_site` = `scadenza.firmaHMAC-SHA256(scadenza)` firmato con CHAT_PASSWORD (WebCrypto, gira nel Worker), HttpOnly+Secure+SameSite=Lax, **30 giorni**. Confronti a tempo costante su password e firma.
+- **functions/_middleware.js (radice)**: gate su ogni richiesta. Cookie valido → next(); POST /__login con password giusta → 303 + Set-Cookie; `/api/*` non autenticato → 401 JSON; tutto il resto → 401 pagina login. Fail-closed (D2): secret mancante = 503, sito chiuso. X-Chat-Auth ancora accettato sulle sole API (client legacy).
+- **functions/api/_middleware.js**: difesa in profondità, stesso contratto (cookie o header).
+- **scripts/build-cf.mjs**: `_routes.json` ora **custom con include ["/*"]** (non più generato da wrangler, che coprirebbe solo /api/*): ogni richiesta, asset inclusi, passa dal Worker; gli asset arrivano via next() → env.ASSETS dopo il gate.
+- **TRAPPOLA Pages scoperta sul campo**: il gate DEVE stare in `_middleware.js` radice, NON in `functions/index.js`: i moduli index matchano solo il path esatto `/`, i middleware matchano ogni path (`/data.js`, `/app.js`, …). Con index.js gli asset con estensione passavano dritti (200) — bucando il gate. Niente `_routes.json` exclude.
+- **Client (site-src/app.js)**: prompt password rimosso; al 401 messaggio "ricarica la pagina" (il gate serve la pagina di login al reload). Chat e sito condividono lo stesso accesso.
+- Test: **test-site-auth.mjs** (10 unit, WebCrypto/Request globali di Node) + smoke end-to-end su `wrangler pages dev` (9: /, /data.js, /api/* bloccati senza cookie; login errata resta fuori; login giusta apre tutto; cookie manomesso → login).
+- **Temi grafici** (utente 25/11 sera): 5 palette dal chiaro allo scuro — **chiaro ☀️ / nebbia 🌤️ / seppia 📜 / ardesia 🌆 / notte 🌙** (default notte = storico). Selettore in topbar (`#f-tema`); `site-src/theme.js` applica `data-theme` su `<html>` prima del CSS (niente flash), scelta in localStorage `radar-theme`. Tutti i colori del CSS passano da variabili (sidebar/badge/chat inclusi). La **pagina di login** (core/site-auth.mjs) ha le stesse 5 palette inline + selettore: legge/scrive lo stesso localStorage (stessa origine), quindi la scelta vale ovunque.
+- **Routing per vista** (utente 25/11 sera): ogni vista ha un URL salvabile come preferito — **hash routing** `#/<portale>/<vista>?params` (niente regole server: funziona su Pages dietro il gate, in locale e via file://). Params: `q` (ricerca), `zona`, `stato`, `extra` (esito/semaforo/fascia), `sort=colonna:dir`, `open=<id>` (dettaglio aperto), `cf=<JSON filtro chat>`, `cr=<ids classifica chat>`. Cambio vista → pushState (back/forward tra viste); filtri/ordinamenti → replaceState con debounce 250ms sulla digitazione (history pulita). Hash sconosciuto → dashboard. Implementato in site-src/app.js (stateToHash/applyHash/syncHash/onHashNav); i select dell'URL si applicano dopo il ripopolamento di render(). Verificato nel browser: reload ripristina filtri+ordine+dettaglio, deep-link portale/vista/aste, filtro e classifica chat via URL, KPI dashboard, drawer mobile.
+
 ## Log decisioni operative
 
 *(append durante l'esecuzione, con timestamp)*
