@@ -494,8 +494,9 @@
       </div>`;
     }
 
-    $('#dashboard').innerHTML = `
-      ${globalBlock}
+    // Sintesi operativa (target + migliori FLIP) in cima alla dashboard: è
+    // quello che si guarda per primo, sopra i numeri di copertura globale.
+    const focusBlock = `
       <div class="kpis">
         ${kpi(ads.length, `Annunci target (+${fuori} fuori comune)`, 'tutti')}
         ${kpi(selBig.length, 'Selezionati BIG', 'big')}
@@ -505,7 +506,7 @@
         ${kpi(stale.filter((a) => a.flip.stale.score >= 60).length, 'STALE negoziabilità alta', 'stale')}
         ${lead.length ? kpi(lead.length, 'Lead privati (affitti in scope)', 'lead') : ''}
       </div>
-      <div class="dash-grid">
+      <div class="dash-grid" style="margin-bottom:18px">
         <div class="card"><h3>Migliori FLIP RENO (ROI netto)</h3>
           ${reno.slice(0, 6).map((a) => mini(a, `${num(a.flip.reno.roi, 1)}% · offerta max ${eur(a.flip.reno.maxOffer)}`, 'reno')).join('') || '<div class="motiv">Nessun candidato</div>'}
         </div>
@@ -513,6 +514,10 @@
           ${stale.slice(0, 6).map((a) => mini(a, `score ${num(a.flip.stale.score)} · target ${eur(a.flip.stale.prezzoTarget)}`, 'stale')).join('') || '<div class="motiv">Nessun dato</div>'}
         </div>
       </div>`;
+
+    $('#dashboard').innerHTML = `
+      ${focusBlock}
+      ${globalBlock}`;
     $('#dashboard').querySelectorAll('[data-view]').forEach((el) => el.addEventListener('click', () => {
       state.view = el.dataset.view;
       state.sortKey = null;
