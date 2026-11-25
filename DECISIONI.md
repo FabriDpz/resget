@@ -79,6 +79,35 @@ Esiti reali dei probe in `probe-archive/probe-report.json` e nelle `strategia.md
 - Gli adapter dichiarano asserzioni verificabili in `probeChecks` (primo: wikicasa). Runbook completo in `.github/copilot-instructions.md`.
 - Il login nel browser reale **non** travasa nei profili Playwright: `npm run login` resta il flusso per la raccolta.
 
+## D10 — Chat del sito ("stile Rufus"): LLM interprete, codice esecutore, server locale
+
+- **Richiesta utente (24/11/2026)**: ricerca conversazionale dei candidati immobili nella dashboard, con lo **stesso LLM indicato in configurazione** (`ai-config.json` → `core/ai-config.mjs`: token-plan / deepseek / ollama). Nessuna configurazione AI nuova.
+- **Pattern**: il modello NON riceve l'intero dataset e non inventa dati. Traduce la richiesta in UNA azione JSON (`filter | rank | compare | answer | clarify`); il server la valida (`normalizeAction`, fail-closed: azione ignota → clarify) e la esegue sui dati reali di `site/data.js` (`core/chat-actions.mjs`, modulo puro testato). Il commento del modello vede solo le righe risultato (max 10-12) o le schede degli annunci citati (max 4, descrizione troncata a 900 caratteri).
+- **Server locale** `chat-server.mjs` (`npm run chat`, default http://localhost:8787, bind 127.0.0.1): solo moduli Node built-in, nessuna dipendenza nuova. Serve `site/` e fa da proxy AI: **le API key restano lato server, mai nel browser**. Budget fail-closed: max chiamate/ora = `maxCallsPerRun` (default 60). `data.js` ricaricato a ogni richiesta se cambiato (rigeneri il sito senza riavviare).
+- **Progressive enhancement**: il sito resta statico e apribile con doppio clic. Senza server (o senza config AI) il pannello chat spiega come attivarla; il resto della dashboard non dipende dalla chat.
+- **UI**: pannello laterale a scomparsa (bottone 💬 in topbar), card annuncio cliccabili → dettaglio in tabella; le azioni `filter`/`rank` si applicano anche alla tabella (predicato `chatMatch` in `site-src/app.js` allineato a `matchFilter` in `core/chat-actions.mjs`). Storia in sessionStorage (max 12 turni); follow-up via contesto risultati dell'ultima azione. Pannello **ridimensionabile trascinando il bordo sinistro** (min 300px, max 94vw; doppio clic = reset 380px; frecce ←/→ col separatore a fuoco; larghezza persistita in localStorage; su mobile full-width, resizer nascosto). **Stop della richiesta in corso**: durante l'attesa il bottone invio diventa ■ rosso (AbortController sul fetch; anche Esc ferma la richiesta senza chiudere il pannello); la domanda interrotta è rimossa dalla history per non confondere il turno successivo.
+- **Perimetro**: la chat cerca nella lista operativa flip (comuni ammessi, no affitti, no stati senza margine) — stessi predicati della UI. Prezzi/ID mostrati sono sempre quelli reali del dataset.
+- Test: `node test-chat.mjs` (azioni, normalizzazione fail-closed, `aiChat` con fetch mockato).
+- **Tema dark** (24/11, richiesta utente): l'intera dashboard usa una palette scura definita nelle variabili `:root` di `site-src/style.css` (`color-scheme: dark`); nessun colore hardcoded fuori dalle variabili, badge verde/giallo/rosso con fondi scuri dedicati. Le foto annuncio restano su fondo chiaro (`--img-bg`) per leggibilità delle planimetrie.
+
+## D11 — Data di pubblicazione: raccolta best-effort su tutti i portali
+
+- **Richiesta utente (24/11/2026)**: scaricare anche la data di pubblicazione in tutto il processo di scraping. Il campo `pubblicatoIl` esiste già nello schema (`core/schema.mjs`) ma solo ~9 portali su 19 attivi lo valorizzavano (subito, immobiliare, trovit, caasa, bakeca, mitula parziale, millecase…).
+- **Meccanismo centrale**: `core/dates.mjs` + hook nel runner condiviso (`core/runner.mjs`, dopo `scrapeDetail`): `fillDates(ad, page)` normalizza le date dell'adapter e, **solo se mancanti**, legge i JSON-LD (`datePublished`/`datePosted`/`dateCreated`/`uploadDate`, update: `dateModified`) dalla pagina di dettaglio GIÀ aperta — zero navigazioni extra, zero costo anti-bot. La fonte esplicita dell'adapter vince sempre sul JSON-LD. Mai throw: pagina senza ld+json → campo vuoto.
+- **Mai inventare date**: se il portale non espone la data, il campo resta '' (D2). Il ledger (`firstSeen` osservato) resta la fonte robusta per l'anzianità in FLIP STALE; `pubblicatoIl` la affianca dove disponibile.
+- **Vale per tutte le prossime esecuzioni** di `npm run radar` (runner condiviso). Lo scraper autonomo di immobiliare.it già raccoglie `createdAt`/`updatedAt` e non è toccato. Gli adapter con date testuali proprie possono usare `normDate` (ISO, epoch s/ms, dd/mm/yyyy, "12 marzo 2026", oggi/ieri).
+- Test: `node test-dates.mjs` (8 casi). Verifica live differita alla prossima esecuzione regolare (richiesta utente: nessun probe dedicato adesso).
+
+### 2026-11-24 (5) — Falsi positivi nella classifica RENO (segnalazione utente)
+
+Utente: "tra i top ho 2 locali non abitabili e una casa completamente da demolire". Cause e fix:
+
+- **Gap RENO vs BIG/SMA**: `analyzeReno` applicava solo un sottoinsieme dei "no" duri. La casa da demolire (attico 52223207, ROI fittizio 103,6%) era esclusa da BIG (`detectDemolizione`) ma non da RENO, perché il campo stato diceva "Da ristrutturare". Ora il pool RENO applica anche `detectDemolizione`, `detectNoResidenza`, `detectIpoteticoResidenziale` (core/flip.mjs).
+- **Locale commerciale non riconosciuto**: wikicasa 27261043 ("LOCALE COMMERCIALE … proponiamo in vendita locale commerciale di 46 mq") aveva tipologia "Appartamento" e nessuna categoria catastale nel testo → sfuggiva a `detectNonResidential`. Aggiunta regola: dichiarazione esplicita "locale/spazio commerciale" come soggetto nelle prime 2 frasi della descrizione (mai come riferimento di zona, mai dopo i contatti d'agenzia).
+- Risultato dopo il rebuild: i 2 falsi positivi fuori dal pool; nuovo top RENO = bilocale Santa Viola 75k (ROI 27,8%, capitale ~92k), attico Mazzini 130k (22,4%).
+- Test: `node test-flip-pool.mjs` (7 casi, inclusi i contro-casi: demolizione già eseguita, "vicino al locale commerciale").
+- **Nota budget**: il capitale RENO include lavori stimati (600 €/m² ristr.) — un ROI alto su mq grandi può comunque richiedere un capitale oltre la disponibilità dell'utente. Parametri in flip-config.mjs; eventuale tetto di capitale in chat: chiedere.
+
 ## Log decisioni operative
 
 *(append durante l'esecuzione, con timestamp)*

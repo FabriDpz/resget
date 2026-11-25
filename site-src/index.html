@@ -30,6 +30,7 @@
         <select id="f-extra" class="hidden"></select>
         <button id="btn-csv" type="button" title="Esporta la vista corrente (righe filtrate e ordinate) in CSV">⬇ CSV</button>
       </div>
+      <button id="btn-chat" type="button" title="Assistente: cerca e confronta annunci in linguaggio naturale" aria-expanded="false">💬</button>
     </header>
     <section id="dashboard" class="hidden"></section>
     <section id="table-wrap">
@@ -37,6 +38,21 @@
       <div class="table-scroll"><table id="tbl"><thead></thead><tbody></tbody></table></div>
     </section>
   </main>
+  <aside id="chat-panel" class="chat-panel" aria-label="Assistente radar">
+    <div id="chat-resizer" class="chat-resizer" title="Trascina per ridimensionare" role="separator" aria-orientation="vertical" aria-label="Ridimensiona il pannello assistente" tabindex="0"></div>
+    <div class="chat-head">
+      <span class="chat-title">💬 Assistente radar</span>
+      <span id="chat-model" class="chat-model"></span>
+      <button id="chat-close" type="button" aria-label="Chiudi la chat">✕</button>
+    </div>
+    <div id="chat-log" class="chat-log"></div>
+    <div id="chat-chips" class="chat-chips"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" placeholder="Es. trilocali a San Lazzaro sotto 130k da ristrutturare" autocomplete="off" maxlength="500">
+      <button id="chat-send" type="submit" aria-label="Invia">➤</button>
+    </form>
+  </aside>
+  <div id="chat-backdrop" class="chat-backdrop"></div>
 </div>
 <script src="data.js"></script>
 <script src="app.js"></script>

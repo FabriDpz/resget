@@ -16,6 +16,7 @@ import { applyProfiles } from './filters.mjs';
 import { detectNonResidential } from './filters.mjs';
 import { analyzeFlip, loadPriceHistory, updatePriceHistory } from './flip.mjs';
 import { normalizeAd } from './schema.mjs';
+import { fillDates } from './dates.mjs';
 import { enrichAds } from './enrich.mjs';
 import { verifyOrigins } from './verify-source.mjs';
 import { recordBlock, recordSuccess, inCooldown } from './health.mjs';
@@ -183,6 +184,9 @@ export async function runPortal(adapter, moduleUrl, argv = process.argv.slice(2)
       const partial = await adapter.scrapeDetail(page, card, { log, dismissCookies });
       if (partial) {
         const ad = normalizeAd(adapter.id, partial);
+        // Date best-effort: la fonte dell'adapter vince; se manca, JSON-LD
+        // della pagina di dettaglio già aperta (nessuna navigazione extra).
+        await fillDates(ad, page);
         ads.push(ad);
         save();
         log(`  ✓ ${ad.comune || '?'} — ${ad.prezzo ?? '?'} € — ${ad.superficieMq ?? '?'} m²`);

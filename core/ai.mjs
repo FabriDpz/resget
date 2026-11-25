@@ -98,6 +98,50 @@ export async function aiJson(cfg, system, user, { log = () => {}, timeoutMs = 90
   }
 }
 
+// Chiamata multi-turno per la chat del sito (chat-server.mjs). Stesso contratto
+// di aiJson: ritorna {ok, data, usage} oppure {ok:false, error}, mai throw.
+// messages: [{role:'system'|'user'|'assistant', content}] — la history è del
+// chiamante. Output JSON vincolato (azione), niente cache: ogni turno è nuovo.
+export async function aiChat(cfg, messages, { timeoutMs = 60000, maxTokens = 700 } = {}) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const headers = { 'Content-Type': 'application/json' };
+    if (cfg.apiKey) headers.Authorization = `Bearer ${cfg.apiKey}`;
+    const body = {
+      model: cfg.model,
+      messages,
+      temperature: 0,
+      max_tokens: maxTokens,
+      response_format: { type: 'json_object' },
+    };
+    if (cfg.provider === 'ollama') body.reasoning_effort = 'none';
+    const resp = await fetch(chatUrl(cfg), {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(body),
+      signal: ctrl.signal,
+    });
+    if (!resp.ok) {
+      const errBody = (await resp.text()).slice(0, 200);
+      return { ok: false, error: `HTTP ${resp.status}: ${errBody}` };
+    }
+    const j = await resp.json();
+    const content = j.choices?.[0]?.message?.content || '';
+    let data;
+    try { data = JSON.parse(content); } catch {
+      const m = content.match(/\{[\s\S]*\}/);
+      try { data = m ? JSON.parse(m[0]) : null; } catch { data = null; }
+      if (!data) return { ok: false, error: `JSON non valido: ${content.slice(0, 120)}` };
+    }
+    return { ok: true, data, usage: j.usage || null };
+  } catch (e) {
+    return { ok: false, error: e.name === 'AbortError' ? 'timeout' : String(e.message || e) };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 // Coda con cache e budget. items: [{ad, task, system, user}].
 // Ritorna Map chiave-annuncio → {data, confidence, cached, model, data_ai}.
 // Gli errori restano per-item (fail-closed a valle), il run prosegue.

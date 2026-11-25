@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { FLIP_CONFIG } from './flip-config.mjs';
-import { detectAuction, detectAffitto } from './filters.mjs';
+import { detectAuction, detectAffitto, detectDemolizione, detectNoResidenza, detectIpoteticoResidenziale } from './filters.mjs';
 import { ALLOWED_COMUNI, comuneContraddetto } from './geo.mjs';
 
 const CFG = FLIP_CONFIG;
@@ -147,6 +147,17 @@ function analyzeReno(ad, medians) {
   if (/nuda\s+propriet/i.test(`${ad.tipologia} ${ad.descrizione}`)) hard.push('Nuda proprietà');
   if (/demolire|cattivo stato/i.test(ad.stato || '')) hard.push(`Stato: ${ad.stato}`);
   if (ad._nonResidenziale) hard.push('Uso non residenziale');
+  // Stessi "no" duri della lettura annuncio (applyProfiles): il campo stato
+  // strutturato può dire "Da ristrutturare" mentre il testo rivela demolizione
+  // (attico 52223207: ROI 103% fittizio, ricostruzione fuori scala) o un uso
+  // non abitabile. Senza questi controlli i falsi positivi dominavano la
+  // classifica RENO (segnalazione utente 24/11/2026).
+  const demol = detectDemolizione(ad);
+  if (demol) hard.push(demol);
+  const noRes = detectNoResidenza(ad);
+  if (noRes) hard.push(noRes);
+  const ipo = detectIpoteticoResidenziale(ad);
+  if (ipo) hard.push(ipo);
   const asta = detectAuction(ad);
   if (asta) hard.push(asta);
   const affitto = detectAffitto(ad);

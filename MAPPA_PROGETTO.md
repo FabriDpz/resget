@@ -72,6 +72,7 @@ La struttura `<portale>/` è un modello comune, non uniforme: alcune fonti diffe
 | [build-site.mjs](build-site.mjs) | Legge l'ultimo `annunci-*.json` di ogni fonte configurata, applica registri AI e verifiche dei lead, ricalcola i profili, deduplica e aggiorna il ledger. Produce `site/data.js` e copia i sorgenti dell'interfaccia. |
 | [login-all.mjs](login-all.mjs) | Coordina il login nei profili persistenti usati dalla raccolta, secondo il registro di autenticazione. |
 | [validate-site.mjs](validate-site.mjs) | Carica `site/data.js` e stampa conteggi e controlli di integrità dei dati generati. |
+| [chat-server.mjs](chat-server.mjs) | Server locale della chat del sito (`npm run chat`): serve `site/` e proxy verso l'LLM configurato in `ai-config.json`. Le chiavi restano lato server; senza server il sito resta statico e la chat si disattiva. |
 
 ## Motore condiviso: `core/`
 
@@ -79,6 +80,7 @@ La struttura `<portale>/` è un modello comune, non uniforme: alcune fonti diffe
 | --- | --- |
 | [runner.mjs](core/runner.mjs) | Esegue gli adattatori: raccolta delle liste, dettagli, normalizzazione, arricchimento, filtri, analisi, salvataggi incrementali, ripresa e coda dei fallimenti. |
 | [schema.mjs](core/schema.mjs) | Definisce lo schema comune degli annunci e normalizza campi, zona, stato, camere e riferimenti alle planimetrie. |
+| [dates.mjs](core/dates.mjs) | Normalizza le date annuncio (ISO, epoch, formati italiani) e completa `pubblicatoIl`/`aggiornatoIl` mancanti dai JSON-LD della pagina di dettaglio; usata dal runner dopo ogni `scrapeDetail` (D11). |
 | [filters.mjs](core/filters.mjs) | Applica BIG/SMA e le esclusioni per prezzo, uso, contratto, stato, piano e posizione; individua anche i lead da affitto privato. |
 | [geo.mjs](core/geo.mjs) | Definisce comuni ammessi, zone escluse e centri abitati; calcola distanze e riconosce incongruenze geografiche. |
 | [enrich.mjs](core/enrich.mjs) | Recupera coordinate da indirizzi e località, dichiara la fonte del geocoding e aggiunge i punteggi dei servizi vicini. |
@@ -96,6 +98,7 @@ La struttura `<portale>/` è un modello comune, non uniforme: alcune fonti diffe
 | [health.mjs](core/health.mjs) | Registra blocchi e successi; applica un cooldown fisso di 24 ore ai portali bloccati. |
 | [auth-registry.mjs](core/auth-registry.mjs) | Descrive i portali e i flussi di autenticazione utilizzati da `login-all.mjs`. |
 | [browser-probe.mjs](core/browser-probe.mjs) | Fornisce funzioni di ispezione della pagina, estrazione dei link e sintesi delle evidenze. |
+| [chat-actions.mjs](core/chat-actions.mjs) | Azioni della chat del sito (modulo puro): valida l'azione JSON del modello ed esegue filter/rank/compare/answer sui dati reali; riepilogo dataset e righe compatte per il prompt. |
 | [probe-save.mjs](core/probe-save.mjs) | Valida e archivia le evidenze di ricognizione per portale e fase. |
 | [probe-verify.mjs](core/probe-verify.mjs) | Verifica le asserzioni `probeChecks` degli adattatori, da archivio oppure dal vivo. |
 | [ai.mjs](core/ai.mjs) | Esegue richieste AI con prompt mirati, risposte JSON, cache, soglie di confidenza e limite di chiamate. |

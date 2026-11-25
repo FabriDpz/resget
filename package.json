@@ -6,6 +6,7 @@
   "description": "Radar multi-portale per flip immobiliare (Bologna / Pianoro / San Lazzaro di Savena)",
   "scripts": {
     "radar": "node run-all.mjs",
+    "chat": "node chat-server.mjs",
     "radar:resume": "node run-all.mjs --resume",
     "probe": "node probe-all.mjs",
     "probe:save": "node core/probe-save.mjs",

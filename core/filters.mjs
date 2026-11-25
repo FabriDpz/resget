@@ -27,6 +27,16 @@ export function detectNonResidential(ad) {
   if (/\bvendita\s+(?:di\s+)?attivit[àa]\s+commerciale\b|\battivit[àa]\s+commerciale\s+di\s+\w+,?\s+avviata\b/i.test(desc)) {
     return 'Cessione di attività commerciale, non immobile residenziale';
   }
+  // Dichiarazione esplicita in apertura di descrizione: wikicasa 27261043
+  // ("LOCALE COMMERCIALE   Proponiamo in vendita locale commerciale di 46 mq…")
+  // aveva tipologia "Appartamento" e nessuna categoria catastale nel testo.
+  // Solo nelle prime 2 frasi (dopo i contatti d'agenzia non vale) e solo come
+  // soggetto dell'annuncio, non come riferimento di zona ("vicino al locale commerciale").
+  const head = desc.split(/(?<=[.!?])\s+|\n+/).slice(0, 2).join(' ');
+  if (!/maggiori informazioni|per info|contatt\w*|appuntament/i.test(head)
+    && /(?:^|\s)(?:locale|spazio)\s+commerciale\s*[:\-–]|\bpropon\w*\s+(?:in\s+vendita\s+)?(?:un\s+|ampio\s+)?locale\s+commerciale\b|\bvendita\s+(?:di\s+)?locale\s+commerciale\b/i.test(head)) {
+    return 'Locale commerciale dichiarato in descrizione';
+  }
   const catRe = /cat(?:egoria)?\.?\s*(?:catastale\s*)?[BDE]\s*\/?\s*\d+|cat(?:egoria)?\.?\s*(?:catastale\s*)?C\s*\/?\s*(?!(?:[2-9]|1[01])\b)\d+|A\s*\/\s*10\b/i;
   const phraseRe = /accatast\w*|licenziat\w*|destinazione d'uso|cambio d'uso|uso ufficio|studio professionale|propon\w*\s+(?:in vendita\s+)?(?:un\s+|ampio\s+)*ufficio|vendita\s+(?:di\s+)?(?:un\s+|ampio\s+)*ufficio|(?:questo|tale|il)\s+locale\s+commerciale|trasform\w*\s+questo\s+locale/i;
   // Alcuni portali (attico) restituiscono la descrizione come blocco unico senza

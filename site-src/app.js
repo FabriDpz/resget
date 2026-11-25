@@ -41,7 +41,7 @@
     return;
   }
 
-  const state = { portal: 'global', view: 'dashboard', sortKey: null, sortDir: 1, expanded: null };
+  const state = { portal: 'global', view: 'dashboard', sortKey: null, sortDir: 1, expanded: null, chatFilter: null };
 
   const isGlobal = () => state.portal === 'global';
   const rawAds = () => isGlobal() ? (D.global?.ads || []) : (D.portals.find((p) => p.id === state.portal)?.ads || []);
@@ -267,6 +267,7 @@
       state.portal = b.dataset.portal;
       state.view = b.dataset.view;
       state.sortKey = null; state.expanded = null;
+      state.chatFilter = null; state.chatRank = null;
       $('#q').value = '';
       closeNav();
       render();
@@ -294,7 +295,18 @@
     if (fs) rows = rows.filter((a) => (a.stato || 'n/d') === fs);
     const fe = $('#f-extra');
     if (v.extra && !fe.classList.contains('hidden') && fe.value) rows = rows.filter((a) => v.extra.get(a) === fe.value);
-    const key = state.sortKey || v.sortKey;
+    // Filtro applicato dalla chat (AND con i filtri manuali della vista).
+    if (state.chatFilter) rows = rows.filter((a) => chatMatch(a, state.chatFilter));
+    // Classifica chat: ordine esplicito per id (gli annunci fuori lista in coda).
+    if (state.chatRank) {
+      const order = state.chatRank;
+      rows = [...rows].sort((a, b) => {
+        const ia = order.has(String(a.id)) ? order.get(String(a.id)) : 1e9;
+        const ib = order.has(String(b.id)) ? order.get(String(b.id)) : 1e9;
+        return ia - ib;
+      });
+    }
+    const key = state.chatRank ? null : (state.sortKey || v.sortKey);
     const dir = state.sortKey ? state.sortDir : (v.sortDir || 1);
     const cols = v.cols();
     const c = cols.find((x) => x.key === key);
@@ -502,6 +514,7 @@
     $('#dashboard').querySelectorAll('[data-view]').forEach((el) => el.addEventListener('click', () => {
       state.view = el.dataset.view;
       state.sortKey = null;
+      state.chatFilter = null; state.chatRank = null;
       state.expanded = el.dataset.id || null;
       render();
     }));
@@ -577,9 +590,10 @@
 
     const rows = currentRows();
     const cols = v.cols();
-    const sortKey = state.sortKey || v.sortKey;
+    const sortKey = state.chatRank ? null : (state.sortKey || v.sortKey);
     const sortDir = state.sortKey ? state.sortDir : (v.sortDir || 1);
-    $('#count').textContent = `${rows.length} annunci${rows.length !== ads.length ? ` (filtrati da ${ads.length})` : ''} — clic su una riga per il dettaglio, clic sulle intestazioni per ordinare`
+    const chatNote = state.chatFilter ? ' · 💬 filtro chat attivo (cambia vista per azzerarlo)' : '';
+    $('#count').textContent = `${rows.length} annunci${rows.length !== ads.length ? ` (filtrati da ${ads.length})` : ''}${chatNote} — clic su una riga per il dettaglio, clic sulle intestazioni per ordinare`
       + (state.view === 'lead' ? ' · 💬 Affitti da privato in scope BIG/SMA: verificare CASO PER CASO chi pubblica (badge Privato), poi contattare MANUALMENTE dal portale per chiedere interesse alla vendita. Il canone non è un prezzo di vendita.' : '');
     $('#tbl thead').innerHTML = '<tr>' + cols.map((c) =>
       `<th data-key="${c.key}">${esc(c.label)}${c.key === sortKey ? ` <span class="arrow">${sortDir > 0 ? '▲' : '▼'}</span>` : ''}</th>`).join('') + '</tr>';
@@ -654,7 +668,292 @@
   });
   const backdrop = $('#nav-backdrop');
   if (backdrop) backdrop.addEventListener('click', closeNav);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeNav(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    // Esc con richiesta in corso: prima ferma la richiesta, non chiude il pannello.
+    if (chat.busy && chat.ctrl) { chat.ctrl.abort(); return; }
+    closeNav(); closeChat();
+  });
+
+  // ------------------------------------------------------------- chat assistente
+  // Progressive enhancement: funziona solo se il sito è servito da
+  // chat-server.mjs (npm run chat). Via file:// o server assente il pannello
+  // spiega come attivarla; il resto del sito non dipende dalla chat.
+  // Predicate allineato a core/chat-actions.mjs (matchFilter): stessa semantica.
+  function chatMatch(a, f) {
+    if (f.comune && String(a.comune || '').toLowerCase() !== f.comune.toLowerCase()) return false;
+    if (f.zona && !String(a.zona || '').toLowerCase().includes(f.zona.toLowerCase())) return false;
+    if (f.prezzoMax != null && !(a.prezzo != null && a.prezzo <= f.prezzoMax)) return false;
+    if (f.prezzoMin != null && !(a.prezzo != null && a.prezzo >= f.prezzoMin)) return false;
+    if (f.mqMin != null && !(a.superficieMq != null && a.superficieMq >= f.mqMin)) return false;
+    if (f.mqMax != null && !(a.superficieMq != null && a.superficieMq <= f.mqMax)) return false;
+    if (f.camereMin != null) { const c = a.camere ?? a.camereAI; if (!(c != null && c >= f.camereMin)) return false; }
+    if (f.stato && !String(a.stato || '').toLowerCase().includes(f.stato.toLowerCase())) return false;
+    if (f.ascensore && !String(a.ascensore || '').toLowerCase().includes(f.ascensore.toLowerCase())) return false;
+    if (f.distanzaMaxKm != null && !(a.distanzaKm != null && a.distanzaKm <= f.distanzaMaxKm)) return false;
+    if (f.poiMin != null && !(a.poi?.rank != null && a.poi.rank >= f.poiMin)) return false;
+    if (f.profilo === 'BIG' && a.esito !== 'Selezionato') return false;
+    if (f.profilo === 'SMA' && !(a.esito !== 'Selezionato' && a.esitoSma === 'Selezionato')) return false;
+    if (f.profilo === 'RENO' && !a.flip?.reno?.candidato) return false;
+    if (f.profilo === 'STALE' && !(a.flip?.stale && a.flip.stale.fascia !== 'Basso')) return false;
+    if (f.testo) {
+      const hay = `${a.titolo || ''} ${a.descrizione || ''} ${a.zona || ''} ${a.indirizzo || ''} ${a.agenzia || ''}`.toLowerCase();
+      if (!f.testo.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
+    }
+    return true;
+  }
+
+  const chat = { status: null, history: [], lastResult: null, busy: false };
+  try {
+    const saved = JSON.parse(sessionStorage.getItem('radar-chat') || 'null');
+    if (saved && Array.isArray(saved.history)) { chat.history = saved.history.slice(-12); chat.lastResult = saved.lastResult || null; }
+  } catch { /* sessione nuova */ }
+  const saveChat = () => {
+    try { sessionStorage.setItem('radar-chat', JSON.stringify({ history: chat.history.slice(-12), lastResult: chat.lastResult })); } catch { /* quota */ }
+  };
+
+  function chatMsg(cls, text) {
+    const div = document.createElement('div');
+    div.className = `chat-msg ${cls}`;
+    div.textContent = text;
+    $('#chat-log').appendChild(div);
+    $('#chat-log').scrollTop = $('#chat-log').scrollHeight;
+    return div;
+  }
+
+  function chatCard(r) {
+    const div = document.createElement('div');
+    div.className = 'chat-card';
+    const badges = [];
+    if (r.roi != null) badges.push(badge(`ROI ${num(r.roi, 1)}%`, r.semaforo || 'info'));
+    if (r.staleScore != null) badges.push(badge(`STALE ${r.staleScore}`, r.staleFascia || 'info'));
+    if (r.nuovo) badges.push(badge('NUOVO', 'verde'));
+    if (r.ribassatoOggi) badges.push(badge('RIBASSATO', 'giallo'));
+    div.innerHTML = `<div class="t"><span>${esc(r.zona || r.comune)} — ${esc(shortId(r.id))}</span><span class="p">${eur(r.prezzo)}</span></div>
+      <div class="d">${num(r.mq)} m² · ${r.camere != null ? num(r.camere) + ' camere · ' : ''}${esc(r.stato || 'stato n/d')}${r.pmq != null ? ' · ' + num(r.pmq) + ' €/m²' : ''}</div>
+      ${badges.length ? `<div class="m">${badges.join(' ')}</div>` : ''}`;
+    div.title = 'Apri il dettaglio nella tabella';
+    div.addEventListener('click', () => openAdInTable(r.id));
+    return div;
+  }
+
+  function openAdInTable(id) {
+    const a = (D.global?.ads || []).find((x) => String(x.id) === String(id));
+    if (!a) return;
+    state.portal = 'global';
+    state.view = 'tutti';
+    state.chatFilter = null; state.chatRank = null;
+    state.sortKey = null;
+    state.expanded = String(id);
+    $('#q').value = String(id);
+    render();
+    if (window.innerWidth <= 760) closeChat();
+    const row = [...document.querySelectorAll('#tbl tbody tr.row')].find((tr) => tr.textContent.includes(shortId(id)));
+    if (row) row.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
+  // Applica l'azione del server anche alla tabella (oltre che in chat).
+  function applyChatAction(res) {
+    if (res.action === 'filter' && res.filtro) {
+      state.portal = 'global';
+      state.view = 'tutti';
+      state.sortKey = null;
+      state.expanded = null;
+      state.chatRank = null;
+      state.chatFilter = res.filtro;
+      $('#q').value = '';
+      render();
+    } else if (res.action === 'rank' && res.rows?.length) {
+      state.portal = 'global';
+      state.view = 'tutti';
+      state.expanded = null;
+      state.sortKey = null;
+      state.chatFilter = res.filtro && Object.keys(res.filtro).length ? res.filtro : null;
+      // Ordine della classifica per id; currentRows lo rispetta finché attivo.
+      state.chatRank = new Map(res.rows.map((r, i) => [String(r.id), i]));
+      $('#q').value = '';
+      render();
+    }
+  }
+
+  function renderChatResult(res) {
+    const label = res.action === 'filter' ? 'Filtro' : res.action === 'rank' ? `Classifica (${res.criterio})` : res.action === 'compare' ? 'Confronto' : 'Annunci';
+    if (res.action !== 'clarify' && res.action !== 'answer') {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'chat-action';
+      btn.textContent = `⚡ ${label} applicato alla tabella — ${res.totale} risultat${res.totale === 1 ? 'o' : 'i'}`;
+      btn.addEventListener('click', () => applyChatAction(res));
+      $('#chat-log').appendChild(btn);
+    }
+    if (res.commento) chatMsg('bot', res.commento);
+    if (res.rows?.length) {
+      const wrap = document.createElement('div');
+      wrap.className = 'chat-cards';
+      for (const r of res.rows.slice(0, 10)) wrap.appendChild(chatCard(r));
+      if (res.totale > 10) {
+        const more = document.createElement('button');
+        more.type = 'button'; more.className = 'chat-action';
+        more.textContent = `… altri ${res.totale - 10}: apri la tabella`;
+        more.addEventListener('click', () => applyChatAction(res));
+        wrap.appendChild(more);
+      }
+      $('#chat-log').appendChild(wrap);
+    }
+    if (res.missing?.length) chatMsg('err', `ID non trovati tra i candidati: ${res.missing.join(', ')}`);
+    $('#chat-log').scrollTop = $('#chat-log').scrollHeight;
+  }
+
+  // Durante l'attesa il bottone invio diventa STOP (■): abort della richiesta.
+  function setChatBusy(busy) {
+    chat.busy = busy;
+    const btn = $('#chat-send');
+    btn.disabled = false;
+    btn.textContent = busy ? '■' : '➤';
+    btn.classList.toggle('stop', busy);
+    btn.setAttribute('aria-label', busy ? 'Ferma la richiesta' : 'Invia');
+    btn.title = busy ? 'Ferma la richiesta in corso' : '';
+  }
+
+  async function sendChat(text) {
+    if (chat.busy || !text.trim()) return;
+    if (!chat.status?.enabled) { chatMsg('err', 'Chat non attiva: avvia il server con «npm run chat» e apri http://localhost:8787.'); return; }
+    setChatBusy(true);
+    chat.ctrl = new AbortController();
+    $('#chat-chips').innerHTML = '';
+    chatMsg('user', text);
+    chat.history.push({ role: 'user', content: text });
+    const wait = chatMsg('bot wait', 'Sto cercando… (■ per fermare)');
+    try {
+      const resp = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: chat.history.slice(-12), lastResult: chat.lastResult }),
+        signal: chat.ctrl.signal,
+      });
+      const res = await resp.json();
+      wait.remove();
+      if (!resp.ok) {
+        chatMsg('err', res.error || `Errore ${resp.status}`);
+      } else {
+        renderChatResult(res);
+        chat.history.push({ role: 'assistant', content: res.commento || '' });
+        chat.lastResult = { action: res.action, filtro: res.filtro, criterio: res.criterio, totale: res.totale, rows: (res.rows || []).slice(0, 12) };
+        if (res.action === 'filter' || (res.action === 'rank' && res.rows?.length)) applyChatAction(res);
+        saveChat();
+      }
+    } catch (e) {
+      wait.remove();
+      if (e.name === 'AbortError') {
+        // Stop dell'utente: la domanda resta in history ma senza risposta;
+        // la rimuovo per non confondere il turno successivo del modello.
+        chat.history.pop();
+        chatMsg('bot wait', '⏹ Richiesta fermata.');
+      } else {
+        chatMsg('err', `Server chat non raggiungibile: ${e.message}. Avvia «npm run chat».`);
+      }
+    } finally {
+      chat.ctrl = null;
+      setChatBusy(false);
+      $('#chat-input').focus();
+    }
+  }
+
+  function openChat() {
+    document.body.classList.add('chat-open');
+    $('#btn-chat').classList.add('active');
+    $('#btn-chat').setAttribute('aria-expanded', 'true');
+    $('#chat-input').focus();
+  }
+  function closeChat() {
+    document.body.classList.remove('chat-open');
+    $('#btn-chat').classList.remove('active');
+    $('#btn-chat').setAttribute('aria-expanded', 'false');
+  }
+  // Ridimensionamento col trascinamento del bordo sinistro (persistito).
+  const CHAT_MIN_W = 300;
+  const chatMaxW = () => Math.round(window.innerWidth * 0.94);
+  const setChatWidth = (px, save) => {
+    const w = Math.min(chatMaxW(), Math.max(CHAT_MIN_W, Math.round(px)));
+    $('#chat-panel').style.setProperty('--chat-w', w + 'px');
+    if (save) { try { localStorage.setItem('radar-chat-w', String(w)); } catch { /* quota */ } }
+    return w;
+  };
+  try {
+    const savedW = parseInt(localStorage.getItem('radar-chat-w'), 10);
+    if (savedW) setChatWidth(savedW, false);
+  } catch { /* storage assente */ }
+  const resizer = $('#chat-resizer');
+  let dragStartX = 0, dragStartW = 0;
+  resizer.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    dragStartX = e.clientX;
+    dragStartW = $('#chat-panel').getBoundingClientRect().width;
+    document.body.classList.add('chat-resizing');
+    resizer.setPointerCapture(e.pointerId);
+  });
+  resizer.addEventListener('pointermove', (e) => {
+    if (!document.body.classList.contains('chat-resizing')) return;
+    setChatWidth(dragStartW + (dragStartX - e.clientX), false);
+  });
+  const endDrag = (e) => {
+    if (!document.body.classList.contains('chat-resizing')) return;
+    document.body.classList.remove('chat-resizing');
+    try { resizer.releasePointerCapture(e.pointerId); } catch { /* già rilasciato */ }
+    setChatWidth($('#chat-panel').getBoundingClientRect().width, true);
+  };
+  resizer.addEventListener('pointerup', endDrag);
+  resizer.addEventListener('pointercancel', endDrag);
+  resizer.addEventListener('dblclick', () => setChatWidth(380, true));
+  // Accessibilità: frecce quando il separatore ha il focus (passo 20px).
+  resizer.addEventListener('keydown', (e) => {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    e.preventDefault();
+    const w = $('#chat-panel').getBoundingClientRect().width;
+    setChatWidth(w + (e.key === 'ArrowLeft' ? 20 : -20), true);
+  });
+  window.addEventListener('resize', () => {
+    const w = $('#chat-panel').getBoundingClientRect().width;
+    if (w > chatMaxW()) setChatWidth(chatMaxW(), false);
+  });
+
+  $('#btn-chat').addEventListener('click', () => document.body.classList.contains('chat-open') ? closeChat() : openChat());
+  $('#chat-close').addEventListener('click', closeChat);
+  $('#chat-backdrop').addEventListener('click', closeChat);
+  $('#chat-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (chat.busy) { if (chat.ctrl) chat.ctrl.abort(); return; }
+    const v = $('#chat-input').value.trim();
+    $('#chat-input').value = '';
+    sendChat(v);
+  });
+
+  async function initChat() {
+    const chips = ['I 5 migliori per ROI', 'Trilocali a San Lazzaro sotto 130k', 'I più negoziabili', 'Novità di oggi'];
+    try {
+      const resp = await fetch('/api/chat/status');
+      chat.status = await resp.json();
+    } catch { chat.status = { enabled: false }; }
+    if (chat.status.enabled) {
+      $('#chat-model').textContent = `${chat.status.provider} · ${chat.status.model}`;
+      if (!chat.history.length) {
+        chatMsg('bot', 'Ciao! Cerca tra i candidati del radar in linguaggio naturale: filtri, classifiche, confronti e domande sugli annunci. I risultati si applicano anche alla tabella.');
+      } else {
+        for (const m of chat.history) chatMsg(m.role === 'user' ? 'user' : 'bot', m.content);
+      }
+      $('#chat-chips').innerHTML = chips.map((c) => `<button type="button">${esc(c)}</button>`).join('');
+      $('#chat-chips').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => sendChat(b.textContent)));
+    } else {
+      $('#chat-model').textContent = 'non attiva';
+      const why = chat.status?.datiOk === false ? 'Dati del sito mancanti: esegui «node build-site.mjs».'
+        : chat.status?.provider ? `LLM non configurato (${chat.status.provider}): vedi ai-config.json / core/ai-config.mjs.`
+        : 'Il sito è aperto come file statico o il server chat non è attivo.';
+      chatMsg('bot', `La chat richiede il server locale.\n\n${why}\n\n1. Avvia: npm run chat\n2. Apri: http://localhost:8787\n\nIl resto del sito funziona normalmente anche senza chat.`);
+      $('#chat-input').disabled = true;
+      $('#chat-send').disabled = true;
+    }
+  }
+  initChat();
 
   render();
 })();
